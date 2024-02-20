@@ -1,0 +1,627 @@
+@font-face {
+  font-family: opensans;
+  src: url("../fonts/opensans/OpenSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  appearance: none;
+  outline: none;
+  font-family: "Lato", sans-serif !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px !important;
+  margin: 0 auto;
+  padding: 0 30px !important;
+}
+@media (min-width: 1250px) {
+  .container {
+    padding: 0 !important;
+  }
+}
+
+.container-full-left {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+@media (min-width: 1250px) {
+  .container-full-left {
+    max-width: calc(1200px + (100% - 1200px) / 2);
+    margin: 0 0 0 auto;
+    padding: 0;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+nav {
+  background: #fff;
+  position: relative;
+  width: 100%;
+  padding: 30px 0;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+nav .container input:checked ~ ul {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+}
+nav ul {
+  display: none;
+}
+nav ul li {
+  cursor: pointer;
+  transition: all 200ms ease;
+  background: #fff;
+}
+nav ul li a {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+@media (min-width: 1200px) {
+  nav {
+    padding: 20px 0 17px 0;
+  }
+  nav::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #425545;
+    width: 40%;
+    height: 100%;
+  }
+  nav .container {
+    margin: 0 auto;
+  }
+  nav input,
+  nav label {
+    display: none;
+  }
+  nav ul {
+    display: inline;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    gap: 20px;
+  }
+  nav ul li {
+    background: transparent;
+  }
+  nav ul li:nth-child(3) {
+    margin-right: 30px;
+  }
+  nav ul li:nth-child(5) a.right-btn {
+    border: 1px solid #DDD;
+    padding: 0 13px;
+  }
+  nav ul li a {
+    color: #425545;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    line-height: 30px;
+  }
+  nav ul li a.right-btn {
+    color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+  }
+  nav ul li a.right-btn div.ico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 1.5px;
+  }
+  nav ul li a.right-btn span {
+    display: block;
+  }
+}
+@media (min-width: 1350px) {
+  nav::after {
+    width: 40%;
+  }
+  nav ul {
+    gap: 30px;
+  }
+  nav ul li:nth-child(3) {
+    margin-right: 80px;
+  }
+}
+@media (min-width: 1550px) {
+  nav::after {
+    width: 42%;
+  }
+  nav ul {
+    gap: 45px;
+  }
+  nav ul li:nth-child(3) {
+    margin-right: 115px;
+  }
+}
+
+section.home-banner div.owl-carousel {
+  position: relative;
+}
+section.home-banner div.owl-carousel div.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+section.home-banner div.owl-carousel div.item img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+@media (min-width: 1200px) {
+  section.home-banner div.owl-carousel div.item img {
+    height: auto;
+  }
+}
+section.home-banner div.owl-carousel div.item div.contain-item {
+  position: absolute;
+  left: 30px;
+}
+@media (min-width: 1200px) {
+  section.home-banner div.owl-carousel div.item div.contain-item {
+    width: 100%;
+    max-width: 1200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 130px;
+  }
+}
+section.home-banner div.owl-carousel div.item div.contain-item > span {
+  display: block;
+  color: #fff;
+  font-style: normal;
+  line-height: normal;
+}
+section.home-banner div.owl-carousel div.item div.contain-item > span.bairro {
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  padding: 0 0 35px 20px;
+}
+section.home-banner div.owl-carousel div.item div.contain-item > span.bairro::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 1px;
+  height: 40px;
+  background: #fff;
+}
+section.home-banner div.owl-carousel div.item div.contain-item > span.titulo {
+  font-size: 34px;
+  font-weight: 700;
+  padding-bottom: 35px;
+}
+@media (min-width: 576px) {
+  section.home-banner div.owl-carousel div.item div.contain-item > span.titulo {
+    font-size: 52px;
+  }
+}
+section.home-banner div.owl-carousel div.item div.contain-item > span.desc {
+  font-size: 20px;
+  font-weight: 400;
+  width: 100%;
+  max-width: 355px;
+}
+section.home-banner div.owl-carousel div.item div.contain-item div.contain-btn {
+  margin-top: 20px;
+}
+section.home-banner div.owl-carousel div.item div.contain-item div.contain-btn a.action-banner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+section.home-banner div.owl-carousel div.item div.contain-item div.contain-btn a.action-banner div.ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+section.home-banner div.owl-carousel div.item div.contain-item div.contain-btn a.action-banner span {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+section.home-banner div.owl-carousel .owl-dots {
+  display: flex !important;
+  flex-direction: row;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 30px;
+}
+@media (min-width: 1200px) {
+  section.home-banner div.owl-carousel .owl-dots {
+    padding: 0;
+    flex-direction: column;
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    right: auto;
+    left: calc((100% - 1200px) / 2);
+    width: 30px;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 1250px) {
+  section.home-banner div.owl-carousel .owl-dots {
+    padding-left: 0;
+  }
+}
+section.home-banner div.owl-carousel .owl-dots .owl-dot > span {
+  background: transparent;
+  border: 1px solid #fff;
+}
+section.home-banner div.owl-carousel .owl-dots .owl-dot.active > span {
+  background: #fff;
+}
+section.home-institucional {
+  padding-top: 100px;
+}
+@media (min-width: 1200px) {
+  section.home-institucional {
+    padding-top: 165px;
+    background: #fff url("/website/img/home/bg-institucional-home.png") no-repeat left top;
+  }
+}
+section.home-institucional div.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 1200px) {
+  section.home-institucional div.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1500px) {
+  section.home-institucional div.grid {
+    grid-template-columns: 1fr 870px;
+  }
+}
+@media (min-width: 1200px) {
+  section.home-institucional div.grid > div.grid-left {
+    padding-right: 50px;
+  }
+}
+section.home-institucional div.grid > div.grid-left div.contain-subtitulo {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 22px;
+}
+section.home-institucional div.grid > div.grid-left div.contain-subtitulo > div.ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 3px;
+}
+section.home-institucional div.grid > div.grid-left div.contain-subtitulo span.subtitulo {
+  display: block;
+  color: #222;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24.317px;
+  line-height: 24.317px;
+}
+@media (min-width: 1200px) {
+  section.home-institucional div.grid > div.grid-left div.contain-subtitulo span.subtitulo {
+    font-size: 26.26px;
+    line-height: 26.26px;
+  }
+}
+section.home-institucional div.grid > div.grid-left div.contain-subtitulo span.subtitulo .destaque {
+  display: inline;
+  font-weight: 600;
+}
+section.home-institucional div.grid > div.grid-left span.titulo {
+  display: block;
+  color: #000;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 100%;
+  max-width: 500px;
+  padding-top: 35px;
+}
+@media (min-width: 1200px) {
+  section.home-institucional div.grid > div.grid-left span.titulo {
+    padding-top: 40px;
+  }
+}
+section.home-institucional div.grid > div.grid-left span.titulo .destaque {
+  font-weight: 400;
+}
+section.home-institucional div.grid > div.grid-left span.desc {
+  display: block;
+  color: #222;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 27px;
+  padding-top: 25px;
+}
+@media (min-width: 1200px) {
+  section.home-institucional div.grid > div.grid-left span.desc {
+    font-size: 22px;
+    line-height: 33px;
+  }
+}
+section.home-institucional div.grid > div.grid-left span.desc .destaque {
+  display: inline;
+  font-weight: 700;
+}
+section.home-institucional div.grid > div.grid-left div.contain-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+@media (min-width: 1200px) {
+  section.home-institucional div.grid > div.grid-left div.contain-btn {
+    justify-content: flex-start;
+  }
+}
+section.home-institucional div.grid > div.grid-left div.contain-btn a {
+  display: inline-block;
+  padding: 16px 58px;
+  background: #425545;
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+section.home-institucional div.grid > div.grid-right {
+  margin-top: 40px;
+}
+@media (min-width: 1200px) {
+  section.home-institucional div.grid > div.grid-right {
+    margin-top: 0;
+    padding-left: 50px;
+  }
+}
+section.home-institucional div.grid > div.grid-right button.video-modal {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+section.home-institucional div.grid > div.grid-right button.video-modal::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/website/img/global/play.svg") no-repeat center center;
+}
+section.home-institucional div.grid > div.grid-right button.video-modal img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 870px;
+}
+section.home-empreendimentos {
+  padding: 130px 0 100px;
+}
+@media (min-width: 1200px) {
+  section.home-empreendimentos {
+    padding: 160px 0 140px;
+  }
+}
+section.home-empreendimentos div.top {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  section.home-empreendimentos div.top {
+    gap: 190px;
+    flex-direction: row;
+    padding-bottom: 40px;
+  }
+}
+section.home-empreendimentos div.top span.titulo {
+  display: block;
+  color: #222;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+@media (min-width: 1200px) {
+  section.home-empreendimentos div.top span.titulo {
+    font-size: 38px;
+    text-align: left;
+  }
+}
+section.home-empreendimentos div.top div.contain-btns {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+@media (min-width: 1200px) {
+  section.home-empreendimentos div.top div.contain-btns {
+    justify-content: flex-start;
+  }
+}
+section.home-empreendimentos div.top div.contain-btns button {
+  display: flex;
+  flex-wrap: nowrap;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  gap: 15px;
+}
+section.home-empreendimentos div.top div.contain-btns button div.ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.home-empreendimentos div.top div.contain-btns button span {
+  display: block;
+  color: #425545;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+}
+@media (min-width: 450px) {
+  section.home-empreendimentos div.top div.contain-btns button span {
+    font-size: 13px;
+  }
+}
+section.home-empreendimentos #owl-carousel-2 div.item > div.card-home-inst {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+section.home-empreendimentos #owl-carousel-2 div.item > div.card-home-inst::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+section.home-empreendimentos #owl-carousel-2 div.item > div.card-home-inst > img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+section.home-empreendimentos #owl-carousel-2 div.item > div.card-home-inst > div.contain-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 27px 27px 30px;
+  display: flex;
+  flex-direction: column;
+}
+section.home-empreendimentos #owl-carousel-2 div.item > div.card-home-inst > div.contain-card > div {
+  display: flex;
+  flex-direction: column;
+}
+section.home-empreendimentos #owl-carousel-2 div.item > div.card-home-inst > div.contain-card > div.top-c-card {
+  height: 100%;
+  justify-content: flex-start;
+}
+section.home-empreendimentos #owl-carousel-2 div.item > div.card-home-inst > div.contain-card > div.top-c-card > span {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+}
+section.home-empreendimentos #owl-carousel-2 div.item > div.card-home-inst > div.contain-card > div.top-c-card > span.entrega {
+  font-weight: 700;
+}
+section.home-empreendimentos #owl-carousel-2 div.item > div.card-home-inst > div.contain-card > div.top-c-card > span.bairro {
+  font-weight: 400;
+}
+section.home-empreendimentos #owl-carousel-2 div.item > div.card-home-inst > div.contain-card > div.bottom-c-card {
+  height: 100%;
+  justify-content: flex-end;
+}
+section.home-empreendimentos #owl-carousel-2 div.item > div.card-home-inst > div.contain-card > div.bottom-c-card > span {
+  display: block;
+  color: #fff;
+  font-style: normal;
+  line-height: normal;
+}
+section.home-empreendimentos #owl-carousel-2 div.item > div.card-home-inst > div.contain-card > div.bottom-c-card > span.titulo {
+  font-size: 22px;
+  font-weight: 600;
+}
+section.home-empreendimentos #owl-carousel-2 div.item > div.card-home-inst > div.contain-card > div.bottom-c-card > span.desc {
+  font-size: 14px;
+  font-weight: 700;
+}
+section.home-empreendimentos #owl-carousel-2 .owl-dots {
+  display: block !important;
+}
+
+/*# sourceMappingURL=principal.css.map */

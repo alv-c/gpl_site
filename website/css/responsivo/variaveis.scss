@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    appearance: none;
+    outline: none;
+    font-family: "Lato", sans-serif !important;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px !important;
+    margin: 0 auto;
+    padding: 0 30px !important;
+
+    @media(min-width: 1250px) {
+        padding: 0 !important;
+    }
+}
+
+.container-full-left {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    @media(min-width: 1250px) {
+        max-width: calc(1200px + ((100% - 1200px) / 2));
+        margin: 0 0 0 auto;
+        padding: 0;
+    }
+}
+
+// SCROLL
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
