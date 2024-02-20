@@ -8,7 +8,7 @@
 	<body id="<?php echo $pagina; ?>">
 
 		<?php include "_inc_header.php"; ?>
-		<?php include "modal_video.php"; ?>
+		<?php include "_modal_video.php"; ?>
 
 		<section class="home-banner">
 			<div class="owl-carousel owl-theme" id="owl-carousel-1">
@@ -166,7 +166,128 @@
 				</div>
 			</div>
 		</section>
-
+		<section class="home-arena">
+			<div class="container">
+				<div class="grid-arena">
+					<div class="left">
+						<div class="contain-img">
+							<img src="website/img/home/arena-banner.png" class="banner-arena">
+						</div>
+					</div>
+					<div class="right">
+						<span class="subtitulo">Arena GPL</span>
+						<span class="titulo">O futuro está apenas começando</span>
+						<span class="desc">
+							Um espaço para receber e compartilhar experiências imersivas com salas interativas, salas de reunião, produção de conteúdo, eventos, coworking e muito mais.
+						</span>
+						<div class="contain-btn">
+							<a href="#" class="saiba-mais">Saiba mais</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="home-acontece">
+			<div class="container">
+				<span class="titulo">GPL Acontece</span>
+				<div class="grid-acontece">
+					<div class="item">
+						<div class="card-acontece">
+							<div class="top-img">
+								<img src="website/img/home/img-card-acontece.png">
+							</div>
+							<div class="body-card">
+								<span class="categoria">Categoria</span>
+								<span class="titulo-card">Sustentabilidade que a gente só vê aqui na GPL</span>
+								<div class="contain-btn">
+									<a href="#">
+										<span>Leia mais</span>
+										<div class="ico">
+											<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+												<mask id="mask0_94_69" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="19">
+													<rect x="18.1035" y="0.791992" width="17.8706" height="17.8706" transform="rotate(90 18.1035 0.791992)" fill="#D9D9D9" />
+												</mask>
+												<g>
+													<path d="M4.70095 13.897L11.8492 6.74874L5.44556 6.74874L5.44556 5.25952L14.3809 5.25952L14.3809 14.1948L12.8916 14.1948L12.8916 7.79119L5.7434 14.9394L4.70095 13.897Z" fill="#425545" />
+												</g>
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="card-acontece">
+							<div class="top-img">
+								<img src="website/img/home/img-card-acontece.png">
+							</div>
+							<div class="body-card">
+								<span class="categoria">Categoria</span>
+								<span class="titulo-card">Sustentabilidade que a gente só vê aqui na GPL</span>
+								<div class="contain-btn">
+									<a href="#">
+										<span>Leia mais</span>
+										<div class="ico">
+											<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+												<mask id="mask0_94_69" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="19">
+													<rect x="18.1035" y="0.791992" width="17.8706" height="17.8706" transform="rotate(90 18.1035 0.791992)" fill="#D9D9D9" />
+												</mask>
+												<g>
+													<path d="M4.70095 13.897L11.8492 6.74874L5.44556 6.74874L5.44556 5.25952L14.3809 5.25952L14.3809 14.1948L12.8916 14.1948L12.8916 7.79119L5.7434 14.9394L4.70095 13.897Z" fill="#425545" />
+												</g>
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="card-acontece">
+							<div class="top-img">
+								<img src="website/img/home/img-card-acontece.png">
+							</div>
+							<div class="body-card">
+								<span class="categoria">Categoria</span>
+								<span class="titulo-card">Sustentabilidade que a gente só vê aqui na GPL</span>
+								<div class="contain-btn">
+									<a href="#">
+										<span>Leia mais</span>
+										<div class="ico">
+											<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+												<mask id="mask0_94_69" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="19">
+													<rect x="18.1035" y="0.791992" width="17.8706" height="17.8706" transform="rotate(90 18.1035 0.791992)" fill="#D9D9D9" />
+												</mask>
+												<g>
+													<path d="M4.70095 13.897L11.8492 6.74874L5.44556 6.74874L5.44556 5.25952L14.3809 5.25952L14.3809 14.1948L12.8916 14.1948L12.8916 7.79119L5.7434 14.9394L4.70095 13.897Z" fill="#425545" />
+												</g>
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contain-ver-todos">
+					<a href="" class="ver-todos">
+						<div class="ico">
+							<svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+								<circle cx="14.5" cy="14.5786" r="14" fill="white" stroke="#B1B1B1" />
+								<mask id="mask0_75_950" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="8" width="13" height="13">
+									<rect x="9.52539" y="8.57861" width="12" height="12" fill="#D9D9D9" />
+								</mask>
+								<g>
+									<path d="M13.5379 19.5786L12.6504 18.6911L16.7629 14.5786L12.6504 10.4661L13.5379 9.57861L18.5379 14.5786L13.5379 19.5786Z" fill="#5C8262" />
+								</g>
+							</svg>
+						</div>
+						<span>ver todas</span>
+					</a>
+				</div>
+			</div>
+		</section>
 		<?php include "_inc_footer.php"; ?>
 	</body>
 
