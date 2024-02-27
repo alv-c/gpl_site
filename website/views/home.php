@@ -63,7 +63,7 @@
 			</div>
 		</section>
 		<section class="home-institucional">
-			<div class="container-full-left">
+			<div class="container-full-right">
 				<div class="grid">
 					<div class="grid-left">
 
@@ -135,7 +135,7 @@
 			</div>
 			<div class="owl-carousel owl-theme" id="owl-carousel-2">
 				<div class="item">
-					<div class="card-home-inst" onclick="window.location.href='https://www.google.com'">
+					<div class="card_1" onclick="window.location.href='https://www.google.com'">
 						<img src="/website/img/home/img-exe-card.png" alt="Imóvel GPL">
 						<div class="contain-card">
 							<div class="top-c-card">
@@ -150,7 +150,7 @@
 					</div>
 				</div>
 				<div class="item">
-					<div class="card-home-inst" onclick="window.location.href='https://www.google.com'">
+					<div class="card_1" onclick="window.location.href='https://www.google.com'">
 						<img src="/website/img/home/img-exe-card.png" alt="Imóvel GPL">
 						<div class="contain-card">
 							<div class="top-c-card">
