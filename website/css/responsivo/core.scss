@@ -2298,6 +2298,349 @@ section {
     }
 }
 
+//POLITICA PRIVACIDADE
+section {
+    &.politica_banner {
+        position: relative;
+
+        img.img-banner-empreendimentos {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        div.container-absolute {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;
+
+            >div.contain-desc {
+                padding: 85px 0 45px;
+
+                >span {
+                    display: block;
+                    color: $color_1;
+
+                    &.titulo {
+                        text-align: center;
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 768px) {
+            & {
+                div.container-absolute {
+                    >div.contain-desc {
+                        padding: 45px 0;
+
+                        >span.titulo {
+                            font-size: 52px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.politica-desc {
+        padding: 50px 0 70px;
+
+        article {
+            color: #000;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 180%;
+
+            >span {
+                display: block;
+
+                &.titulo {
+                    font-weight: 700;
+                    line-height: 25.2px;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+//TEASER
+section {
+    &.teaser_banner {
+        position: relative;
+
+        img.img-banner-empreendimentos {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: 590px;
+            object-fit: cover;
+
+            @media (min-width: 768px) {
+                height: 450px;
+            }
+        }
+
+        div.container-full-right {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+            height: 100%;
+            padding: 0;
+
+            @media (min-width: 768px) {
+                padding: 0 0 0 30px;
+            }
+
+            @media (min-width: 1200px) {
+                max-width: calc(1200px + (100% - 1200px) / 2);
+                margin: 0 0 0 auto;
+                padding: 0 0 0 30px;
+            }
+
+            @media (min-width: 1250px) {
+                padding: 0;
+            }
+
+            >div.contain-desc {
+                padding: 55px 0 0;
+                height: 100%;
+
+                @media (min-width: 768px) {
+                    padding: 0;
+                }
+
+                div.grid-empreendimento-topo {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    flex-direction: column;
+                    height: 100%;
+                    gap: 55px;
+
+                    @media (min-width: 768px) {
+                        flex-direction: row;
+                        align-items: stretch;
+                        gap: 15px;
+                    }
+
+                    >div {
+                        &.left-topo {
+                            width: 100%;
+
+                            @media (max-width: 767.9px) {
+                                padding: 0 30px;
+                            }
+
+                            div.contain-left {
+
+                                @media (min-width: 768px) {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    height: calc(100% - 40px);
+                                }
+
+                                >div.contain-titulo {
+                                    display: flex;
+                                    flex-wrap: nowrap;
+                                    flex-direction: column;
+                                    gap: 13px;
+
+                                    @media (min-width: 768px) {
+                                        flex-direction: row;
+                                        gap: 30px;
+                                        position: relative;
+                                        bottom: 40px;
+                                    }
+
+                                    >div.ico {
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        align-items: flex-start;
+
+                                        @media (min-width: 768px) {
+                                            padding-top: 10px;
+                                        }
+                                    }
+
+                                    >span {
+                                        display: block;
+                                        color: #fff;
+                                        font-size: 34px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 34px;
+
+                                        @media (min-width: 768px) {
+                                            font-size: 35px;
+                                            line-height: normal;
+                                        }
+
+                                        @media (min-width: 1200px) {
+                                            font-size: 44px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.right-topo {
+                            width: 100%;
+                            background: rgba(0, 0, 0, 0.35);
+                            height: 100%;
+
+                            @media (max-width: 767.9px) {
+                                padding: 30px 30px 0;
+                            }
+
+                            @media (min-width: 768px) {
+                                padding: 0;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                justify-content: center;
+                            }
+
+                            >fieldset#containFormTopo {
+                                @media (min-width: 768px) {
+                                    width: 100%;
+                                }
+
+                                @media (min-width: 768px) {
+                                    padding: 0 30px 0 15px;
+                                }
+
+                                @media (min-width: 992px) {
+                                    padding: 0 30px 0 45px;
+                                }
+
+                                @media (min-width: 1200px) {
+                                    padding: 0 0 0 65px;
+                                }
+
+                                >span.titulo-form {
+                                    display: block;
+                                    color: #fff;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                    padding-bottom: 5px;
+                                    width: 100%;
+                                    max-width: 310px;
+                                }
+
+                                input.form-cont-emp {
+                                    display: block;
+                                    width: 100%;
+                                    background: none;
+                                    padding: 11px 0;
+                                    border-bottom: 1px solid #B4B4B4;
+                                    margin-bottom: 7px;
+                                    color: #fff;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+
+                                    &::placeholder {
+                                        color: #fff;
+                                    }
+                                }
+
+                                div.contain-check-cont {
+                                    padding: 7px 0 20px;
+
+                                    label[for="politica_privacidade"] {
+                                        color: #FFF;
+                                        font-size: 12px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+                                        padding-left: 25px;
+                                        position: relative;
+                                        width: 100%;
+                                        max-width: 300px;
+
+                                        @media(min-width: 768px) {
+                                            max-width: 100%;
+                                        }
+
+                                        &::after {
+                                            content: '';
+                                            position: absolute;
+                                            inset: 2px auto auto 0;
+                                            width: 15px;
+                                            height: 15px;
+                                            background: transparent;
+                                            border: 1px solid #fff;
+                                        }
+
+                                        >a {
+                                            color: #fff;
+                                            text-decoration-line: underline;
+                                        }
+                                    }
+
+                                    label[for="politica_privacidade"]:has(> input#politica_privacidade:checked) {
+                                        &::after {
+                                            background: #fff url('/website/img/global/checkbox.svg') no-repeat center center;
+                                        }
+                                    }
+                                }
+
+                                div.contain-btn-form {
+                                    display: flex;
+                                    justify-content: flex-end;
+
+                                    >button.submit-form {
+                                        display: flex;
+                                        flex-wrap: nowrap;
+                                        gap: 15px;
+                                        border: none;
+                                        background: none;
+                                        outline: none;
+
+                                        div.ico {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+
+                                        >span {
+                                            display: block;
+                                            color: #FFF;
+                                            font-size: 13px;
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            line-height: 30px;
+                                            letter-spacing: 2.6px;
+                                            text-transform: uppercase;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 1250px) {
     .container {
         padding: 0 !important;

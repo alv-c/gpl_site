@@ -2031,6 +2031,317 @@ section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-a
   background-position: calc(100% - 10px) !important;
 }
 
+section.politica_banner {
+  position: relative;
+}
+section.politica_banner img.img-banner-empreendimentos {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+section.politica_banner div.container-absolute {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+section.politica_banner div.container-absolute > div.contain-desc {
+  padding: 85px 0 45px;
+}
+section.politica_banner div.container-absolute > div.contain-desc > span {
+  display: block;
+  color: #fff;
+}
+section.politica_banner div.container-absolute > div.contain-desc > span.titulo {
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media (min-width: 768px) {
+  section.politica_banner div.container-absolute > div.contain-desc {
+    padding: 45px 0;
+  }
+  section.politica_banner div.container-absolute > div.contain-desc > span.titulo {
+    font-size: 52px;
+  }
+}
+section.politica-desc {
+  padding: 50px 0 70px;
+}
+section.politica-desc article {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+section.politica-desc article > span {
+  display: block;
+}
+section.politica-desc article > span.titulo {
+  font-weight: 700;
+  line-height: 25.2px;
+  padding-bottom: 30px;
+}
+
+section.teaser_banner {
+  position: relative;
+}
+section.teaser_banner img.img-banner-empreendimentos {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 590px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  section.teaser_banner img.img-banner-empreendimentos {
+    height: 450px;
+  }
+}
+section.teaser_banner div.container-full-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  section.teaser_banner div.container-full-right {
+    padding: 0 0 0 30px;
+  }
+}
+@media (min-width: 1200px) {
+  section.teaser_banner div.container-full-right {
+    max-width: calc(1200px + (100% - 1200px) / 2);
+    margin: 0 0 0 auto;
+    padding: 0 0 0 30px;
+  }
+}
+@media (min-width: 1250px) {
+  section.teaser_banner div.container-full-right {
+    padding: 0;
+  }
+}
+section.teaser_banner div.container-full-right > div.contain-desc {
+  padding: 55px 0 0;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  section.teaser_banner div.container-full-right > div.contain-desc {
+    padding: 0;
+  }
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 100%;
+  gap: 55px;
+}
+@media (min-width: 768px) {
+  section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 15px;
+  }
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo {
+  width: 100%;
+}
+@media (max-width: 767.9px) {
+  section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo {
+    padding: 0 30px;
+  }
+}
+@media (min-width: 768px) {
+  section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo div.contain-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - 40px);
+  }
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo div.contain-left > div.contain-titulo {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 13px;
+}
+@media (min-width: 768px) {
+  section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo div.contain-left > div.contain-titulo {
+    flex-direction: row;
+    gap: 30px;
+    position: relative;
+    bottom: 40px;
+  }
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo div.contain-left > div.contain-titulo > div.ico {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media (min-width: 768px) {
+  section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo div.contain-left > div.contain-titulo > div.ico {
+    padding-top: 10px;
+  }
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo div.contain-left > div.contain-titulo > span {
+  display: block;
+  color: #fff;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
+@media (min-width: 768px) {
+  section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo div.contain-left > div.contain-titulo > span {
+    font-size: 35px;
+    line-height: normal;
+  }
+}
+@media (min-width: 1200px) {
+  section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo div.contain-left > div.contain-titulo > span {
+    font-size: 44px;
+  }
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  height: 100%;
+}
+@media (max-width: 767.9px) {
+  section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo {
+    padding: 30px 30px 0;
+  }
+}
+@media (min-width: 768px) {
+  section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo {
+    padding: 0 30px 0 15px;
+  }
+}
+@media (min-width: 992px) {
+  section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo {
+    padding: 0 30px 0 45px;
+  }
+}
+@media (min-width: 1200px) {
+  section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo {
+    padding: 0 0 0 65px;
+  }
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo > span.titulo-form {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 5px;
+  width: 100%;
+  max-width: 310px;
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo input.form-cont-emp {
+  display: block;
+  width: 100%;
+  background: none;
+  padding: 11px 0;
+  border-bottom: 1px solid #B4B4B4;
+  margin-bottom: 7px;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo input.form-cont-emp::placeholder {
+  color: #fff;
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-check-cont {
+  padding: 7px 0 20px;
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-check-cont label[for=politica_privacidade] {
+  color: #FFF;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 25px;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+@media (min-width: 768px) {
+  section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-check-cont label[for=politica_privacidade] {
+    max-width: 100%;
+  }
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-check-cont label[for=politica_privacidade]::after {
+  content: "";
+  position: absolute;
+  inset: 2px auto auto 0;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border: 1px solid #fff;
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-check-cont label[for=politica_privacidade] > a {
+  color: #fff;
+  text-decoration-line: underline;
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-check-cont label[for=politica_privacidade]:has(> input#politica_privacidade:checked)::after {
+  background: #fff url("/website/img/global/checkbox.svg") no-repeat center center;
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-btn-form {
+  display: flex;
+  justify-content: flex-end;
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-btn-form > button.submit-form {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  border: none;
+  background: none;
+  outline: none;
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-btn-form > button.submit-form div.ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-btn-form > button.submit-form > span {
+  display: block;
+  color: #FFF;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+}
+
 @media (min-width: 1250px) {
   .container {
     padding: 0 !important;
