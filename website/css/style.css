@@ -120,6 +120,7 @@ div#videoModal div.modal-dialog div.modal-content .modal-body div.embed-containe
 nav.navbar {
   overflow: hidden;
   padding: 40px 0 30px;
+  border-bottom: 1px solid #BAC3B0;
 }
 nav.navbar .menu {
   background-color: transparent;
@@ -437,7 +438,6 @@ section.home-banner div.owl-carousel .owl-dots .owl-dot > span {
 section.home-banner div.owl-carousel .owl-dots .owl-dot.active > span {
   background: #fff;
 }
-
 section.home-institucional {
   padding-top: 100px;
   position: relative;
@@ -544,7 +544,6 @@ section.home-institucional div.grid > div.grid-right button.video-modal img {
   width: 100%;
   max-width: 870px;
 }
-
 section.home-empreendimentos {
   padding: 130px 0 100px;
 }
@@ -669,7 +668,6 @@ section.home-empreendimentos #owl-carousel-2 div.item div.card_1 > div.contain-c
 section.home-empreendimentos #owl-carousel-2 .owl-dots {
   display: block !important;
 }
-
 section.home-arena {
   padding-bottom: 100px;
 }
@@ -753,7 +751,6 @@ section.home-arena div.grid-arena > div.right > div.contain-btn > a.saiba-mais {
   line-height: normal;
   text-transform: uppercase;
 }
-
 section.home-acontece {
   background: #F9F9F8;
   padding: 40px 0 70px;
@@ -900,7 +897,6 @@ section.empreendimentos_banner div.container-absolute > div.contain-desc > span.
   line-height: normal;
   width: 100%;
 }
-
 section.empreendimentos_listagem {
   background: #fff;
   padding: 40px 0 90px;
@@ -1108,7 +1104,6 @@ section.institucional-topo div.grid-inst-topo > div.right-top > img.banner_insti
   width: 100%;
   object-fit: cover;
 }
-
 section.institucional-media {
   background: #fff;
 }
@@ -1138,7 +1133,6 @@ section.institucional-media button.video-modal > img {
   margin: 0 auto;
   object-fit: cover;
 }
-
 section.politica-qualidade {
   padding: 100px 0 60px;
 }
@@ -1214,7 +1208,6 @@ section.politica-qualidade div.grid-polit-qua > div.right > fieldset.certificado
   width: 100%;
   max-width: 260px;
 }
-
 section.institucional-mapa .container-full {
   position: relative;
 }
@@ -1299,14 +1292,19 @@ section.acontece_banner div.contain-desc > div.contain-info > div.contain-btn-in
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-
 section.acontece-listagem div.grid-listagem {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 45px;
+  padding-bottom: 55px;
+  border-bottom: 1px solid #D9D9D9;
+}
+@media (min-width: 768px) {
+  section.acontece-listagem div.grid-listagem {
+    padding-bottom: 90px;
+  }
 }
 section.acontece-listagem div.grid-listagem > div.card-acontece {
-  border: 2px solid cyan;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -1369,9 +1367,55 @@ section.acontece-listagem div.grid-listagem > div.card-acontece > div.bottom-car
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+section.acontece-paginacao div.contain-paginacao {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 45px;
+  padding: 45px 0 70px;
+}
+@media (min-width: 768px) {
+  section.acontece-paginacao div.contain-paginacao {
+    padding: 45px 0 90px;
+  }
+}
+section.acontece-paginacao div.contain-paginacao > div.seta-esquerda > button.btn-seta-paginacao,
+section.acontece-paginacao div.contain-paginacao > div.seta-direita > button.btn-seta-paginacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 100%;
+}
+section.acontece-paginacao div.contain-paginacao > div.contain-btns-pag {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 18px;
+}
+section.acontece-paginacao div.contain-paginacao > div.contain-btns-pag > button.btn-pag {
+  display: block;
+  padding: 7px 12px;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5.767px;
+}
+section.acontece-paginacao div.contain-paginacao > div.contain-btns-pag > button.btn-pag.ativo {
+  border: 0.721px solid #5C8262;
+}
 
 section.noticia-topo {
-  padding: 40px 0 55px;
+  padding: 0 0 55px;
+}
+@media (min-width: 768px) {
+  section.noticia-topo {
+    padding: 0 0 60px;
+  }
 }
 section.noticia-topo span {
   display: block;
@@ -1383,12 +1427,23 @@ section.noticia-topo span.data-noticia {
   font-size: 11px;
   font-weight: 400;
   padding-bottom: 18px;
+  padding-top: 40px;
+}
+@media (min-width: 768px) {
+  section.noticia-topo span.data-noticia {
+    padding-top: 85px;
+  }
 }
 section.noticia-topo span.titulo-noticia {
   color: #333;
   font-size: 32px;
   font-weight: 500;
   padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  section.noticia-topo span.titulo-noticia {
+    font-size: 46px;
+  }
 }
 section.noticia-topo img.banner-noticia {
   display: block;
@@ -1397,7 +1452,6 @@ section.noticia-topo img.banner-noticia {
   max-width: 1020px;
   object-fit: cover;
 }
-
 section.noticia-desc {
   padding-bottom: 50px;
 }
@@ -1413,9 +1467,13 @@ section.noticia-desc article > span {
 section.noticia-desc article > span:last-child {
   padding-bottom: 0;
 }
-
 section.noticia-imgs-grid {
   padding-bottom: 100px;
+}
+@media (min-width: 768px) {
+  section.noticia-imgs-grid {
+    padding-bottom: 40px;
+  }
 }
 section.noticia-imgs-grid div.grid-imgs {
   display: grid;
@@ -1424,12 +1482,28 @@ section.noticia-imgs-grid div.grid-imgs {
   gap: 25px;
   padding-bottom: 60px;
 }
+@media (min-width: 650px) {
+  section.noticia-imgs-grid div.grid-imgs {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
+@media (min-width: 768px) {
+  section.noticia-imgs-grid div.grid-imgs {
+    gap: 30px;
+  }
+}
 section.noticia-imgs-grid div.grid-imgs > img {
   display: block;
   width: 100%;
   margin: 0 auto;
   object-fit: cover;
   max-width: 320px;
+}
+@media (min-width: 768px) {
+  section.noticia-imgs-grid div.grid-imgs > img {
+    max-width: 100%;
+  }
 }
 section.noticia-imgs-grid div.contain-btn-voltar {
   display: flex;
@@ -1457,6 +1531,504 @@ section.noticia-imgs-grid div.contain-btn-voltar > a.btn-voltar > span {
   line-height: normal;
   letter-spacing: 0.64px;
   text-transform: uppercase;
+}
+
+section.contato_banner {
+  position: relative;
+}
+section.contato_banner img.img-banner-empreendimentos {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+}
+section.contato_banner div.container-absolute {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+section.contato_banner div.container-absolute > div.contain-desc {
+  padding: 120px 0 110px;
+}
+section.contato_banner div.container-absolute > div.contain-desc > span {
+  display: block;
+  color: #fff;
+}
+section.contato_banner div.container-absolute > div.contain-desc > span.titulo {
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 15px;
+}
+section.contato_banner div.container-absolute > div.contain-desc > span.desc {
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  section.contato_banner img.img-banner-empreendimentos {
+    height: 450px;
+  }
+  section.contato_banner div.container-absolute > div.contain-desc {
+    padding: 130px 0;
+  }
+  section.contato_banner div.container-absolute > div.contain-desc > span.titulo {
+    font-size: 52px;
+    text-align: left;
+  }
+  section.contato_banner div.container-absolute > div.contain-desc > span.desc {
+    text-align: left;
+    max-width: 355px;
+  }
+}
+section.contato_form {
+  background: #fff;
+}
+@media (min-width: 1350px) {
+  section.contato_form .container {
+    max-width: 1320px !important;
+  }
+}
+@media (min-width: 768px) {
+  section.contato_form {
+    padding-bottom: 680px;
+  }
+}
+section.contato_form .contain-contato {
+  position: relative;
+}
+section.contato_form .contain-contato div.grid-contato {
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 40px 0 110px;
+  gap: 100px;
+}
+@media (min-width: 768px) {
+  section.contato_form .contain-contato div.grid-contato {
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 55px 60px 75px;
+    z-index: 1;
+    gap: 15px;
+  }
+}
+section.contato_form .contain-contato div.grid-contato > div.left-contato div.contain-endereco {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+section.contato_form .contain-contato div.grid-contato > div.left-contato div.contain-endereco > div.ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.contato_form .contain-contato div.grid-contato > div.left-contato div.contain-endereco > span {
+  display: block;
+  width: 100%;
+  max-width: 290px;
+}
+section.contato_form .contain-contato div.grid-contato > div.left-contato div.contain-btn-maps {
+  padding-top: 10px;
+}
+section.contato_form .contain-contato div.grid-contato > div.left-contato div.contain-btn-maps > a.mapa-contato {
+  display: inline-block;
+  padding: 12px 27px;
+  border: 1px solid #B1B1B1;
+  background: #fff;
+  text-decoration: none;
+  color: #425545;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+section.contato_form .contain-contato div.grid-contato > div.left-contato div.contain-contato {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  padding-top: 50px;
+}
+section.contato_form .contain-contato div.grid-contato > div.left-contato div.contain-contato > div.ico {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+section.contato_form .contain-contato div.grid-contato > div.left-contato div.contain-contato > div.ico svg {
+  position: relative;
+  top: 5px;
+}
+section.contato_form .contain-contato div.grid-contato > div.left-contato div.contain-contato > div.spans {
+  display: flex;
+  flex-direction: column;
+}
+section.contato_form .contain-contato div.grid-contato > div.left-contato div.contain-contato > div.spans > span {
+  display: block;
+  color: #000;
+  font-style: normal;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+section.contato_form .contain-contato div.grid-contato > div.left-contato div.contain-contato > div.spans > span:first-child {
+  font-size: 13px;
+  font-weight: 600;
+}
+section.contato_form .contain-contato div.grid-contato > div.left-contato div.contain-contato > div.spans > span:last-child {
+  font-size: 18px;
+  font-weight: 400;
+}
+section.contato_form .contain-contato div.grid-contato > div.left-contato div.contain-redes-sociais {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding-top: 15px;
+}
+section.contato_form .contain-contato div.grid-contato > div.left-contato div.contain-redes-sociais > a.btn-rede-social {
+  display: inline-block;
+  text-decoration: none;
+}
+section.contato_form .contain-contato div.grid-contato > div.right-contato > fieldset .form-contato {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #D2D2D2;
+  background: #fff;
+  padding: 15px 24px;
+  margin-bottom: 11px;
+  color: #6B6B6B;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+section.contato_form .contain-contato div.grid-contato > div.right-contato > fieldset div.contain-check-cont {
+  padding-bottom: 40px;
+}
+section.contato_form .contain-contato div.grid-contato > div.right-contato > fieldset div.contain-check-cont label[for=politica_privacidade] {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  position: relative;
+}
+section.contato_form .contain-contato div.grid-contato > div.right-contato > fieldset div.contain-check-cont label[for=politica_privacidade]::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 17px;
+  height: 17px;
+  background: #fff;
+  border: 1px solid #707070;
+}
+section.contato_form .contain-contato div.grid-contato > div.right-contato > fieldset div.contain-check-cont label[for=politica_privacidade] > a {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+section.contato_form .contain-contato div.grid-contato > div.right-contato > fieldset div.contain-check-cont label[for=politica_privacidade]:has(> input#politica_privacidade:checked)::after {
+  background: #fff url("/website/img/global/checkbox.svg") no-repeat center center;
+}
+section.contato_form .contain-contato div.grid-contato > div.right-contato > fieldset button.submit-contato {
+  display: block;
+  border: none;
+  background: #425545;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 40px;
+  color: #fff;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+section.contato_form .contain-contato div.grid-contato > div.right-contato > fieldset select {
+  background: #fff url("/website/img/global/seta-select.svg") no-repeat !important;
+  background-position: calc(100% - 10px) !important;
+}
+
+section.assistencia_banner {
+  position: relative;
+}
+section.assistencia_banner img.img-banner-empreendimentos {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+}
+section.assistencia_banner div.container-absolute {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+section.assistencia_banner div.container-absolute > div.contain-desc {
+  padding: 120px 0 110px;
+}
+section.assistencia_banner div.container-absolute > div.contain-desc > span {
+  display: block;
+  color: #fff;
+}
+section.assistencia_banner div.container-absolute > div.contain-desc > span.titulo {
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 15px;
+}
+section.assistencia_banner div.container-absolute > div.contain-desc > span.desc {
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  section.assistencia_banner img.img-banner-empreendimentos {
+    height: 450px;
+  }
+  section.assistencia_banner div.container-absolute > div.contain-desc {
+    padding: 130px 0;
+  }
+  section.assistencia_banner div.container-absolute > div.contain-desc > span.titulo {
+    font-size: 52px;
+    text-align: left;
+  }
+  section.assistencia_banner div.container-absolute > div.contain-desc > span.desc {
+    text-align: left;
+    max-width: 355px;
+  }
+}
+section.assistencia_form {
+  background: #fff;
+}
+@media (min-width: 1350px) {
+  section.assistencia_form .container {
+    max-width: 1320px !important;
+  }
+}
+section.assistencia_form .contain-assistencia {
+  position: relative;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia {
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 40px 0 110px;
+  gap: 55px;
+}
+@media (min-width: 768px) {
+  section.assistencia_form .contain-assistencia div.grid-assistencia {
+    position: relative;
+    top: -100px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 55px 60px 0;
+    z-index: 1;
+    gap: 15px;
+  }
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.left-assistencia > span.desc-left {
+  display: block;
+  color: #585858;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+  max-width: 400px;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset div.contain-form-inline {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset div.contain-form-inline {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset div.contain-form-inline > div {
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset div.contain-form-inline > div.min {
+    width: 30%;
+  }
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset label {
+  display: block;
+  color: #6B6B6B;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset .form-assistencia {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #D2D2D2;
+  background: #fff;
+  padding: 15px 24px;
+  margin-bottom: 11px;
+  color: #6B6B6B;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset label[for=anexo] {
+  position: relative;
+  top: 22px;
+  padding: 16px 100px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6px;
+  background: #425545;
+  margin-bottom: 68px;
+  width: 100%;
+  max-width: 300px;
+}
+@media (min-width: 768px) {
+  section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset label[for=anexo] {
+    max-width: 330px;
+  }
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset label[for=anexo] > span {
+  display: block;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #fff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset label[for=anexo]::after {
+  content: "Adicionar anexo";
+  position: absolute;
+  inset: -22px auto auto 0;
+  width: 100%;
+  height: 22px;
+  color: #6B6B6B;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  text-overflow: clip !important;
+  white-space: normal !important;
+  overflow: visible !important;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset input#anexo {
+  display: none;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset article.contain-termo {
+  padding-bottom: 15px;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset article.contain-termo > span {
+  display: block;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset article.contain-termo > span.titulo {
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset article.contain-termo > span.subtitulo {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  padding-bottom: 15px;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset article.contain-termo > span.topico {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset div.contain-check-cont {
+  padding-bottom: 40px;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset div.contain-check-cont label[for=politica_privacidade] {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  position: relative;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset div.contain-check-cont label[for=politica_privacidade]::after {
+  content: "";
+  position: absolute;
+  inset: 2px auto auto 0;
+  width: 17px;
+  height: 17px;
+  background: #fff;
+  border: 1px solid #707070;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset div.contain-check-cont label[for=politica_privacidade] > a {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset div.contain-check-cont label[for=politica_privacidade]:has(> input#politica_privacidade:checked)::after {
+  background: #fff url("/website/img/global/checkbox.svg") no-repeat center center;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset button.submit-assistencia {
+  display: block;
+  border: none;
+  background: #425545;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 40px;
+  color: #fff;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+section.assistencia_form .contain-assistencia div.grid-assistencia > div.right-assistencia > fieldset select {
+  background: #fff url("/website/img/global/seta-select.svg") no-repeat !important;
+  background-position: calc(100% - 10px) !important;
 }
 
 @media (min-width: 1250px) {
@@ -1620,9 +2192,6 @@ section.noticia-imgs-grid div.contain-btn-voltar > a.btn-voltar > span {
   }
   section.acontece-listagem div.grid-listagem > div.card-acontece > div.bottom-card-acontece > span.desc {
     font-size: 26px;
-  }
-  section.noticia-topo {
-    padding: 85px 0 60px;
   }
   section.noticia-topo span.titulo-noticia {
     font-size: 46px;
@@ -2344,123 +2913,6 @@ section.noticia-imgs-grid div.contain-btn-voltar > a.btn-voltar > span {
     letter-spacing: 2.6px;
     text-transform: uppercase;
   }
-}
-section.noticia-topo {
-  padding: 40px 0 55px;
-}
-@media (min-width: 768px) {
-  section.noticia-topo {
-    padding: 85px 0 60px;
-  }
-}
-section.noticia-topo span {
-  display: block;
-  font-style: normal;
-  line-height: normal;
-}
-section.noticia-topo span.data-noticia {
-  color: #5C8262;
-  font-size: 11px;
-  font-weight: 400;
-  padding-bottom: 18px;
-}
-section.noticia-topo span.titulo-noticia {
-  color: #333;
-  font-size: 32px;
-  font-weight: 500;
-  padding-bottom: 30px;
-}
-@media (min-width: 768px) {
-  section.noticia-topo span.titulo-noticia {
-    font-size: 46px;
-  }
-}
-section.noticia-topo img.banner-noticia {
-  display: block;
-  margin: 0 auto 0 0;
-  width: 100%;
-  max-width: 1020px;
-  object-fit: cover;
-}
-section.noticia-desc {
-  padding-bottom: 50px;
-}
-section.noticia-desc article > span {
-  display: block;
-  color: #3E3E3E;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 25.6px;
-  padding-bottom: 20px;
-}
-section.noticia-desc article > span:last-child {
-  padding-bottom: 0;
-}
-section.noticia-imgs-grid {
-  padding-bottom: 100px;
-}
-@media (min-width: 768px) {
-  section.noticia-imgs-grid {
-    padding-bottom: 40px;
-  }
-}
-section.noticia-imgs-grid div.grid-imgs {
-  display: grid;
-  justify-items: stretch;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 25px;
-  padding-bottom: 60px;
-}
-@media (min-width: 650px) {
-  section.noticia-imgs-grid div.grid-imgs {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-  }
-}
-@media (min-width: 768px) {
-  section.noticia-imgs-grid div.grid-imgs {
-    gap: 30px;
-  }
-}
-section.noticia-imgs-grid div.grid-imgs > img {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  object-fit: cover;
-  max-width: 320px;
-}
-@media (min-width: 768px) {
-  section.noticia-imgs-grid div.grid-imgs > img {
-    max-width: 100%;
-  }
-}
-section.noticia-imgs-grid div.contain-btn-voltar {
-  display: flex;
-  justify-content: flex-start;
-}
-section.noticia-imgs-grid div.contain-btn-voltar > a.btn-voltar {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-}
-section.noticia-imgs-grid div.contain-btn-voltar > a.btn-voltar > div.ico {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-section.noticia-imgs-grid div.contain-btn-voltar > a.btn-voltar > span {
-  display: block;
-  color: #000;
-  font-size: 8px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.64px;
-  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,13 +6,27 @@
 	</head>
 
 	<body id="<?php echo $pagina; ?>">
-	
+
 		<?php
 		include "_inc_header.php";
 		?>
 
 		<section class="noticia-topo">
 			<div class="container">
+				<div class="breadcrumb-banner dark">
+					<a href="./home">Home</a>
+					<div class="ico-breadcrumb">
+						<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+							<mask id="mask0_339_344" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="10" height="10">
+								<rect width="10" height="10" fill="#D9D9D9" />
+							</mask>
+							<g>
+								<path d="M3.3431 9.16665L2.60352 8.42706L6.0306 4.99998L2.60352 1.5729L3.3431 0.833313L7.50977 4.99998L3.3431 9.16665Z" fill="#343434" />
+							</g>
+						</svg>
+					</div>
+					<a href="./empreendimentos">Institucional</a>
+				</div>
 				<span class="data-noticia">20/12/2023</span>
 				<span class="titulo-noticia">
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem ispum.

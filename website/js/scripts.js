@@ -1,3 +1,8 @@
+//MASCARAS
+$(document).ready(function() {
+    $("#cpj_cnpj").mask("000.000.000-00"); //máscara campo CPF/CNPJ pagina contato
+})
+
 // OWN CAROUSEL
 $(function () {
     // Owl Carousel
@@ -88,5 +93,21 @@ function getId(url) {
         return `https://www.youtube.com/embed/${match[2]}`
     } else {
         return 'error';
+    }
+}
+
+//PEGA O NOME DO ARQUIVO NOS INPUTS FILE, E ADICIONA NA LABEL DO MESMO
+document.getElementById('anexo').onchange = function () {
+    document.getElementById('label-anexo').innerHTML = ''
+    document.getElementById('label-anexo').innerHTML = this.files.item(0).name
+};
+
+//CONTATO -> ALTERA AS MASCARAS CPF/CNPJ DO INPUT, AO SELECIONAR O TIPO NO SELECT
+document.getElementById('cpj_cnpj_tipo').onchange = function () {
+    $("#cpj_cnpj").val("")
+    if (this.value == 'cpf') {
+        $("#cpj_cnpj").mask("000.000.000-00");
+    } else if (this.value == 'cnpj') {
+        $("#cpj_cnpj").mask("99.999.999/9999-99");
     }
 }
