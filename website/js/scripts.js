@@ -1,5 +1,5 @@
 //MASCARAS
-$(document).ready(function() {
+$(document).ready(function () {
     $("#cpj_cnpj").mask("000.000.000-00"); //máscara campo CPF/CNPJ pagina contato
 })
 
@@ -109,5 +109,15 @@ document.getElementById('cpj_cnpj_tipo').onchange = function () {
         $("#cpj_cnpj").mask("000.000.000-00");
     } else if (this.value == 'cnpj') {
         $("#cpj_cnpj").mask("99.999.999/9999-99");
+    }
+}
+
+//CONTROLADOR NAVBAR SUPERIOR INTERNA EMPREENDIMENTO
+function openColapso() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
     }
 }

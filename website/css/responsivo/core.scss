@@ -2639,6 +2639,69 @@ section {
             }
         }
     }
+
+    &.teaser_lancamento_desc {
+        border: 2px solid red;
+        padding: 0 0 70px;
+
+        .container {
+            @media(max-width: 767.9px) {
+                padding: 0 !important;
+            }
+        }
+
+        div.info {
+            border: 2px solid lime;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            background: #F6F6F6;
+
+            @media(max-width: 767.9px) {
+                padding: 45px 30px 40px;
+            }
+
+            @media(min-width: 768px) {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                gap: 50px;
+                margin-top: 40px;
+                border-radius: 12px;
+                padding: 40px;
+            }
+
+            @media(min-width: 992px) {
+                gap: 80px;
+            }
+
+            @media(min-width: 1200px) {
+                gap: 110px;
+            }
+
+            >div.item {
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 15px;
+
+                >div.ico {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    bottom: 2px;
+                }
+
+                >span {
+                    display: block;
+                    color: #000;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1250px) {

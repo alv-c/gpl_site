@@ -117,6 +117,132 @@ div#videoModal div.modal-dialog div.modal-content .modal-body div.embed-containe
   color: #343434;
 }
 
+.topnav {
+  background: #fff;
+  padding: 15px 0;
+}
+.topnav .container {
+  position: relative;
+}
+.topnav a.nav-logo {
+  background: none;
+  border: none;
+  outline: none;
+  display: inline-block;
+  float: left;
+  text-decoration: none;
+}
+.topnav #contain-ancoras {
+  display: none;
+}
+.topnav.responsive #contain-ancoras {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 150px;
+  z-index: 5;
+  animation-name: bounceInRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  width: 100%;
+  max-width: 360px;
+  padding: 40px 30px 70px;
+  background: #fff;
+}
+.topnav.responsive #contain-ancoras > div.contain-top-colapso {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-bottom: 55px;
+}
+.topnav.responsive #contain-ancoras > div.contain-top-colapso > img {
+  display: block;
+  margin: 0 auto 0 0;
+  object-fit: cover;
+}
+.topnav.responsive #contain-ancoras > div.contain-top-colapso > a.btn-close-colapso {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  left: 15px;
+}
+.topnav.responsive #contain-ancoras > a.ancora-center {
+  display: block;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+.topnav.responsive #contain-ancoras > a.ancora-bottom {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-decoration: none;
+  padding: 11px 25px;
+  border-radius: 4.029px;
+}
+.topnav.responsive #contain-ancoras > a.ancora-bottom.top {
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1.343px solid #BAC3B0;
+}
+.topnav.responsive #contain-ancoras > a.ancora-bottom.bottom {
+  background: rgba(186, 195, 176, 0.38);
+}
+.topnav.responsive #contain-ancoras > a.ancora-bottom > div.ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topnav.responsive #contain-ancoras > a.ancora-bottom > span {
+  display: block;
+  color: #425545;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.topnav a.btn-colapso {
+  float: right;
+  display: block;
+  text-decoration: none;
+  height: 100%;
+  position: relative;
+  top: 10px;
+}
+.topnav .clear {
+  clear: both;
+}
+
+/* ANIMACAO */
+@keyframes bounceInRight {
+  0%, 60%, 75%, 90%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
 nav.navbar {
   overflow: hidden;
   padding: 40px 0 30px;
@@ -2340,6 +2466,67 @@ section.teaser_banner div.container-full-right > div.contain-desc div.grid-empre
   line-height: 30px;
   letter-spacing: 2.6px;
   text-transform: uppercase;
+}
+section.teaser_lancamento_desc {
+  border: 2px solid red;
+  padding: 0 0 70px;
+}
+@media (max-width: 767.9px) {
+  section.teaser_lancamento_desc .container {
+    padding: 0 !important;
+  }
+}
+section.teaser_lancamento_desc div.info {
+  border: 2px solid lime;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #F6F6F6;
+}
+@media (max-width: 767.9px) {
+  section.teaser_lancamento_desc div.info {
+    padding: 45px 30px 40px;
+  }
+}
+@media (min-width: 768px) {
+  section.teaser_lancamento_desc div.info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+    border-radius: 12px;
+    padding: 40px;
+  }
+}
+@media (min-width: 992px) {
+  section.teaser_lancamento_desc div.info {
+    gap: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  section.teaser_lancamento_desc div.info {
+    gap: 110px;
+  }
+}
+section.teaser_lancamento_desc div.info > div.item {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+section.teaser_lancamento_desc div.info > div.item > div.ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 2px;
+}
+section.teaser_lancamento_desc div.info > div.item > span {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 @media (min-width: 1250px) {

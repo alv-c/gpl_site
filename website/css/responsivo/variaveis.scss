@@ -140,3 +140,156 @@ div#videoModal {
         color: $color_3;
     }
 }
+
+//NAVBAR INTERNA EMPREENDIMENTO
+.topnav {
+    background: #fff;
+    padding: 15px 0;
+
+    .container {
+        position: relative;
+    }
+
+    & a.nav-logo {
+        background: none;
+        border: none;
+        outline: none;
+        display: inline-block;
+        float: left;
+        text-decoration: none;
+    }
+
+    & #contain-ancoras {
+        display: none;
+    }
+
+    &.responsive #contain-ancoras {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 150px;
+        z-index: 5;
+        animation-name: bounceInRight;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        width: 100%;
+        max-width: 360px;
+        padding: 40px 30px 70px;
+        background: #fff;
+
+        >div.contain-top-colapso {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            padding-bottom: 55px;
+
+            >img {
+                display: block;
+                margin: 0 auto 0 0;
+                object-fit: cover;
+            }
+
+            >a.btn-close-colapso {
+                display: inline-block;
+                text-decoration: none;
+                position: relative;
+                left: 15px;
+            }
+        }
+
+        >a.ancora-center {
+            display: block;
+            color: #000;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-bottom: 40px;
+            text-decoration: none;
+        }
+
+        >a.ancora-bottom {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            text-decoration: none;
+            padding: 11px 25px;
+            border-radius: 4.029px;
+
+            &.top {
+                margin-bottom: 20px;
+                background: #fff;
+                border: 1.343px solid #BAC3B0;
+            }
+
+            &.bottom {
+                background: rgba(186, 195, 176, 0.38);
+            }
+
+            >div.ico {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            >span {
+                display: block;
+                color: #425545;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+
+    & a.btn-colapso {
+        float: right;
+        display: block;
+        text-decoration: none;
+        height: 100%;
+        position: relative;
+        top: 10px;
+    }
+
+    .clear {
+        clear: both;
+    }
+}
+
+/* ANIMACAO */
+@keyframes bounceInRight {
+
+    0%,
+    60%,
+    75%,
+    90%,
+    100% {
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(-25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(10px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    100% {
+        transform: none;
+    }
+}
