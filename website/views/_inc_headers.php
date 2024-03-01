@@ -45,6 +45,10 @@
 	<!-- MAPBOX -->
 	<link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
 
+	<!-- LIGHTBOX GALLERY -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+
 	<link rel="icon" type="image/png" href="#">
 
 	<script type="text/javascript">

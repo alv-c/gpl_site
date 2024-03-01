@@ -3,16 +3,6 @@ $pagina = "empreendimento";
 include "_inc_headers.php";
 ?>
 <title>Empreendimento | GPL Incorporadora</title>
-
-<style>
-    .blue {
-        background-color: dodgerblue;
-    }
-
-    .red {
-        background-color: brown;
-    }
-</style>
 </head>
 
 <body id="<?php echo $pagina; ?>">
@@ -100,7 +90,6 @@ include "_inc_headers.php";
             </div>
         </div>
     </section>
-
     <section class="empreendimento-navegacao">
         <nav class="nav-empreendimento">
             <div class="container">
@@ -114,7 +103,6 @@ include "_inc_headers.php";
             </div>
         </nav>
     </section>
-
     <section class="empreendimento_lancamento_desc" id="sessao-1">
         <div class="container">
             <div class="info">
@@ -250,7 +238,6 @@ include "_inc_headers.php";
             </article>
         </div>
     </section>
-
     <section class="empreendimento-galeria">
         <div class="container">
             <span class="titulo-galeria">Galeria de imagens</span>
@@ -258,37 +245,239 @@ include "_inc_headers.php";
         <div class="container-full contain-nav">
             <div class="container">
                 <nav class="owl-filter-bar">
-                    <button type="button" class="item active" data-owl-filter="*">All</button>
-                    <button type="button" class="item" data-owl-filter=".red">Red</button>
-                    <button type="button" class="item" data-owl-filter=".blue">Blue</button>
+                    <!-- <button type="button" class="item active" data-owl-filter="*">All</button> -->
+                    <button type="button" class="item active" data-owl-filter=".fachada">Fachada</button>
+                    <button type="button" class="item" data-owl-filter=".apartamento">Apartamento</button>
                 </nav>
             </div>
         </div>
         <div class="container-full">
             <div class="owl-carousel owl-theme">
-                <div class="item red">
-                    <h4>1</h4>
+                <div class="item fachada">
+                    <a href="/website/img/empreendimento/galeria-1.png" class="ancor-item-gall" data-lightbox="gallery">
+                        <img src="/website/img/empreendimento/galeria-1.png" class="img-item-gall" alt="">
+                        <div class="contain-item-bottom">
+                            <span>Acesso</span>
+                            <div class="btn-contain">
+                                <div class="ico">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                        <circle cx="14.5351" cy="15.3962" r="14" fill="white" stroke="#B1B1B1" />
+                                        <mask id="mask0_306_767" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="13" height="13">
+                                            <rect x="9.56055" y="9.39624" width="12" height="12" fill="#D9D9D9" />
+                                        </mask>
+                                        <g>
+                                            <path d="M13.573 20.3962L12.6855 19.5087L16.798 15.3962L12.6855 11.2837L13.573 10.3962L18.573 15.3962L13.573 20.3962Z" fill="#5C8262" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span>Ver galeria</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="item red">
-                    <h4>2</h4>
+                <div class="item fachada">
+                    <a href="/website/img/empreendimento/galeria-2.png" class="ancor-item-gall" data-lightbox="gallery">
+                        <img src="/website/img/empreendimento/galeria-2.png" class="img-item-gall" alt="">
+                        <div class="contain-item-bottom">
+                            <span>Acesso</span>
+                            <div class="btn-contain">
+                                <div class="ico">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                        <circle cx="14.5351" cy="15.3962" r="14" fill="white" stroke="#B1B1B1" />
+                                        <mask id="mask0_306_767" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="13" height="13">
+                                            <rect x="9.56055" y="9.39624" width="12" height="12" fill="#D9D9D9" />
+                                        </mask>
+                                        <g>
+                                            <path d="M13.573 20.3962L12.6855 19.5087L16.798 15.3962L12.6855 11.2837L13.573 10.3962L18.573 15.3962L13.573 20.3962Z" fill="#5C8262" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span>Ver galeria</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="item blue">
-                    <h4>3</h4>
+                <div class="item apartamento">
+                    <a href="/website/img/empreendimento/galeria-3.png" class="ancor-item-gall" data-lightbox="gallery">
+                        <img src="/website/img/empreendimento/galeria-3.png" class="img-item-gall" alt="">
+                        <div class="contain-item-bottom">
+                            <span>Acesso</span>
+                            <div class="btn-contain">
+                                <div class="ico">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                        <circle cx="14.5351" cy="15.3962" r="14" fill="white" stroke="#B1B1B1" />
+                                        <mask id="mask0_306_767" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="13" height="13">
+                                            <rect x="9.56055" y="9.39624" width="12" height="12" fill="#D9D9D9" />
+                                        </mask>
+                                        <g>
+                                            <path d="M13.573 20.3962L12.6855 19.5087L16.798 15.3962L12.6855 11.2837L13.573 10.3962L18.573 15.3962L13.573 20.3962Z" fill="#5C8262" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span>Ver galeria</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="item red">
-                    <h4>4</h4>
+                <div class="item fachada">
+                    <a href="/website/img/empreendimento/galeria-2.png" class="ancor-item-gall" data-lightbox="gallery">
+                        <img src="/website/img/empreendimento/galeria-2.png" class="img-item-gall" alt="">
+                        <div class="contain-item-bottom">
+                            <span>Acesso</span>
+                            <div class="btn-contain">
+                                <div class="ico">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                        <circle cx="14.5351" cy="15.3962" r="14" fill="white" stroke="#B1B1B1" />
+                                        <mask id="mask0_306_767" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="13" height="13">
+                                            <rect x="9.56055" y="9.39624" width="12" height="12" fill="#D9D9D9" />
+                                        </mask>
+                                        <g>
+                                            <path d="M13.573 20.3962L12.6855 19.5087L16.798 15.3962L12.6855 11.2837L13.573 10.3962L18.573 15.3962L13.573 20.3962Z" fill="#5C8262" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span>Ver galeria</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="item blue">
-                    <h4>5</h4>
+                <div class="item apartamento">
+                    <a href="/website/img/empreendimento/galeria-3.png" class="ancor-item-gall" data-lightbox="gallery">
+                        <img src="/website/img/empreendimento/galeria-3.png" class="img-item-gall" alt="">
+                        <div class="contain-item-bottom">
+                            <span>Acesso</span>
+                            <div class="btn-contain">
+                                <div class="ico">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                        <circle cx="14.5351" cy="15.3962" r="14" fill="white" stroke="#B1B1B1" />
+                                        <mask id="mask0_306_767" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="13" height="13">
+                                            <rect x="9.56055" y="9.39624" width="12" height="12" fill="#D9D9D9" />
+                                        </mask>
+                                        <g>
+                                            <path d="M13.573 20.3962L12.6855 19.5087L16.798 15.3962L12.6855 11.2837L13.573 10.3962L18.573 15.3962L13.573 20.3962Z" fill="#5C8262" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span>Ver galeria</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="item red">
-                    <h4>6</h4>
+                <div class="item apartamento">
+                    <a href="/website/img/empreendimento/galeria-2.png" class="ancor-item-gall" data-lightbox="gallery">
+                        <img src="/website/img/empreendimento/galeria-2.png" class="img-item-gall" alt="">
+                        <div class="contain-item-bottom">
+                            <span>Acesso</span>
+                            <div class="btn-contain">
+                                <div class="ico">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                        <circle cx="14.5351" cy="15.3962" r="14" fill="white" stroke="#B1B1B1" />
+                                        <mask id="mask0_306_767" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="13" height="13">
+                                            <rect x="9.56055" y="9.39624" width="12" height="12" fill="#D9D9D9" />
+                                        </mask>
+                                        <g>
+                                            <path d="M13.573 20.3962L12.6855 19.5087L16.798 15.3962L12.6855 11.2837L13.573 10.3962L18.573 15.3962L13.573 20.3962Z" fill="#5C8262" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span>Ver galeria</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="item blue">
-                    <h4>7</h4>
+            </div>
+            <div class="slider_nav">
+                <button class="am-next">
+                    <svg width="18" height="29" viewBox="0 0 18 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.7978 0.658776L17.2754 3.13638L5.79466 14.6171L17.2754 26.0978L14.7978 28.5754L0.839452 14.6171L14.7978 0.658776Z" fill="white" />
+                    </svg>
+                </button>
+                <button class="am-prev">
+                    <svg width="18" height="29" viewBox="0 0 18 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.20221 28.5754L0.724609 26.0978L12.2053 14.617L0.724609 3.1363L3.20221 0.658691L17.1605 14.617L3.20221 28.5754Z" fill="white" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="contain-btn">
+                <a href="#" class="interesse">Tenho interesse</a>
+            </div>
+        </div>
+    </section>
+    <section class="empreendimento-localizacao">
+        <div class="container">
+            <div class="contain-titulo-loc">
+                <span class="titulo-loc">Localização</span>
+                <div class="contain-btns-loc">
+                    <button type="button" class="filtro-mapa active" data-lat="-16.70462320664015" data-long="-49.26433650500866">Empreendimento</button>
+                    <button type="button" class="filtro-mapa" data-lat="-16.737587439106694" data-long="-49.205252531695805">Stand</button>
+                    <div class="contain-btn-rota">
+                        <a href="#" class="btn-rota">
+                            <div class="ico">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                    <circle cx="14.5" cy="15" r="14" fill="white" stroke="#B1B1B1" />
+                                    <mask id="mask0_306_895" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="13" height="12">
+                                        <rect x="9.52539" y="9" width="12" height="12" fill="#D9D9D9" />
+                                    </mask>
+                                    <g>
+                                        <path d="M13.5379 20L12.6504 19.1125L16.7629 15L12.6504 10.8875L13.5379 10L18.5379 15L13.5379 20Z" fill="#5C8262" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <span>Fazer rota</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="item red">
-                    <h4>8</h4>
+            </div>
+        </div>
+        <div class="container-full dual-color">
+            <div class="container">
+                <div class="content-map">
+                    <div id="mapa"></div>
+                </div>
+                <span class="endereco-loc">R. 22, 97 - St. Oeste, Goiânia - GO, 74120-130</span>
+                <div class="contain-rota-mobille">
+                    <a href="#" class="btn-rota">
+                        <div class="ico">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                <circle cx="14.5" cy="15" r="14" fill="white" stroke="#B1B1B1" />
+                                <mask id="mask0_306_895" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="13" height="12">
+                                    <rect x="9.52539" y="9" width="12" height="12" fill="#D9D9D9" />
+                                </mask>
+                                <g>
+                                    <path d="M13.5379 20L12.6504 19.1125L16.7629 15L12.6504 10.8875L13.5379 10L18.5379 15L13.5379 20Z" fill="#5C8262" />
+                                </g>
+                            </svg>
+                        </div>
+                        <span>Fazer rota</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="empreendimento-estagio-obra">
+        <div class="container">
+            <span class="titulo-estagio">Estágio da obra</span>
+            <div class="grid-filtro-estagio">
+                <div class="left-filtro-estagio">
+                    <div class="btn-group">
+                        <button type="button" class="drop-filtro-estagio dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Novembro 2022
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">Outubro 2022</button>
+                            <button class="dropdown-item" type="button">Setembro 2022</button>
+                            <button class="dropdown-item" type="button">Agosto 2022</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-filtro-estagio">
+                    <div class="grupo-btn-filtro">
+                        <button type="button" class="bnt-grupo active">Fotos</button>
+                        <button type="button" class="bnt-grupo">Videos</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -297,16 +486,6 @@ include "_inc_headers.php";
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <script>
-        //controla largura do container formulário banner topo
-        $(document).ready(function() {
-            let larguraContain = ($(window).width() - 1200) / 2;
-            if ($(window).width() >= 1200 && $(window).width() <= 1249) {
-                $("#containFormTopo").css("max-width", `calc((100% - ${larguraContain}px) - 30px)`);
-            } else if ($(window).width() >= 1250) {
-                $("#containFormTopo").css("max-width", `calc((100% - ${larguraContain}px))`);
-            }
-        })
-
         //controla estado ativo navegacao inferior ao banner
         function boxTop(idBox) {
             var boxOffset = $(idBox).offset();
@@ -342,32 +521,89 @@ include "_inc_headers.php";
     </script>
 
     <script>
-        // OWL Carousel filtro
-        var owl = $('.owl-carousel').owlCarousel({
+        // CONTROLADOR OWL CAROUSEL filtro -> sessao "empreendimento-galeria"
+        var owlFilter = $('.owl-carousel').owlCarousel({
+            center: true,
             loop: true,
-            margin: 10,
+            items: 1,
             nav: true,
+            dots: false,
+            lazyLoad: true,
+            stagePadding: 50,
+            navText: [$('.am-next'), $('.am-prev')],
             responsive: {
                 0: {
-                    items: 1
+                    margin: 10,
                 },
                 600: {
-                    items: 3
+                    margin: 10,
                 },
                 1000: {
-                    items: 5
+                    margin: 23,
+                },
+                1098: {
+                    margin: 23,
+                    items: 3,
+                    autoWidth: true,
+                    stagePadding: 0,
                 }
             }
         })
 
         $('.owl-filter-bar').on('click', '.item', function() {
+            $('.owl-filter-bar .item').each(function(index) {
+                $(this).removeClass("active");
+            });
+            $(this).addClass("active");
             var $item = $(this);
-            var filter = $item.data('owl-filter')
-            owl.owlcarousel2_filter(filter);
-        })
+            var filter = $item.data('owl-filter');
+            owlFilter.owlcarousel2_filter(filter);
+        });
+
+        setTimeout(function() {
+            $('.owl-filter-bar .item').each(function(index) {
+                $(this).click();
+                return false;
+            });
+        }, 2000);
     </script>
-    <?php //include "_inc_footer_empreendimento.php";
-    ?>
+
+    <?php include "_inc_footer_empreendimento.php"; ?>
+
+    <script>
+        // MAPA MAPBOX
+        mapboxgl.accessToken = 'pk.eyJ1IjoiaGlicmlkYXdlYiIsImEiOiJja284djMyMWwwd20yMm9wd3QzbTZvZnhrIn0.ro1ZJXeWhkK2bCRqOHcx_A';
+        var lat = -16.70462320664015;
+        var long = -49.26433650500866;
+        var map = new mapboxgl.Map({
+            container: 'mapa', // container ID
+            style: 'mapbox://styles/mapbox/streets-v11', // style URL
+            center: [long, lat], // starting position [lng, lat]
+            zoom: 17.180720990093583 // starting zoom
+        });
+        var marker;
+        marker = new mapboxgl.Marker().setLngLat([long, lat]).addTo(map);
+        $('.mapboxgl-marker').click(function() {
+            map.flyTo({
+                center: [long, lat],
+                zoom: 15
+            });
+        });
+        $('.filtro-mapa').click(function() {
+            let latitude = $(this).attr("data-lat");
+            let longitude = $(this).attr("data-long");
+            marker.setLngLat([longitude, latitude]).addTo(map);
+            map.flyTo({
+                center: [longitude, latitude],
+                zoom: 15,
+                essential: true,
+            });
+            $('.filtro-mapa').each(function(index) {
+                $(this).removeClass("active");
+            });
+            $(this).addClass("active");
+        });
+    </script>
 </body>
 
 </html>

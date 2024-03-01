@@ -4,6 +4,16 @@ $(document).ready(function () {
     $(".cel_mascara").mask("(00)0.0000-0000");
 })
 
+//controla largura do container formulário banner topo /empreendimento.php - teaser.php
+$(document).ready(function () {
+    let larguraContain = ($(window).width() - 1200) / 2;
+    if ($(window).width() >= 1200 && $(window).width() <= 1249) {
+        $("#containFormTopo").css("max-width", `calc((100% - ${larguraContain}px) - 30px)`);
+    } else if ($(window).width() >= 1250) {
+        $("#containFormTopo").css("max-width", `calc((100% - ${larguraContain}px))`);
+    }
+})
+
 // OWN CAROUSEL
 $(function () {
     // Owl Carousel

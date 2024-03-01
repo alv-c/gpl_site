@@ -220,18 +220,6 @@ include "_inc_headers.php";
             </div>
         </div>
     </section>
-    <script>
-        //controla largura do container formulário banner topo
-        $(document).ready(function() {
-            let larguraContain = ($(window).width() - 1200) / 2;
-            if ($(window).width() >= 1200 && $(window).width() <= 1249) {
-                $("#containFormTopo").css("max-width", `calc((100% - ${larguraContain}px) - 30px)`);
-            } else if ($(window).width() >= 1250) {
-                $("#containFormTopo").css("max-width", `calc((100% - ${larguraContain}px))`);
-            }
-        })
-    </script>
-
     <?php include "_inc_footer_empreendimento.php";
     ?>
 </body>

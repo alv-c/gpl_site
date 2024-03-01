@@ -170,7 +170,7 @@ div#videoModal {
         right: 0;
         top: 0;
         width: 150px;
-        z-index: 5;
+        z-index: 10;
         animation-name: bounceInRight;
         animation-duration: 1s;
         animation-fill-mode: both;
@@ -345,5 +345,31 @@ footer.footer-empreendimento {
                 }
             }
         }
+    }
+}
+
+//MODAL LIGHTBOX GALERIA EMPREENDIMENTO
+#lightbox {
+    .lb-outerContainer {
+        padding-top: 40px;
+        background: none !important;
+
+        .lb-image {
+            border: none !important;
+        }
+
+        .lb-nav {
+            margin-top: 40px !important;
+        }
+    }
+
+    .lb-dataContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 5;
     }
 }
