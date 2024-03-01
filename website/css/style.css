@@ -72,6 +72,7 @@ div#videoModal div.modal-dialog {
 }
 div#videoModal div.modal-dialog div.modal-content {
   background: none;
+  border: 0;
 }
 div#videoModal div.modal-dialog div.modal-content .modal-header {
   padding: 0 15px;
@@ -243,6 +244,51 @@ div#videoModal div.modal-dialog div.modal-content .modal-body div.embed-containe
     transform: none;
   }
 }
+footer.footer-empreendimento {
+  padding: 55px 30px 50px;
+}
+footer.footer-empreendimento div.grid-footer-empreendimento {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+@media (min-width: 768px) {
+  footer.footer-empreendimento div.grid-footer-empreendimento {
+    flex-direction: row;
+    gap: 85px;
+  }
+}
+footer.footer-empreendimento div.grid-footer-empreendimento > div {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  footer.footer-empreendimento div.grid-footer-empreendimento > div {
+    width: auto;
+  }
+}
+footer.footer-empreendimento div.grid-footer-empreendimento > div.left-grid-empreendimento > img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 135px;
+  object-fit: cover;
+}
+footer.footer-empreendimento div.grid-footer-empreendimento > div.right-grid-empreendimento > div.contain-btn-redes-sociais {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer.footer-empreendimento div.grid-footer-empreendimento > div.right-grid-empreendimento > div.contain-btn-redes-sociais > a.btn-rede-social {
+  display: inline-block;
+  text-align: none;
+  outline: none;
+}
+
 nav.navbar {
   overflow: hidden;
   padding: 40px 0 30px;
@@ -2467,28 +2513,27 @@ section.teaser_banner div.container-full-right > div.contain-desc div.grid-empre
   letter-spacing: 2.6px;
   text-transform: uppercase;
 }
-section.teaser_lancamento_desc {
-  border: 2px solid red;
-  padding: 0 0 70px;
+section.empreendimento_lancamento_desc {
+  padding: 0 0 60px;
 }
 @media (max-width: 767.9px) {
-  section.teaser_lancamento_desc .container {
+  section.empreendimento_lancamento_desc .container {
     padding: 0 !important;
   }
 }
-section.teaser_lancamento_desc div.info {
-  border: 2px solid lime;
+section.empreendimento_lancamento_desc div.info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
   background: #F6F6F6;
 }
 @media (max-width: 767.9px) {
-  section.teaser_lancamento_desc div.info {
+  section.empreendimento_lancamento_desc div.info {
     padding: 45px 30px 40px;
   }
 }
 @media (min-width: 768px) {
-  section.teaser_lancamento_desc div.info {
+  section.empreendimento_lancamento_desc div.info {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -2499,36 +2544,856 @@ section.teaser_lancamento_desc div.info {
   }
 }
 @media (min-width: 992px) {
-  section.teaser_lancamento_desc div.info {
+  section.empreendimento_lancamento_desc div.info {
     gap: 80px;
   }
 }
 @media (min-width: 1200px) {
-  section.teaser_lancamento_desc div.info {
+  section.empreendimento_lancamento_desc div.info {
     gap: 110px;
   }
 }
-section.teaser_lancamento_desc div.info > div.item {
+section.empreendimento_lancamento_desc div.info > div.item {
   display: flex;
   flex-wrap: nowrap;
   gap: 15px;
 }
-section.teaser_lancamento_desc div.info > div.item > div.ico {
+section.empreendimento_lancamento_desc div.info > div.item:nth-child(even) {
+  justify-content: flex-end;
+}
+section.empreendimento_lancamento_desc div.info > div.item > div.ico {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   bottom: 2px;
 }
-section.teaser_lancamento_desc div.info > div.item > span {
+section.empreendimento_lancamento_desc div.info > div.item > span {
   display: block;
   color: #000;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
+@media (min-width: 430px) {
+  section.empreendimento_lancamento_desc div.info > div.item > span {
+    font-size: 16px;
+  }
+}
+section.empreendimento_lancamento_info {
+  padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  section.empreendimento_lancamento_info {
+    padding-bottom: 70px;
+  }
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 80px;
+}
+@media (min-width: 768px) {
+  section.empreendimento_lancamento_info div.grid-empreendimento-info {
+    flex-direction: row;
+    gap: 65px;
+  }
+}
+@media (min-width: 992px) {
+  section.empreendimento_lancamento_info div.grid-empreendimento-info {
+    gap: 130px;
+  }
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div {
+  width: 100%;
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div.left-info {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  section.empreendimento_lancamento_info div.grid-empreendimento-info > div.left-info {
+    max-width: 205px;
+  }
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div.left-info > img {
+  display: block;
+  width: 100%;
+  max-width: 205px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div.right-info > span {
+  display: block;
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div.right-info > span.subtitulo {
+  color: #5C8262;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  padding-bottom: 20px;
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div.right-info > span.titulo {
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  section.empreendimento_lancamento_info div.grid-empreendimento-info > div.right-info > span.titulo {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  section.empreendimento_lancamento_info div.grid-empreendimento-info > div.right-info > span.titulo {
+    font-size: 40px;
+  }
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div.right-info > span.desc {
+  color: #7B7B7B;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+section.empreendimento-media {
+  background: #425545;
+}
+@media (max-width: 767.9px) {
+  section.empreendimento-media .container {
+    padding: 0 !important;
+  }
+}
+section.empreendimento-media button.video-modal {
+  display: block;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+section.empreendimento-media button.video-modal::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/website/img/global/play.svg") no-repeat center center;
+}
+section.empreendimento-media button.video-modal > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+section.empreendimento-diferenciais {
+  background: #fff;
+  padding: 120px 0 110px;
+}
+@media (min-width: 768px) {
+  section.empreendimento-diferenciais {
+    padding: 100px 0 120px;
+  }
+}
+section.empreendimento-diferenciais span.titulo-diferenciais {
+  display: block;
+  color: #000;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 25px;
+}
+section.empreendimento-diferenciais article.sanfona div#accordion > div.card {
+  border-radius: 0;
+  border: 1px solid #BAC3B0;
+}
+section.empreendimento-diferenciais article.sanfona div#accordion > div.card > div.card-header {
+  background-color: #fff;
+  border-radius: 0;
+  padding: 20px 30px;
+  padding: 0;
+  border: none;
+}
+section.empreendimento-diferenciais article.sanfona div#accordion > div.card > div.card-header button.btn-open-sanf {
+  display: block;
+  width: 100%;
+  padding: 20px 50px 20px 30px;
+  background: #fff url("/website/img/global/sanfona-open.svg") no-repeat;
+  background-position: calc(100% - 20px) center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  color: #231F20;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.2px;
+}
+section.empreendimento-diferenciais article.sanfona div#accordion > div.card div.card-body {
+  color: #231F20;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+section.empreendimento-diferenciais article.sanfona div#accordion div.card:has(> .collapse.show) div.card-header button.btn-open-sanf {
+  background: #fff url("/website/img/global/sanfona-close.svg") no-repeat;
+  background-position: calc(100% - 20px) center;
+}
+section.teaser-flyer {
+  background: #fff;
+  padding-bottom: 70px;
+}
+section.teaser-flyer img.flyer {
+  display: block;
+  margin: 0 auto 0 0;
+  width: 100%;
+  max-width: 930px;
+  object-fit: cover;
+}
+section.teaser-flyer div.contain-btn-flyer {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+section.teaser-flyer div.contain-btn-flyer > a.interesse-flyer {
+  display: inline-block;
+  padding: 16px 36px;
+  text-decoration: none;
+  outline: none;
+  background: #425545;
+  border: 0;
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
 
+section.empreendimento_banner {
+  position: relative;
+}
+section.empreendimento_banner img.img-banner-empreendimentos {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 590px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  section.empreendimento_banner img.img-banner-empreendimentos {
+    height: 450px;
+  }
+}
+section.empreendimento_banner div.container-full-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  section.empreendimento_banner div.container-full-right {
+    padding: 0 0 0 30px;
+  }
+}
+@media (min-width: 1200px) {
+  section.empreendimento_banner div.container-full-right {
+    max-width: calc(1200px + (100% - 1200px) / 2);
+    margin: 0 0 0 auto;
+    padding: 0 0 0 30px;
+  }
+}
+@media (min-width: 1250px) {
+  section.empreendimento_banner div.container-full-right {
+    padding: 0;
+  }
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc {
+  padding: 55px 0 0;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  section.empreendimento_banner div.container-full-right > div.contain-desc {
+    padding: 0;
+  }
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 100%;
+  gap: 55px;
+}
+@media (min-width: 768px) {
+  section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 15px;
+  }
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo {
+  width: 100%;
+}
+@media (max-width: 767.9px) {
+  section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo {
+    padding: 0 30px;
+  }
+}
+@media (min-width: 768px) {
+  section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo div.contain-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - 40px);
+  }
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo div.contain-left > div.contain-titulo {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 13px;
+}
+@media (min-width: 768px) {
+  section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo div.contain-left > div.contain-titulo {
+    flex-direction: row;
+    gap: 30px;
+    position: relative;
+    bottom: 40px;
+  }
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo div.contain-left > div.contain-titulo > div.ico {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media (min-width: 768px) {
+  section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo div.contain-left > div.contain-titulo > div.ico {
+    padding-top: 10px;
+  }
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo div.contain-left > div.contain-titulo > span {
+  display: block;
+  color: #fff;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
+@media (min-width: 768px) {
+  section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo div.contain-left > div.contain-titulo > span {
+    font-size: 35px;
+    line-height: normal;
+  }
+}
+@media (min-width: 1200px) {
+  section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.left-topo div.contain-left > div.contain-titulo > span {
+    font-size: 44px;
+  }
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  height: 100%;
+}
+@media (max-width: 767.9px) {
+  section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo {
+    padding: 30px 30px 0;
+  }
+}
+@media (min-width: 768px) {
+  section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo {
+    padding: 0 30px 0 15px;
+  }
+}
+@media (min-width: 992px) {
+  section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo {
+    padding: 0 30px 0 45px;
+  }
+}
+@media (min-width: 1200px) {
+  section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo {
+    padding: 0 0 0 65px;
+  }
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo > span.titulo-form {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 5px;
+  width: 100%;
+  max-width: 310px;
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo input.form-cont-emp {
+  display: block;
+  width: 100%;
+  background: none;
+  padding: 11px 0;
+  border-bottom: 1px solid #B4B4B4;
+  margin-bottom: 7px;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo input.form-cont-emp::placeholder {
+  color: #fff;
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-check-cont {
+  padding: 7px 0 20px;
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-check-cont label[for=politica_privacidade] {
+  color: #FFF;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 25px;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+@media (min-width: 768px) {
+  section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-check-cont label[for=politica_privacidade] {
+    max-width: 100%;
+  }
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-check-cont label[for=politica_privacidade]::after {
+  content: "";
+  position: absolute;
+  inset: 2px auto auto 0;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border: 1px solid #fff;
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-check-cont label[for=politica_privacidade] > a {
+  color: #fff;
+  text-decoration-line: underline;
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-check-cont label[for=politica_privacidade]:has(> input#politica_privacidade:checked)::after {
+  background: #fff url("/website/img/global/checkbox.svg") no-repeat center center;
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-btn-form {
+  display: flex;
+  justify-content: flex-end;
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-btn-form > button.submit-form {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  border: none;
+  background: none;
+  outline: none;
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-btn-form > button.submit-form div.ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-btn-form > button.submit-form > span {
+  display: block;
+  color: #FFF;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+}
+section.empreendimento-navegacao {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: #fff;
+  padding: 15px 0 0;
+  display: none;
+  border-bottom: 1px solid #D9D9D9;
+}
+@media (min-width: 768px) {
+  section.empreendimento-navegacao {
+    display: block;
+  }
+}
+section.empreendimento-navegacao nav.nav-empreendimento .container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 25px;
+}
+@media (min-width: 992px) {
+  section.empreendimento-navegacao nav.nav-empreendimento .container {
+    gap: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  section.empreendimento-navegacao nav.nav-empreendimento .container {
+    gap: 80px;
+  }
+}
+section.empreendimento-navegacao nav.nav-empreendimento .container > button.btn-filter-top {
+  display: block;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 11.5px;
+  position: relative;
+}
+section.empreendimento-navegacao nav.nav-empreendimento .container > button.btn-filter-top.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1.5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #000;
+}
+section.empreendimento_lancamento_desc {
+  padding: 0 0 60px;
+}
+@media (max-width: 767.9px) {
+  section.empreendimento_lancamento_desc .container {
+    padding: 0 !important;
+  }
+}
+section.empreendimento_lancamento_desc div.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  background: #F6F6F6;
+}
+@media (max-width: 767.9px) {
+  section.empreendimento_lancamento_desc div.info {
+    padding: 45px 30px 40px;
+  }
+}
+@media (min-width: 768px) {
+  section.empreendimento_lancamento_desc div.info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+    border-radius: 12px;
+    padding: 40px;
+  }
+}
+@media (min-width: 992px) {
+  section.empreendimento_lancamento_desc div.info {
+    gap: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  section.empreendimento_lancamento_desc div.info {
+    gap: 110px;
+  }
+}
+section.empreendimento_lancamento_desc div.info > div.item {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+section.empreendimento_lancamento_desc div.info > div.item:nth-child(even) {
+  justify-content: flex-end;
+}
+section.empreendimento_lancamento_desc div.info > div.item > div.ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 2px;
+}
+section.empreendimento_lancamento_desc div.info > div.item > span {
+  display: block;
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (min-width: 430px) {
+  section.empreendimento_lancamento_desc div.info > div.item > span {
+    font-size: 16px;
+  }
+}
+section.empreendimento_lancamento_info {
+  padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  section.empreendimento_lancamento_info {
+    padding-bottom: 70px;
+  }
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 80px;
+}
+@media (min-width: 768px) {
+  section.empreendimento_lancamento_info div.grid-empreendimento-info {
+    flex-direction: row;
+    gap: 65px;
+  }
+}
+@media (min-width: 992px) {
+  section.empreendimento_lancamento_info div.grid-empreendimento-info {
+    gap: 130px;
+  }
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div {
+  width: 100%;
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div.left-info {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  section.empreendimento_lancamento_info div.grid-empreendimento-info > div.left-info {
+    max-width: 205px;
+  }
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div.left-info > img {
+  display: block;
+  width: 100%;
+  max-width: 205px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div.right-info > span {
+  display: block;
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div.right-info > span.subtitulo {
+  color: #5C8262;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  padding-bottom: 20px;
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div.right-info > span.titulo {
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  section.empreendimento_lancamento_info div.grid-empreendimento-info > div.right-info > span.titulo {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  section.empreendimento_lancamento_info div.grid-empreendimento-info > div.right-info > span.titulo {
+    font-size: 40px;
+  }
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div.right-info > span.desc {
+  color: #7B7B7B;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+section.empreendimento-media {
+  background: #425545;
+}
+@media (max-width: 767.9px) {
+  section.empreendimento-media .container {
+    padding: 0 !important;
+  }
+}
+section.empreendimento-media button.video-modal {
+  display: block;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+section.empreendimento-media button.video-modal::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/website/img/global/play.svg") no-repeat center center;
+}
+section.empreendimento-media button.video-modal > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+section.empreendimento-diferenciais {
+  background: #fff;
+  padding: 120px 0 110px;
+}
+@media (min-width: 768px) {
+  section.empreendimento-diferenciais {
+    padding: 100px 0 120px;
+  }
+}
+section.empreendimento-diferenciais span.titulo-diferenciais {
+  display: block;
+  color: #000;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 25px;
+}
+section.empreendimento-diferenciais article.sanfona div#accordion > div.card {
+  border-radius: 0;
+  border: 1px solid #BAC3B0;
+}
+section.empreendimento-diferenciais article.sanfona div#accordion > div.card > div.card-header {
+  background-color: #fff;
+  border-radius: 0;
+  padding: 20px 30px;
+  padding: 0;
+  border: none;
+}
+section.empreendimento-diferenciais article.sanfona div#accordion > div.card > div.card-header button.btn-open-sanf {
+  display: block;
+  width: 100%;
+  padding: 20px 50px 20px 30px;
+  background: #fff url("/website/img/global/sanfona-open.svg") no-repeat;
+  background-position: calc(100% - 20px) center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  color: #231F20;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.2px;
+}
+section.empreendimento-diferenciais article.sanfona div#accordion > div.card div.card-body {
+  color: #231F20;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+section.empreendimento-diferenciais article.sanfona div#accordion div.card:has(> .collapse.show) div.card-header button.btn-open-sanf {
+  background: #fff url("/website/img/global/sanfona-close.svg") no-repeat;
+  background-position: calc(100% - 20px) center;
+}
+section.empreendimento-galeria span.titulo-galeria {
+  display: block;
+  color: #000;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  section.empreendimento-galeria span.titulo-galeria {
+    font-size: 40px;
+  }
+}
+section.empreendimento-galeria div.contain-nav {
+  margin-bottom: 35px;
+  position: relative;
+}
+section.empreendimento-galeria div.contain-nav::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1.5px;
+  width: 100%;
+  height: 1px;
+  background: #B1B1B1;
+}
+@media (min-width: 768px) {
+  section.empreendimento-galeria div.contain-nav {
+    margin-bottom: 25px;
+  }
+}
+section.empreendimento-galeria div.contain-nav .container {
+  border: 2px solid lime;
+}
+@media (max-width: 767.9px) {
+  section.empreendimento-galeria div.contain-nav .container {
+    padding: 0 0 0 30px !important;
+  }
+}
+section.empreendimento-galeria div.contain-nav .container > nav.owl-filter-bar {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  overflow-x: auto;
+}
+@media (min-width: 768px) {
+  section.empreendimento-galeria div.contain-nav .container > nav.owl-filter-bar {
+    gap: 20px;
+  }
+}
+section.empreendimento-galeria div.contain-nav .container > nav.owl-filter-bar > button.item {
+  border-bottom: 3px solid transparent;
+  display: block;
+  padding: 0 20px 20px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #A9A9A9;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  position: relative;
+  z-index: 1;
+}
+section.empreendimento-galeria div.contain-nav .container > nav.owl-filter-bar > button.item.active {
+  border-bottom: 3px solid #425545;
+  color: #000;
+}
 @media (min-width: 1250px) {
   .container {
     padding: 0 !important;

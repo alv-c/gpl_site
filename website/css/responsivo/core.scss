@@ -2640,9 +2640,8 @@ section {
         }
     }
 
-    &.teaser_lancamento_desc {
-        border: 2px solid red;
-        padding: 0 0 70px;
+    &.empreendimento_lancamento_desc {
+        padding: 0 0 60px;
 
         .container {
             @media(max-width: 767.9px) {
@@ -2651,9 +2650,9 @@ section {
         }
 
         div.info {
-            border: 2px solid lime;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
             background: #F6F6F6;
 
             @media(max-width: 767.9px) {
@@ -2683,6 +2682,10 @@ section {
                 flex-wrap: nowrap;
                 gap: 15px;
 
+                &:nth-child(even) {
+                    justify-content: flex-end;
+                }
+
                 >div.ico {
                     display: flex;
                     justify-content: center;
@@ -2694,10 +2697,908 @@ section {
                 >span {
                     display: block;
                     color: #000;
-                    font-size: 16px;
+                    font-size: 12px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
+
+                    @media(min-width: 430px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.empreendimento_lancamento_info {
+        padding-bottom: 50px;
+
+        @media(min-width: 768px) {
+            padding-bottom: 70px;
+        }
+
+        div.grid-empreendimento-info {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            gap: 80px;
+
+            @media(min-width: 768px) {
+                flex-direction: row;
+                gap: 65px;
+            }
+
+            @media(min-width: 992px) {
+                gap: 130px;
+            }
+
+            >div {
+                width: 100%;
+
+                &.left-info {
+                    display: flex;
+                    flex-direction: column;
+
+                    @media(min-width: 768px) {
+                        max-width: 205px;
+                    }
+
+                    >img {
+                        display: block;
+                        width: 100%;
+                        max-width: 205px;
+                        object-fit: cover;
+                        margin: 0 auto;
+                    }
+                }
+
+                &.right-info {
+                    >span {
+                        display: block;
+
+                        &.subtitulo {
+                            color: #5C8262;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            letter-spacing: 1.6px;
+                            padding-bottom: 20px;
+                        }
+
+                        &.titulo {
+                            color: #000;
+                            font-size: 28px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                            padding-bottom: 30px;
+
+                            @media(min-width: 768px) {
+                                font-size: 30px;
+                                padding-bottom: 20px;
+                            }
+
+                            @media(min-width: 992px) {
+                                font-size: 40px;
+                            }
+                        }
+
+                        &.desc {
+                            color: #7B7B7B;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.empreendimento-media {
+        background: #425545;
+
+        .container {
+            @media(max-width: 767.9px) {
+                padding: 0 !important;
+            }
+        }
+
+        button.video-modal {
+            display: block;
+            border: none;
+            background: none;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: url('/website/img/global/play.svg') no-repeat center center;
+            }
+
+            >img {
+                display: block;
+                width: 100%;
+                object-fit: cover;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &.empreendimento-diferenciais {
+        background: #fff;
+        padding: 120px 0 110px;
+
+        @media(min-width: 768px) {
+            padding: 100px 0 120px;
+        }
+
+        span.titulo-diferenciais {
+            display: block;
+            color: #000;
+            font-family: Lato;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            padding-bottom: 25px;
+        }
+
+        article.sanfona {
+            div#accordion {
+                >div.card {
+                    border-radius: 0;
+                    border: 1px solid #BAC3B0;
+
+                    >div.card-header {
+                        background-color: #fff;
+                        border-radius: 0;
+                        padding: 20px 30px;
+                        padding: 0;
+                        border: none;
+
+                        button.btn-open-sanf {
+                            display: block;
+                            width: 100%;
+                            padding: 20px 50px 20px 30px;
+                            background: #fff url('/website/img/global/sanfona-open.svg') no-repeat;
+                            background-position: calc(100% - 20px) center;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            text-align: left;
+                            color: #231F20;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 25.2px;
+                        }
+                    }
+
+                    div.card-body {
+                        color: #231F20;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 140%;
+                    }
+                }
+
+                div.card:has(> .collapse.show) {
+                    div.card-header {
+                        button.btn-open-sanf {
+                            background: #fff url('/website/img/global/sanfona-close.svg') no-repeat;
+                            background-position: calc(100% - 20px) center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.teaser-flyer {
+        background: #fff;
+        padding-bottom: 70px;
+
+        img.flyer {
+            display: block;
+            margin: 0 auto 0 0;
+            width: 100%;
+            max-width: 930px;
+            object-fit: cover;
+        }
+
+        div.contain-btn-flyer {
+            padding-top: 70px;
+            display: flex;
+            justify-content: center;
+
+            >a.interesse-flyer {
+                display: inline-block;
+                padding: 16px 36px;
+                text-decoration: none;
+                outline: none;
+                background: #425545;
+                border: 0;
+                color: #FFF;
+                text-align: center;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+//EMPREENDIMENTO
+section {
+    &.empreendimento_banner {
+        position: relative;
+
+        img.img-banner-empreendimentos {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: 590px;
+            object-fit: cover;
+
+            @media (min-width: 768px) {
+                height: 450px;
+            }
+        }
+
+        div.container-full-right {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+            height: 100%;
+            padding: 0;
+
+            @media (min-width: 768px) {
+                padding: 0 0 0 30px;
+            }
+
+            @media (min-width: 1200px) {
+                max-width: calc(1200px + (100% - 1200px) / 2);
+                margin: 0 0 0 auto;
+                padding: 0 0 0 30px;
+            }
+
+            @media (min-width: 1250px) {
+                padding: 0;
+            }
+
+            >div.contain-desc {
+                padding: 55px 0 0;
+                height: 100%;
+
+                @media (min-width: 768px) {
+                    padding: 0;
+                }
+
+                div.grid-empreendimento-topo {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    flex-direction: column;
+                    height: 100%;
+                    gap: 55px;
+
+                    @media (min-width: 768px) {
+                        flex-direction: row;
+                        align-items: stretch;
+                        gap: 15px;
+                    }
+
+                    >div {
+                        &.left-topo {
+                            width: 100%;
+
+                            @media (max-width: 767.9px) {
+                                padding: 0 30px;
+                            }
+
+                            div.contain-left {
+
+                                @media (min-width: 768px) {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    height: calc(100% - 40px);
+                                }
+
+                                >div.contain-titulo {
+                                    display: flex;
+                                    flex-wrap: nowrap;
+                                    flex-direction: column;
+                                    gap: 13px;
+
+                                    @media (min-width: 768px) {
+                                        flex-direction: row;
+                                        gap: 30px;
+                                        position: relative;
+                                        bottom: 40px;
+                                    }
+
+                                    >div.ico {
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        align-items: flex-start;
+
+                                        @media (min-width: 768px) {
+                                            padding-top: 10px;
+                                        }
+                                    }
+
+                                    >span {
+                                        display: block;
+                                        color: #fff;
+                                        font-size: 34px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 34px;
+
+                                        @media (min-width: 768px) {
+                                            font-size: 35px;
+                                            line-height: normal;
+                                        }
+
+                                        @media (min-width: 1200px) {
+                                            font-size: 44px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.right-topo {
+                            width: 100%;
+                            background: rgba(0, 0, 0, 0.35);
+                            height: 100%;
+
+                            @media (max-width: 767.9px) {
+                                padding: 30px 30px 0;
+                            }
+
+                            @media (min-width: 768px) {
+                                padding: 0;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                justify-content: center;
+                            }
+
+                            >fieldset#containFormTopo {
+                                @media (min-width: 768px) {
+                                    width: 100%;
+                                }
+
+                                @media (min-width: 768px) {
+                                    padding: 0 30px 0 15px;
+                                }
+
+                                @media (min-width: 992px) {
+                                    padding: 0 30px 0 45px;
+                                }
+
+                                @media (min-width: 1200px) {
+                                    padding: 0 0 0 65px;
+                                }
+
+                                >span.titulo-form {
+                                    display: block;
+                                    color: #fff;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                    padding-bottom: 5px;
+                                    width: 100%;
+                                    max-width: 310px;
+                                }
+
+                                input.form-cont-emp {
+                                    display: block;
+                                    width: 100%;
+                                    background: none;
+                                    padding: 11px 0;
+                                    border-bottom: 1px solid #B4B4B4;
+                                    margin-bottom: 7px;
+                                    color: #fff;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+
+                                    &::placeholder {
+                                        color: #fff;
+                                    }
+                                }
+
+                                div.contain-check-cont {
+                                    padding: 7px 0 20px;
+
+                                    label[for="politica_privacidade"] {
+                                        color: #FFF;
+                                        font-size: 12px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+                                        padding-left: 25px;
+                                        position: relative;
+                                        width: 100%;
+                                        max-width: 300px;
+
+                                        @media(min-width: 768px) {
+                                            max-width: 100%;
+                                        }
+
+                                        &::after {
+                                            content: '';
+                                            position: absolute;
+                                            inset: 2px auto auto 0;
+                                            width: 15px;
+                                            height: 15px;
+                                            background: transparent;
+                                            border: 1px solid #fff;
+                                        }
+
+                                        >a {
+                                            color: #fff;
+                                            text-decoration-line: underline;
+                                        }
+                                    }
+
+                                    label[for="politica_privacidade"]:has(> input#politica_privacidade:checked) {
+                                        &::after {
+                                            background: #fff url('/website/img/global/checkbox.svg') no-repeat center center;
+                                        }
+                                    }
+                                }
+
+                                div.contain-btn-form {
+                                    display: flex;
+                                    justify-content: flex-end;
+
+                                    >button.submit-form {
+                                        display: flex;
+                                        flex-wrap: nowrap;
+                                        gap: 15px;
+                                        border: none;
+                                        background: none;
+                                        outline: none;
+
+                                        div.ico {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+
+                                        >span {
+                                            display: block;
+                                            color: #FFF;
+                                            font-size: 13px;
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            line-height: 30px;
+                                            letter-spacing: 2.6px;
+                                            text-transform: uppercase;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.empreendimento-navegacao {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background: #fff;
+        padding: 15px 0 0;
+        display: none;
+        border-bottom: 1px solid #D9D9D9;
+
+        @media(min-width: 768px) {
+            display: block;
+        }
+
+        nav.nav-empreendimento {
+            .container {
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 25px;
+
+                @media (min-width: 992px) {
+                    gap: 40px;
+                }
+
+                @media (min-width: 1200px) {
+                    gap: 80px;
+                }
+
+                >button.btn-filter-top {
+                    display: block;
+                    background: none;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    color: #000;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    padding-bottom: 11.5px;
+                    position: relative;
+
+                    &.active {
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: -1.5px;
+                            left: 0;
+                            width: 100%;
+                            height: 2px;
+                            background: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.empreendimento_lancamento_desc {
+        padding: 0 0 60px;
+
+        .container {
+            @media(max-width: 767.9px) {
+                padding: 0 !important;
+            }
+        }
+
+        div.info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            background: #F6F6F6;
+
+            @media(max-width: 767.9px) {
+                padding: 45px 30px 40px;
+            }
+
+            @media(min-width: 768px) {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                gap: 50px;
+                margin-top: 40px;
+                border-radius: 12px;
+                padding: 40px;
+            }
+
+            @media(min-width: 992px) {
+                gap: 80px;
+            }
+
+            @media(min-width: 1200px) {
+                gap: 110px;
+            }
+
+            >div.item {
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 15px;
+
+                &:nth-child(even) {
+                    justify-content: flex-end;
+                }
+
+                >div.ico {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    bottom: 2px;
+                }
+
+                >span {
+                    display: block;
+                    color: #000;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    @media(min-width: 430px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.empreendimento_lancamento_info {
+        padding-bottom: 50px;
+
+        @media(min-width: 768px) {
+            padding-bottom: 70px;
+        }
+
+        div.grid-empreendimento-info {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            gap: 80px;
+
+            @media(min-width: 768px) {
+                flex-direction: row;
+                gap: 65px;
+            }
+
+            @media(min-width: 992px) {
+                gap: 130px;
+            }
+
+            >div {
+                width: 100%;
+
+                &.left-info {
+                    display: flex;
+                    flex-direction: column;
+
+                    @media(min-width: 768px) {
+                        max-width: 205px;
+                    }
+
+                    >img {
+                        display: block;
+                        width: 100%;
+                        max-width: 205px;
+                        object-fit: cover;
+                        margin: 0 auto;
+                    }
+                }
+
+                &.right-info {
+                    >span {
+                        display: block;
+
+                        &.subtitulo {
+                            color: #5C8262;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            letter-spacing: 1.6px;
+                            padding-bottom: 20px;
+                        }
+
+                        &.titulo {
+                            color: #000;
+                            font-size: 28px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                            padding-bottom: 30px;
+
+                            @media(min-width: 768px) {
+                                font-size: 30px;
+                                padding-bottom: 20px;
+                            }
+
+                            @media(min-width: 992px) {
+                                font-size: 40px;
+                            }
+                        }
+
+                        &.desc {
+                            color: #7B7B7B;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.empreendimento-media {
+        background: #425545;
+
+        .container {
+            @media(max-width: 767.9px) {
+                padding: 0 !important;
+            }
+        }
+
+        button.video-modal {
+            display: block;
+            border: none;
+            background: none;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: url('/website/img/global/play.svg') no-repeat center center;
+            }
+
+            >img {
+                display: block;
+                width: 100%;
+                object-fit: cover;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &.empreendimento-diferenciais {
+        background: #fff;
+        padding: 120px 0 110px;
+
+        @media(min-width: 768px) {
+            padding: 100px 0 120px;
+        }
+
+        span.titulo-diferenciais {
+            display: block;
+            color: #000;
+            font-family: Lato;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            padding-bottom: 25px;
+        }
+
+        article.sanfona {
+            div#accordion {
+                >div.card {
+                    border-radius: 0;
+                    border: 1px solid #BAC3B0;
+
+                    >div.card-header {
+                        background-color: #fff;
+                        border-radius: 0;
+                        padding: 20px 30px;
+                        padding: 0;
+                        border: none;
+
+                        button.btn-open-sanf {
+                            display: block;
+                            width: 100%;
+                            padding: 20px 50px 20px 30px;
+                            background: #fff url('/website/img/global/sanfona-open.svg') no-repeat;
+                            background-position: calc(100% - 20px) center;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            text-align: left;
+                            color: #231F20;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 25.2px;
+                        }
+                    }
+
+                    div.card-body {
+                        color: #231F20;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 140%;
+                    }
+                }
+
+                div.card:has(> .collapse.show) {
+                    div.card-header {
+                        button.btn-open-sanf {
+                            background: #fff url('/website/img/global/sanfona-close.svg') no-repeat;
+                            background-position: calc(100% - 20px) center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.empreendimento-galeria {
+        span.titulo-galeria {
+            display: block;
+            color: #000;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            padding-bottom: 40px;
+
+            @media (min-width: 768px) {
+                font-size: 40px;
+            }
+        }
+
+        div.contain-nav {
+            margin-bottom: 35px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 1.5px;
+                width: 100%;
+                height: 1px;
+                background: #B1B1B1;
+            }
+
+            @media (min-width: 768px) {
+                margin-bottom: 25px;
+            }
+
+            .container {
+                border: 2px solid lime;
+
+                @media (max-width: 767.9px) {
+                    padding: 0 0 0 30px !important;
+                }
+
+                >nav.owl-filter-bar {
+                    // border: 2px solid lime;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    gap: 15px;
+                    overflow-x: auto;
+
+                    @media (min-width: 768px) {
+                        gap: 20px;
+                    }
+
+                    >button.item {
+                        border-bottom: 3px solid transparent;
+                        display: block;
+                        padding: 0 20px 20px;
+                        background: none;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        color: #A9A9A9;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26px;
+                        position: relative;
+                        z-index: 1;
+
+                        &.active {
+                            border-bottom: 3px solid #425545;
+                            color: #000;
+                        }
+
+                        @media (min-width: 768px) {}
+                    }
                 }
             }
         }

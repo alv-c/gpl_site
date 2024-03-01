@@ -118,7 +118,7 @@
 								<form action="#" method="post">
 									<input type="text" name="nome" class="form-contato" placeholder="Nome completo *" required>
 									<input type="email" name="email" class="form-contato" placeholder="E-mail *" required>
-									<input type="text" name="telefone" class="form-contato" placeholder="Telefone *" required>
+									<input type="text" name="telefone" class="form-contato cel_mascara" placeholder="Telefone *" required>
 									<select name="como_conheceu" class="form-contato" required>
 										<option hidden>Como conheceu a GPL</option>
 										<option value="1">Valor 1</option>

@@ -1,6 +1,7 @@
 //MASCARAS
 $(document).ready(function () {
     $("#cpj_cnpj").mask("000.000.000-00"); //máscara campo CPF/CNPJ pagina contato
+    $(".cel_mascara").mask("(00)0.0000-0000");
 })
 
 // OWN CAROUSEL

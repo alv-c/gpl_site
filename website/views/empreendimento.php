@@ -1,8 +1,18 @@
 <?php
-$pagina = "teaser";
+$pagina = "empreendimento";
 include "_inc_headers.php";
 ?>
-<title>Empreendimentos | GPL Incorporadora</title>
+<title>Empreendimento | GPL Incorporadora</title>
+
+<style>
+    .blue {
+        background-color: dodgerblue;
+    }
+
+    .red {
+        background-color: brown;
+    }
+</style>
 </head>
 
 <body id="<?php echo $pagina; ?>">
@@ -12,8 +22,8 @@ include "_inc_headers.php";
     include "_modal_video.php";
     ?>
 
-    <section class="teaser_banner">
-        <img src="/website/img/teaser/teaser_banner.png" class="img-banner-empreendimentos" alt="Empreendimentos GPL">
+    <section class="empreendimento_banner">
+        <img src="/website/img/empreendimento/empreendimento_banner.png" class="img-banner-empreendimentos" alt="Empreendimentos GPL">
         <div class="container-full-right">
             <div class="contain-desc">
                 <div class="grid-empreendimento-topo">
@@ -50,7 +60,7 @@ include "_inc_headers.php";
                                         <path d="M0.910156 0.19857L24.7266 25.8014V0.19857H0.910156Z" fill="white" />
                                     </svg>
                                 </div>
-                                <span>Seu mundo, vários destinos</span>
+                                <span>Alma Home Senses</span>
                             </div>
                         </div>
                     </div>
@@ -90,7 +100,22 @@ include "_inc_headers.php";
             </div>
         </div>
     </section>
-    <section class="empreendimento_lancamento_desc">
+
+    <section class="empreendimento-navegacao">
+        <nav class="nav-empreendimento">
+            <div class="container">
+                <button type="button" data-animation="sessao-1" class="btn-filter-top">Sobre</button>
+                <button type="button" data-animation="sessao-2" class="btn-filter-top">Diferenciais</button>
+                <button type="button" data-animation="sessao-1" class="btn-filter-top">Galeria</button>
+                <button type="button" data-animation="sessao-2" class="btn-filter-top">Localização</button>
+                <button type="button" data-animation="sessao-1" class="btn-filter-top">Estágio da obra</button>
+                <button type="button" data-animation="sessao-2" class="btn-filter-top">Indique um amigo</button>
+                <button type="button" data-animation="sessao-2" class="btn-filter-top">Agende uma visita</button>
+            </div>
+        </nav>
+    </section>
+
+    <section class="empreendimento_lancamento_desc" id="sessao-1">
         <div class="container">
             <div class="info">
                 <div class="item">
@@ -132,6 +157,19 @@ include "_inc_headers.php";
                     </div>
                     <span>62 a 112m2</span>
                 </div>
+                <div class="item">
+                    <div class="ico">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <mask id="mask0_306_720" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="25">
+                                <rect y="0.861938" width="24" height="24" fill="#D9D9D9" />
+                            </mask>
+                            <g>
+                                <path d="M6 19.8619V20.8619C6 21.1453 5.90417 21.3828 5.7125 21.5744C5.52083 21.7661 5.28333 21.8619 5 21.8619H4C3.71667 21.8619 3.47917 21.7661 3.2875 21.5744C3.09583 21.3828 3 21.1453 3 20.8619V12.8619L5.1 6.86194C5.2 6.56194 5.37917 6.32027 5.6375 6.13694C5.89583 5.95361 6.18333 5.86194 6.5 5.86194H17.5C17.8167 5.86194 18.1042 5.95361 18.3625 6.13694C18.6208 6.32027 18.8 6.56194 18.9 6.86194L21 12.8619V20.8619C21 21.1453 20.9042 21.3828 20.7125 21.5744C20.5208 21.7661 20.2833 21.8619 20 21.8619H19C18.7167 21.8619 18.4792 21.7661 18.2875 21.5744C18.0958 21.3828 18 21.1453 18 20.8619V19.8619H6ZM5.8 10.8619H18.2L17.15 7.86194H6.85L5.8 10.8619ZM7.5 16.8619C7.91667 16.8619 8.27083 16.7161 8.5625 16.4244C8.85417 16.1328 9 15.7786 9 15.3619C9 14.9453 8.85417 14.5911 8.5625 14.2994C8.27083 14.0078 7.91667 13.8619 7.5 13.8619C7.08333 13.8619 6.72917 14.0078 6.4375 14.2994C6.14583 14.5911 6 14.9453 6 15.3619C6 15.7786 6.14583 16.1328 6.4375 16.4244C6.72917 16.7161 7.08333 16.8619 7.5 16.8619ZM16.5 16.8619C16.9167 16.8619 17.2708 16.7161 17.5625 16.4244C17.8542 16.1328 18 15.7786 18 15.3619C18 14.9453 17.8542 14.5911 17.5625 14.2994C17.2708 14.0078 16.9167 13.8619 16.5 13.8619C16.0833 13.8619 15.7292 14.0078 15.4375 14.2994C15.1458 14.5911 15 14.9453 15 15.3619C15 15.7786 15.1458 16.1328 15.4375 16.4244C15.7292 16.7161 16.0833 16.8619 16.5 16.8619ZM5 17.8619H19V12.8619H5V17.8619Z" fill="#BAC3B0" />
+                            </g>
+                        </svg>
+                    </div>
+                    <span>3 e 4 vagas</span>
+                </div>
             </div>
         </div>
     </section>
@@ -160,7 +198,7 @@ include "_inc_headers.php";
             </div>
         </div>
     </section>
-    <section class="empreendimento-media">
+    <section class="empreendimento-media" id="sessao-2">
         <div class="container">
             <button class="video-modal" data-video="https://www.youtube.com/watch?v=RqlvAIlAwmw&t=7s" data-toggle="modal" data-target="#videoModal">
                 <img src="/website/img/teaser/banner_media_empreendimento.png">
@@ -212,14 +250,52 @@ include "_inc_headers.php";
             </article>
         </div>
     </section>
-    <section class="teaser-flyer">
+
+    <section class="empreendimento-galeria">
         <div class="container">
-            <img src="/website/img/teaser/teaser-flyer.png" class="flyer">
-            <div class="contain-btn-flyer">
-                <a href="#" class="interesse-flyer">Tenho interesse</a>
+            <span class="titulo-galeria">Galeria de imagens</span>
+        </div>
+        <div class="container-full contain-nav">
+            <div class="container">
+                <nav class="owl-filter-bar">
+                    <button type="button" class="item active" data-owl-filter="*">All</button>
+                    <button type="button" class="item" data-owl-filter=".red">Red</button>
+                    <button type="button" class="item" data-owl-filter=".blue">Blue</button>
+                </nav>
+            </div>
+        </div>
+        <div class="container-full">
+            <div class="owl-carousel owl-theme">
+                <div class="item red">
+                    <h4>1</h4>
+                </div>
+                <div class="item red">
+                    <h4>2</h4>
+                </div>
+                <div class="item blue">
+                    <h4>3</h4>
+                </div>
+                <div class="item red">
+                    <h4>4</h4>
+                </div>
+                <div class="item blue">
+                    <h4>5</h4>
+                </div>
+                <div class="item red">
+                    <h4>6</h4>
+                </div>
+                <div class="item blue">
+                    <h4>7</h4>
+                </div>
+                <div class="item red">
+                    <h4>8</h4>
+                </div>
             </div>
         </div>
     </section>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
     <script>
         //controla largura do container formulário banner topo
         $(document).ready(function() {
@@ -230,9 +306,67 @@ include "_inc_headers.php";
                 $("#containFormTopo").css("max-width", `calc((100% - ${larguraContain}px))`);
             }
         })
+
+        //controla estado ativo navegacao inferior ao banner
+        function boxTop(idBox) {
+            var boxOffset = $(idBox).offset();
+            return boxOffset.top
+        }
+
+        function retornarBtn(dataAnimation, disabled = false) {
+            if (disabled) {
+                $("button.btn-filter-top").each(function(index) {
+                    if ($(this).attr('data-animation') != dataAnimation) {
+                        $(this).removeClass('active');
+                    }
+                });
+            }
+            return $(`button.btn-filter-top[data-animation="${dataAnimation}"]`)
+        }
+
+        $(document).scroll(function() {
+            var documentTop = $(this).scrollTop();
+
+            if (documentTop > boxTop('#sessao-1') - 120) {
+                retornarBtn('sessao-1', true).addClass('active');
+            } else {
+                retornarBtn('sessao-1').removeClass('active');
+            }
+
+            if (documentTop > boxTop('#sessao-2') - 120) {
+                retornarBtn('sessao-2', true).addClass('active');
+            } else {
+                retornarBtn('sessao-2').removeClass('active');
+            }
+        });
     </script>
 
-    <?php include "_inc_footer_empreendimento.php";
+    <script>
+        // OWL Carousel filtro
+        var owl = $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+
+        $('.owl-filter-bar').on('click', '.item', function() {
+            var $item = $(this);
+            var filter = $item.data('owl-filter')
+            owl.owlcarousel2_filter(filter);
+        })
+    </script>
+    <?php //include "_inc_footer_empreendimento.php";
     ?>
 </body>
 

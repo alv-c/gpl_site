@@ -34,6 +34,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+	<!-- OwlCarousel 2 - Filter -->
+	<script src="/website/plugins/owl_carousel_filter_2.js"></script>
+
 	<!-- FONT LATO GOOGLE FONTS -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -69,7 +69,7 @@
 										</div>
 										<div>
 											<label for="telefone">Telefone</label>
-											<input type="text" name="telefone" id="telefone" class="form-assistencia" required>
+											<input type="text" name="telefone" id="telefone" class="form-assistencia cel_mascara" required>
 										</div>
 									</div>
 									<div class="contain-form-inline">

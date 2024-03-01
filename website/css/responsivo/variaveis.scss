@@ -83,6 +83,7 @@ div#videoModal {
 
         div.modal-content {
             background: none;
+            border: 0;
 
             .modal-header {
                 padding: 0 15px;
@@ -291,5 +292,58 @@ div#videoModal {
 
     100% {
         transform: none;
+    }
+}
+
+//FOOTER INTERNA EMPREENDIMENTO
+footer.footer-empreendimento {
+    padding: 55px 30px 50px;
+
+    div.grid-footer-empreendimento {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        @media(min-width: 768px) {
+            flex-direction: row;
+            gap: 85px;
+        }
+
+        >div {
+            width: 100%;
+
+            @media(min-width: 768px) {
+                width: auto;
+            }
+
+            &.left-grid-empreendimento {
+                >img {
+                    display: block;
+                    margin: 0 auto;
+                    width: 100%;
+                    max-width: 135px;
+                    object-fit: cover;
+                }
+            }
+
+            &.right-grid-empreendimento {
+                >div.contain-btn-redes-sociais {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+
+                    >a.btn-rede-social {
+                        display: inline-block;
+                        text-align: none;
+                        outline: none;
+                    }
+                }
+            }
+        }
     }
 }
