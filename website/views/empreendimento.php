@@ -252,7 +252,7 @@ include "_inc_headers.php";
             </div>
         </div>
         <div class="container-full">
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme" id="owl-carousel-galeria">
                 <div class="item fachada">
                     <a href="/website/img/empreendimento/galeria-1.png" class="ancor-item-gall" data-lightbox="gallery">
                         <img src="/website/img/empreendimento/galeria-1.png" class="img-item-gall" alt="">
@@ -462,23 +462,68 @@ include "_inc_headers.php";
             <span class="titulo-estagio">Estágio da obra</span>
             <div class="grid-filtro-estagio">
                 <div class="left-filtro-estagio">
-                    <div class="btn-group">
-                        <button type="button" class="drop-filtro-estagio dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Novembro 2022
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <button class="dropdown-item" type="button">Outubro 2022</button>
-                            <button class="dropdown-item" type="button">Setembro 2022</button>
-                            <button class="dropdown-item" type="button">Agosto 2022</button>
-                        </div>
-                    </div>
+                    <select id="filtro_data_estagio" name="filtro_data_estagio" style="border: 1px solid #000;">
+                        <option value=".outubro_2022">Outubro 2022</option>
+                        <option value=".setembro_2022">Setembro 2022</option>
+                        <option value=".agosto_2022">Agosto 2022</option>
+                    </select>
                 </div>
-                <div class="right-filtro-estagio">
-                    <div class="grupo-btn-filtro">
-                        <button type="button" class="bnt-grupo active">Fotos</button>
-                        <button type="button" class="bnt-grupo">Videos</button>
-                    </div>
+                <div class="right-filtro-estagio filtro-carousel-estagio">
+                    <!-- <div class="grupo-btn-filtro">
+                        <button type="button" class="bnt-grupo item-estagio active" data-owl-filter=".foto">Fotos</button>
+                        <button type="button" class="bnt-grupo item-estagio" data-owl-filter=".video">Videos</button>
+                    </div> -->
+                    <label for="tipo_midia_foto">Fotos</label>
+                    <input type="radio" name="tipo_midia" id="tipo_midia_foto" value=".foto" style="appearance: auto;" checked>
+
+                    <label for="tipo_midia_video">Videos</label>
+                    <input type="radio" name="tipo_midia" id="tipo_midia_video" value=".video" style="appearance: auto;">
                 </div>
+            </div>
+
+
+            <div class="contain-charts">
+                <div class="pie" data-pie='{ "percent": "0" }'></div>
+                <div class="pie" data-pie='{ "percent": 20 }'></div>
+                <div class="pie" data-pie='{ "percent": 30 }'></div>
+                <div class="pie" data-pie='{ "percent": 30 }'></div>
+                <div class="pie" data-pie='{ "percent": 30 }'></div>
+                <div class="pie" data-pie='{ "percent": 30 }'></div>
+                <div class="pie" data-pie='{ "percent": 30 }'></div>
+            </div>
+            <div class="contain-carrossel-estagio">
+
+
+
+                <div class="owl-carousel owl-theme" id="owl-carousel-estagio">
+
+                    <div class="item-estagio video outubro_2022" style="height: 250px; border: 2px solid red; display: block;">
+                        <a class="owl-video" href="https://www.youtube.com/watch?v=JpxsRwnRwCQ">
+                            <img src="https://img.freepik.com/fotos-gratis/grupo-de-estudantes-do-ensino-medio-fazendo-um-teste-em-uma-sala-de-aula_662251-1868.jpg?w=1380&t=st=1709555964~exp=1709556564~hmac=de3eadf5b306996f7d9fc4260e1b2280d662aa17f7b859bed802a540bf7cca38" alt="">
+                        </a>
+                    </div>
+
+                    <div class="item-estagio foto outubro_2022">
+                        <h4>1</h4>
+                    </div>
+                    <div class="item-estagio foto agosto_2022">
+                        <h4>2</h4>
+                    </div>
+                    <div class="item-estagio foto setembro_2022">
+                        <h4>3</h4>
+                    </div>
+
+                    <div class="item-estagio video setembro_2022" style="height: 250px; border: 2px solid lime; display: block;">
+                        <a class="owl-video" href="https://www.youtube.com/watch?v=JpxsRwnRwCQ">
+                            <img src="https://img.freepik.com/fotos-gratis/grupo-de-estudantes-do-ensino-medio-fazendo-um-teste-em-uma-sala-de-aula_662251-1868.jpg?w=1380&t=st=1709555964~exp=1709556564~hmac=de3eadf5b306996f7d9fc4260e1b2280d662aa17f7b859bed802a540bf7cca38" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+
             </div>
         </div>
     </section>
@@ -521,8 +566,39 @@ include "_inc_headers.php";
     </script>
 
     <script>
-        // CONTROLADOR OWL CAROUSEL filtro -> sessao "empreendimento-galeria"
-        var owlFilter = $('.owl-carousel').owlCarousel({
+        // CONTROLADOR OWL CAROUSEL filtro -> sessao "empreendimento-estagio-obra" **************************************************
+        var owlFilterEstagio = $('#owl-carousel-estagio').owlCarousel({
+            items: 1,
+            merge: true,
+            loop: false,
+            margin: 10,
+            video: true,
+            lazyLoad: true,
+            center: true,
+            responsive: {
+                480: {
+                    items: 2
+                },
+                600: {
+                    items: 4
+                }
+            }
+        });
+        $('#filtro_data_estagio').on('change', function() {
+            let filter_1 = $(this).val();
+            let filter_2 = $('input[type="radio"][name="tipo_midia"]:checked').val();
+            const filter = [filter_1, filter_2];
+            owlFilterEstagio.owlcarousel2_filter(filter);
+        });
+        $('input[type="radio"][name="tipo_midia"]').on('click', function() {
+            let filter_1 = $('#filtro_data_estagio').val();
+            let filter_2 = $(this).val();
+            const filter = [filter_1, filter_2];
+            owlFilterEstagio.owlcarousel2_filter(filter);
+        });
+
+        // CONTROLADOR OWL CAROUSEL filtro -> sessao "empreendimento-galeria" **************************************************
+        var owlFilter = $('#owl-carousel-galeria').owlCarousel({
             center: true,
             loop: true,
             items: 1,
@@ -548,7 +624,7 @@ include "_inc_headers.php";
                     stagePadding: 0,
                 }
             }
-        })
+        });
 
         $('.owl-filter-bar').on('click', '.item', function() {
             $('.owl-filter-bar .item').each(function(index) {
@@ -556,7 +632,9 @@ include "_inc_headers.php";
             });
             $(this).addClass("active");
             var $item = $(this);
-            var filter = $item.data('owl-filter');
+            var filter_1 = $item.data('owl-filter');
+            var filter_2 = null;
+            const filter = [filter_1, filter_2];
             owlFilter.owlcarousel2_filter(filter);
         });
 
@@ -602,6 +680,52 @@ include "_inc_headers.php";
                 $(this).removeClass("active");
             });
             $(this).addClass("active");
+        });
+
+
+        //CIRCULAR PROGRESSBAR
+        /************ DOCUMENTAÇÃO ***************/
+        // https://github.com/tomickigrzegorz/circular-progress-bar/blob/master/README.md
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const globalConfig = {
+                "stroke": 10, //largura da barra indicadora
+                "colorSlice": "#425545",
+                "colorCircle": "#D9D9D9",
+                "round": true,
+                "size": 85, //largura e altura em px
+                "fontSize": "16px",
+                "fontWeight": 700,
+                "fontColor": "#000",
+            }
+
+            const elements = [].slice.call(document.querySelectorAll('.pie'));
+            const circle = new CircularProgressBar('pie', globalConfig);
+
+            if ('IntersectionObserver' in window) {
+                const config = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.75,
+                };
+
+                const ovserver = new IntersectionObserver((entries, observer) => {
+                    entries.map((entry) => {
+                        if (entry.isIntersecting && entry.intersectionRatio >= 0.75) {
+                            circle.initial(entry.target);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, config);
+
+                elements.map((item) => {
+                    ovserver.observe(item);
+                });
+            } else {
+                elements.map((element) => {
+                    circle.initial(element);
+                });
+            }
         });
     </script>
 </body>

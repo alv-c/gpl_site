@@ -47,7 +47,10 @@
 
 	<!-- LIGHTBOX GALLERY -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+
+	<!-- CIRCULAR PROGRESSBAR -->
+	<script src="https://cdn.jsdelivr.net/gh/tomickigrzegorz/circular-progress-bar@1.1.9/dist/circularProgressBar.ie.min.js"></script>
 
 	<link rel="icon" type="image/png" href="#">
 

@@ -3813,6 +3813,39 @@ section.empreendimento-estagio-obra div.grid-filtro-estagio > div.right-filtro-e
   color: #425545;
   border-bottom: 3px solid #425545;
 }
+section.empreendimento-estagio-obra div.contain-charts {
+  display: grid;
+  grid-template-columns: repeat(2, 85px);
+  padding-top: 50px;
+  justify-content: space-between;
+  gap: 50px 0;
+}
+@media (min-width: 450px) {
+  section.empreendimento-estagio-obra div.contain-charts {
+    grid-template-columns: repeat(3, 85px);
+  }
+}
+@media (min-width: 600px) {
+  section.empreendimento-estagio-obra div.contain-charts {
+    grid-template-columns: repeat(4, 85px);
+  }
+}
+@media (min-width: 768px) {
+  section.empreendimento-estagio-obra div.contain-charts {
+    grid-template-columns: repeat(7, 85px);
+    padding-top: 60px;
+    gap: 0;
+  }
+}
+section.empreendimento-estagio-obra div.contain-carrossel-estagio {
+  border: 2px solid cyan;
+  padding-top: 75px;
+}
+@media (min-width: 768px) {
+  section.empreendimento-estagio-obra div.contain-carrossel-estagio {
+    padding-top: 60px;
+  }
+}
 
 @media (min-width: 1250px) {
   .container {

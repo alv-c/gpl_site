@@ -4012,7 +4012,6 @@ section {
 
                 &.right-filtro-estagio {
                     >div.grupo-btn-filtro {
-                        // border: 2px solid red;
                         display: flex;
                         flex-wrap: nowrap;
                         justify-content: center;
@@ -4022,7 +4021,6 @@ section {
                             display: block;
                             width: 100%;
                             padding: 0 25px 13px;
-                            // border: 2px solid lime;
                             background: none;
                             border-bottom: 1px solid #B1B1B1;
                             outline: none;
@@ -4040,6 +4038,39 @@ section {
                         }
                     }
                 }
+            }
+        }
+
+        div.contain-charts {
+            display: grid;
+            grid-template-columns: repeat(2, 85px);
+            padding-top: 50px;
+            justify-content: space-between;
+            gap: 50px 0;
+
+            @media (min-width: 450px) {
+                grid-template-columns: repeat(3, 85px);
+            }
+
+            @media (min-width: 600px) {
+                grid-template-columns: repeat(4, 85px);
+            }
+
+            @media (min-width: 768px) {
+                grid-template-columns: repeat(7, 85px);
+                padding-top: 60px;
+                gap: 0;
+            }
+
+            .pie {}
+        }
+
+        div.contain-carrossel-estagio {
+            border: 2px solid cyan;
+            padding-top: 75px;
+
+            @media (min-width: 768px) {
+                padding-top: 60px;
             }
         }
     }
