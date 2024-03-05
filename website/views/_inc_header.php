@@ -45,21 +45,6 @@
                         <span>Portal do Cliente</span>
                     </a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <div class="ico">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26" fill="none">
-                                <mask id="mask0_46_1434" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="26">
-                                    <rect x="0.6875" y="0.914291" width="24.1714" height="24.1714" fill="#D9D9D9" />
-                                </mask>
-                                <g>
-                                    <path d="M19.7532 21.0571C18.0553 21.0571 16.3147 20.632 14.5316 19.7817C12.7484 18.9315 11.0886 17.7381 9.55205 16.2016C8.02841 14.665 6.84146 13.0084 5.99122 11.2317C5.14095 9.45498 4.71582 7.71766 4.71582 6.01972C4.71582 5.71757 4.81653 5.46256 5.01796 5.25467C5.21939 5.04679 5.47118 4.94286 5.77332 4.94286H8.26406C8.5378 4.94286 8.77668 5.02904 8.98069 5.20141C9.18471 5.37379 9.32286 5.59491 9.39516 5.86477L9.89485 8.26643C9.94135 8.54791 9.93295 8.79388 9.86967 9.00436C9.80641 9.21482 9.69472 9.38719 9.53462 9.52148L7.3247 11.5822C7.7379 12.3324 8.19467 13.0294 8.69502 13.673C9.19535 14.3167 9.72893 14.9265 10.2958 15.5024C10.8807 16.0873 11.5102 16.6312 12.1842 17.1341C12.8582 17.6371 13.598 18.1119 14.4038 18.5586L16.5575 16.3662C16.7215 16.1893 16.9058 16.0728 17.1105 16.0166C17.3151 15.9604 17.5414 15.9491 17.7893 15.9827L19.9082 16.4165C20.1819 16.4837 20.404 16.6215 20.5744 16.83C20.7449 17.0386 20.8301 17.2778 20.8301 17.5476V19.9996C20.8301 20.3018 20.7262 20.5536 20.5183 20.755C20.3104 20.9564 20.0554 21.0571 19.7532 21.0571Z" />
-                                </g>
-                            </svg>
-                        </div>
-                        <span>Central de atendimento</span>
-                    </a>
-                </li> -->
                 <li class="nav-item">
                     <div class="btn-group dropleft">
                         <button type="button" class="nav-link btn-drop-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -109,15 +94,6 @@
                             </a>
                         </div>
                     </div>
-                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: white;">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div> -->
                 </li>
             </div>
         </div>
