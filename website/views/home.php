@@ -9,6 +9,7 @@
 
 		<?php include "_inc_header.php"; ?>
 		<?php include "_modal_video.php"; ?>
+		<?php include "_modal_filtro.php"; ?>
 
 		<section class="home-banner">
 			<div class="owl-carousel owl-theme" id="owl-carousel-1">
@@ -102,7 +103,7 @@
 				<div class="top">
 					<span class="titulo">Empreendimentos</span>
 					<div class="contain-btns">
-						<button type="button">
+						<button type="button" data-toggle="modal" data-target="#modalFiltro">
 							<div class="ico">
 								<svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none">
 									<circle cx="15" cy="14.5" r="14" fill="white" stroke="#B1B1B1" />

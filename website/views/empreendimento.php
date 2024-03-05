@@ -93,17 +93,17 @@ include "_inc_headers.php";
     <section class="empreendimento-navegacao">
         <nav class="nav-empreendimento">
             <div class="container">
-                <button type="button" data-animation="sessao-1" class="btn-filter-top">Sobre</button>
-                <button type="button" data-animation="sessao-2" class="btn-filter-top">Diferenciais</button>
-                <button type="button" data-animation="sessao-1" class="btn-filter-top">Galeria</button>
-                <button type="button" data-animation="sessao-2" class="btn-filter-top">Localização</button>
-                <button type="button" data-animation="sessao-1" class="btn-filter-top">Estágio da obra</button>
+                <button type="button" data-animation="empreendimento_lancamento_desc" class="btn-filter-top">Sobre</button>
+                <button type="button" data-animation="empreendimento-diferenciais" class="btn-filter-top">Diferenciais</button>
+                <button type="button" data-animation="empreendimento-galeria" class="btn-filter-top">Galeria</button>
+                <button type="button" data-animation="empreendimento-localizacao" class="btn-filter-top">Localização</button>
+                <button type="button" data-animation="empreendimento-estagio-obra" class="btn-filter-top">Estágio da obra</button>
                 <button type="button" data-animation="sessao-2" class="btn-filter-top">Indique um amigo</button>
-                <button type="button" data-animation="sessao-2" class="btn-filter-top">Agende uma visita</button>
+                <button type="button" data-animation="empreendimento_banner" class="btn-filter-top">Agende uma visita</button>
             </div>
         </nav>
     </section>
-    <section class="empreendimento_lancamento_desc" id="sessao-1">
+    <section class="empreendimento_lancamento_desc" id="empreendimento_lancamento_desc">
         <div class="container">
             <div class="info">
                 <div class="item">
@@ -161,7 +161,7 @@ include "_inc_headers.php";
             </div>
         </div>
     </section>
-    <section class="empreendimento_lancamento_info">
+    <section class="empreendimento_lancamento_info" id="empreendimento_lancamento_info">
         <div class="container">
             <div class="grid-empreendimento-info">
                 <div class="left-info">
@@ -186,14 +186,14 @@ include "_inc_headers.php";
             </div>
         </div>
     </section>
-    <section class="empreendimento-media" id="sessao-2">
+    <section class="empreendimento-media" id="empreendimento-media">
         <div class="container">
             <button class="video-modal" data-video="https://www.youtube.com/watch?v=RqlvAIlAwmw&t=7s" data-toggle="modal" data-target="#videoModal">
                 <img src="/website/img/teaser/banner_media_empreendimento.png">
             </button>
         </div>
     </section>
-    <section class="empreendimento-diferenciais">
+    <section class="empreendimento-diferenciais" id="empreendimento-diferenciais">
         <div class="container">
             <span class="titulo-diferenciais">Diferenciais</span>
             <article class="sanfona">
@@ -238,7 +238,7 @@ include "_inc_headers.php";
             </article>
         </div>
     </section>
-    <section class="empreendimento-galeria">
+    <section class="empreendimento-galeria" id="empreendimento-galeria">
         <div class="container">
             <span class="titulo-galeria">Galeria de imagens</span>
         </div>
@@ -405,7 +405,7 @@ include "_inc_headers.php";
             </div>
         </div>
     </section>
-    <section class="empreendimento-localizacao">
+    <section class="empreendimento-localizacao" id="empreendimento-localizacao">
         <div class="container">
             <div class="contain-titulo-loc">
                 <span class="titulo-loc">Localização</span>
@@ -456,7 +456,7 @@ include "_inc_headers.php";
             </div>
         </div>
     </section>
-    <section class="empreendimento-estagio-obra">
+    <section class="empreendimento-estagio-obra" id="empreendimento-estagio-obra">
         <div class="container">
             <span class="titulo-estagio">Estágio da obra</span>
             <div class="grid-filtro-estagio">
@@ -478,15 +478,100 @@ include "_inc_headers.php";
                     </label>
                 </div>
             </div>
-            <div class="contain-charts">
-                <div class="pie" data-pie='{ "percent": "0" }'></div>
-                <div class="pie" data-pie='{ "percent": 20 }'></div>
-                <div class="pie" data-pie='{ "percent": 30 }'></div>
-                <div class="pie" data-pie='{ "percent": 30 }'></div>
-                <div class="pie" data-pie='{ "percent": 30 }'></div>
-                <div class="pie" data-pie='{ "percent": 30 }'></div>
-                <div class="pie" data-pie='{ "percent": 30 }'></div>
+            <div class="contains-chart">
+                <div class="contain-charts" data-periodo="outubro_2022">
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": "0" }'></div>
+                        <span class="span-chart">Escavação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 20 }'></div>
+                        <span class="span-chart">Fundação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 30 }'></div>
+                        <span class="span-chart">Escavação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 30 }'></div>
+                        <span class="span-chart">Fundação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 30 }'></div>
+                        <span class="span-chart">Escavação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 30 }'></div>
+                        <span class="span-chart">Fundação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 30 }'></div>
+                        <span class="span-chart">Escavação</span>
+                    </div>
+                </div>
+                <div class="contain-charts" data-periodo="setembro_2022">
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": "0" }'></div>
+                        <span class="span-chart">Escavação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 20 }'></div>
+                        <span class="span-chart">Fundação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 30 }'></div>
+                        <span class="span-chart">Escavação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 30 }'></div>
+                        <span class="span-chart">Fundação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 30 }'></div>
+                        <span class="span-chart">Escavação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 30 }'></div>
+                        <span class="span-chart">Fundação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 30 }'></div>
+                        <span class="span-chart">Escavação</span>
+                    </div>
+                </div>
+                <div class="contain-charts" data-periodo="agosto_2022">
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": "0" }'></div>
+                        <span class="span-chart">Escavação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 20 }'></div>
+                        <span class="span-chart">Fundação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 30 }'></div>
+                        <span class="span-chart">Escavação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 30 }'></div>
+                        <span class="span-chart">Fundação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 30 }'></div>
+                        <span class="span-chart">Escavação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 30 }'></div>
+                        <span class="span-chart">Fundação</span>
+                    </div>
+                    <div class="item-chart">
+                        <div class="pie" data-pie='{ "percent": 30 }'></div>
+                        <span class="span-chart">Escavação</span>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="container container-carrossel-estagio">
             <div class="contain-carrossel-estagio">
                 <div class="owl-carousel owl-theme" id="owl-carousel-estagio">
 
@@ -509,6 +594,11 @@ include "_inc_headers.php";
                     </div>
 
                 </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="contain-btn">
+                <a href="#" class="interesse">Tenho interesse</a>
             </div>
         </div>
     </section>
@@ -534,16 +624,46 @@ include "_inc_headers.php";
         $(document).scroll(function() {
             var documentTop = $(this).scrollTop();
 
-            if (documentTop > boxTop('#sessao-1') - 120) {
-                retornarBtn('sessao-1', true).addClass('active');
+            if (documentTop > boxTop('#empreendimento_lancamento_desc') - 120) {
+                retornarBtn('empreendimento_lancamento_desc', true).addClass('active');
             } else {
-                retornarBtn('sessao-1').removeClass('active');
+                retornarBtn('empreendimento_lancamento_desc').removeClass('active');
+            }
+
+            if (documentTop > boxTop('#empreendimento-diferenciais') - 120) {
+                retornarBtn('empreendimento-diferenciais', true).addClass('active');
+            } else {
+                retornarBtn('empreendimento-diferenciais').removeClass('active');
+            }
+
+            if (documentTop > boxTop('#empreendimento-galeria') - 120) {
+                retornarBtn('empreendimento-galeria', true).addClass('active');
+            } else {
+                retornarBtn('empreendimento-galeria').removeClass('active');
+            }
+
+            if (documentTop > boxTop('#empreendimento-localizacao') - 120) {
+                retornarBtn('empreendimento-localizacao', true).addClass('active');
+            } else {
+                retornarBtn('empreendimento-localizacao').removeClass('active');
+            }
+
+            if (documentTop > boxTop('#empreendimento-estagio-obra') - 120) {
+                retornarBtn('empreendimento-estagio-obra', true).addClass('active');
+            } else {
+                retornarBtn('empreendimento-estagio-obra').removeClass('active');
             }
 
             if (documentTop > boxTop('#sessao-2') - 120) {
                 retornarBtn('sessao-2', true).addClass('active');
             } else {
                 retornarBtn('sessao-2').removeClass('active');
+            }
+
+            if (documentTop > boxTop('#empreendimento_banner') - 120) {
+                retornarBtn('empreendimento_banner', true).addClass('active');
+            } else {
+                retornarBtn('empreendimento_banner').removeClass('active');
             }
         });
     </script>
@@ -556,23 +676,17 @@ include "_inc_headers.php";
             loop: true,
             margin: 10,
             video: true,
-            lazyLoad: true,
+            lazyLoad: false,
             center: true,
             dots: true,
-            stagePadding: 50,
-            // videoHeight: 165,
-            // videoWidth: 260,
+            stagePadding: 30,
             responsive: {
                 200: {
-                    autoWidth: true,
+                    // autoWidth: true,
                 },
                 600: {
                     items: 2,
                     autoWidth: false,
-                },
-                768: {
-                    // videoHeight: 240,
-                    // videoWidth: 380,
                 },
                 850: {
                     margin: 30,
@@ -582,6 +696,11 @@ include "_inc_headers.php";
             }
         });
         $('#filtro_data_estagio').on('change', function() {
+            $(".contain-charts").each(function(index) {
+                $(this).css('display', 'none');
+            });
+            let filtroChart = $(this).val().replace(".", "");
+            $(`.contain-charts[data-periodo=${filtroChart}]`).css('display', 'grid');
             let filter_1 = $(this).val();
             let filter_2 = $('input[type="radio"][name="tipo_midia"]:checked').val();
             const filter = [filter_1, filter_2];

@@ -90,6 +90,197 @@ div#videoModal div.modal-dialog div.modal-content .modal-body div.embed-containe
   height: 280px;
 }
 
+@media (min-width: 576px) {
+  div#modalFiltro {
+    padding: 0 30px;
+  }
+}
+div#modalFiltro div.modal-dialog {
+  max-width: calc(1920px - 10%);
+}
+div#modalFiltro div.modal-dialog .modal-content {
+  border-radius: 0;
+}
+div#modalFiltro div.modal-dialog .modal-body {
+  padding: 30px 35px;
+}
+@media (min-width: 768px) {
+  div#modalFiltro div.modal-dialog .modal-body {
+    padding: 0 35px 50px;
+  }
+}
+div#modalFiltro div.modal-dialog .modal-body div.contain-close-desktop {
+  display: none;
+  padding: 7px 0 11px;
+}
+@media (min-width: 768px) {
+  div#modalFiltro div.modal-dialog .modal-body div.contain-close-desktop {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+div#modalFiltro div.modal-dialog .modal-body div.contain-close-desktop > button.btn-close-filtro {
+  display: block;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal {
+    gap: 50px;
+  }
+}
+div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-titulo-filtro {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-titulo-filtro {
+    max-width: 130px;
+    padding-bottom: 0;
+  }
+}
+div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-titulo-filtro > span.titulo-filtro {
+  display: block;
+  flex-grow: 1;
+  color: #222;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+@media (min-width: 768px) {
+  div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-titulo-filtro > span.titulo-filtro {
+    font-size: 28px;
+  }
+}
+@media (min-width: 768px) {
+  div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-titulo-filtro > div.contain-btn-close-filtro-mobille {
+    display: none;
+  }
+}
+div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-titulo-filtro > div.contain-btn-close-filtro-mobille > button.btn-close-filtro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-form-filtro {
+  width: 100%;
+}
+div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-form-filtro > form {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-form-filtro > form {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-form-filtro > form {
+    gap: 50px;
+  }
+}
+div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-form-filtro > form div.contain-itens-filtro {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-form-filtro > form div.contain-itens-filtro {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-form-filtro > form div.contain-itens-filtro div.item-filtro-modal {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-form-filtro > form div.contain-itens-filtro div.item-filtro-modal {
+    gap: 40px;
+  }
+}
+div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-form-filtro > form div.contain-itens-filtro div.item-filtro-modal > select.input-filtro-modal {
+  display: block;
+  margin-bottom: 40px;
+  background: #fff url("/website/img/global/seta-select-2.svg") no-repeat;
+  background-position: 100% 5px;
+  outline: none;
+  border-bottom: 1px solid #000;
+  padding: 0 20px 9px 0;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+@media (min-width: 768px) {
+  div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-form-filtro > form div.contain-itens-filtro div.item-filtro-modal > select.input-filtro-modal {
+    margin-bottom: 0;
+  }
+}
+div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-form-filtro > form div.contain-submit-filtro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-form-filtro > form div.contain-submit-filtro {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 1000px) {
+  div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-form-filtro > form div.contain-submit-filtro {
+    padding-top: 0;
+  }
+}
+div#modalFiltro div.modal-dialog .modal-body div.container-modal-filtro fieldset.form-filtro-modal div.contain-form-filtro > form div.contain-submit-filtro button.submit-filtro-modal {
+  display: block;
+  border: none;
+  background: #425545;
+  outline: none;
+  cursor: pointer;
+  padding: 16px 100px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
 .breadcrumb-banner {
   display: none;
   flex-wrap: nowrap;
@@ -382,8 +573,11 @@ nav.navbar div.contain-btn-right > li.nav-item:first-child a.nav-link {
   background: #fff;
   border: 1.343px solid #BAC3B0;
 }
-nav.navbar div.contain-btn-right > li.nav-item:last-child a.nav-link {
-  background: rgba(186, 195, 176, 0.38);
+@media (min-width: 1200px) {
+  nav.navbar div.contain-btn-right > li.nav-item:last-child {
+    display: flex;
+    align-items: center;
+  }
 }
 nav.navbar div.contain-btn-right > li.nav-item a.nav-link {
   display: flex;
@@ -409,6 +603,103 @@ nav.navbar div.contain-btn-right > li.nav-item a.nav-link > span {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+nav.navbar div.contain-btn-right > li.nav-item .dropleft {
+  width: 100%;
+}
+nav.navbar div.contain-btn-right > li.nav-item .dropleft > button.btn-drop-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: rgba(186, 195, 176, 0.38);
+  outline: none;
+  cursor: pointer;
+  padding: 11px 13px;
+  white-space: nowrap;
+  gap: 4px;
+  border: none;
+  width: 100%;
+  border-radius: 4.029px;
+}
+@media (min-width: 1200px) {
+  nav.navbar div.contain-btn-right > li.nav-item .dropleft > button.btn-drop-nav {
+    border: 1px solid #DDD;
+    background: none;
+    border-radius: 0;
+    position: relative;
+    bottom: 5px;
+  }
+}
+nav.navbar div.contain-btn-right > li.nav-item .dropleft > button.btn-drop-nav > div.ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav.navbar div.contain-btn-right > li.nav-item .dropleft > button.btn-drop-nav > div.ico svg path {
+  fill: #425545;
+}
+@media (min-width: 1200px) {
+  nav.navbar div.contain-btn-right > li.nav-item .dropleft > button.btn-drop-nav > div.ico svg path {
+    fill: #fff;
+  }
+}
+nav.navbar div.contain-btn-right > li.nav-item .dropleft > button.btn-drop-nav > span {
+  display: block;
+  color: #425545;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (min-width: 1200px) {
+  nav.navbar div.contain-btn-right > li.nav-item .dropleft > button.btn-drop-nav > span {
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+}
+nav.navbar div.contain-btn-right > li.nav-item .dropleft .dropdown-menu {
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  nav.navbar div.contain-btn-right > li.nav-item .dropleft .dropdown-menu {
+    top: -15px !important;
+    right: calc(100% + 10px) !important;
+    left: auto !important;
+  }
+}
+nav.navbar div.contain-btn-right > li.nav-item .dropleft .dropdown-menu .dropdown-item {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+nav.navbar div.contain-btn-right > li.nav-item .dropleft .dropdown-menu .dropdown-item > div.ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav.navbar div.contain-btn-right > li.nav-item .dropleft .dropdown-menu .dropdown-item > div.ico svg {
+  width: 16px;
+  height: 16px;
+}
+nav.navbar div.contain-btn-right > li.nav-item .dropleft .dropdown-menu .dropdown-item > span {
+  display: block;
+  color: #231F20;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+@media (min-width: 1200px) {
+  nav.navbar div.contain-btn-right > li.nav-item .dropleft .dropdown-menu .dropdown-item > span {
+    font-size: 14px;
+  }
+}
+nav.navbar div.contain-btn-right > li.nav-item .dropleft .dropdown-menu .dropdown-divider {
+  margin: 3px 0;
 }
 
 footer {
@@ -3772,6 +4063,7 @@ section.empreendimento-estagio-obra div.grid-filtro-estagio > div.left-filtro-es
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  cursor: pointer;
 }
 section.empreendimento-estagio-obra div.grid-filtro-estagio > div.right-filtro-estagio {
   display: flex;
@@ -3795,6 +4087,7 @@ section.empreendimento-estagio-obra div.grid-filtro-estagio > div.right-filtro-e
   line-height: 26px;
   border-bottom: 1px solid #B1B1B1;
   position: relative;
+  cursor: pointer;
 }
 section.empreendimento-estagio-obra div.grid-filtro-estagio > div.right-filtro-estagio label.label-filtro-estagio:has(.input-filtro-estagio:checked) {
   color: #425545;
@@ -3812,76 +4105,118 @@ section.empreendimento-estagio-obra div.grid-filtro-estagio > div.right-filtro-e
   height: 3px;
   background: #425545;
 }
-section.empreendimento-estagio-obra div.contain-charts {
-  display: grid;
-  grid-template-columns: repeat(2, 85px);
+section.empreendimento-estagio-obra div.contains-chart div.contain-charts {
   padding-top: 50px;
   justify-content: space-between;
   gap: 50px 0;
+  display: none;
+  grid-template-columns: repeat(2, 85px);
+}
+section.empreendimento-estagio-obra div.contains-chart div.contain-charts:nth-child(1) {
+  display: grid;
 }
 @media (min-width: 450px) {
-  section.empreendimento-estagio-obra div.contain-charts {
+  section.empreendimento-estagio-obra div.contains-chart div.contain-charts {
     grid-template-columns: repeat(3, 85px);
   }
 }
 @media (min-width: 600px) {
-  section.empreendimento-estagio-obra div.contain-charts {
+  section.empreendimento-estagio-obra div.contains-chart div.contain-charts {
     grid-template-columns: repeat(4, 85px);
   }
 }
 @media (min-width: 768px) {
-  section.empreendimento-estagio-obra div.contain-charts {
+  section.empreendimento-estagio-obra div.contains-chart div.contain-charts {
     grid-template-columns: repeat(7, 85px);
     padding-top: 60px;
     gap: 0;
   }
 }
-section.empreendimento-estagio-obra div.contain-carrossel-estagio {
+section.empreendimento-estagio-obra div.contains-chart div.contain-charts div.item-chart {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+section.empreendimento-estagio-obra div.contains-chart div.contain-charts div.item-chart span.span-chart {
+  display: block;
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+@media (max-width: 767.9px) {
+  section.empreendimento-estagio-obra div.container-carrossel-estagio {
+    padding: 0 !important;
+  }
+}
+section.empreendimento-estagio-obra div.container-carrossel-estagio div.contain-carrossel-estagio {
   padding-top: 75px;
 }
 @media (min-width: 768px) {
-  section.empreendimento-estagio-obra div.contain-carrossel-estagio {
+  section.empreendimento-estagio-obra div.container-carrossel-estagio div.contain-carrossel-estagio {
     padding-top: 60px;
   }
 }
-section.empreendimento-estagio-obra div.contain-carrossel-estagio div.item-estagio {
+section.empreendimento-estagio-obra div.container-carrossel-estagio div.contain-carrossel-estagio div.item-estagio {
   display: block;
   height: 165px;
 }
 @media (min-width: 768px) {
-  section.empreendimento-estagio-obra div.contain-carrossel-estagio div.item-estagio {
+  section.empreendimento-estagio-obra div.container-carrossel-estagio div.contain-carrossel-estagio div.item-estagio {
     height: 240px;
   }
 }
-section.empreendimento-estagio-obra div.contain-carrossel-estagio div.item-estagio.video .owl-video-play-icon {
+section.empreendimento-estagio-obra div.container-carrossel-estagio div.contain-carrossel-estagio div.item-estagio.video .owl-video-play-icon {
   margin: 0 !important;
   left: 0 !important;
   top: 0 !important;
   background-position: center center;
-  width: 260px;
+  width: 100%;
   height: 165px;
 }
 @media (min-width: 768px) {
-  section.empreendimento-estagio-obra div.contain-carrossel-estagio div.item-estagio.video .owl-video-play-icon {
+  section.empreendimento-estagio-obra div.container-carrossel-estagio div.contain-carrossel-estagio div.item-estagio.video .owl-video-play-icon {
     height: 240px;
     width: 100%;
     max-width: 380px;
   }
 }
-section.empreendimento-estagio-obra div.contain-carrossel-estagio div.item-estagio > img {
+section.empreendimento-estagio-obra div.container-carrossel-estagio div.contain-carrossel-estagio div.item-estagio > img {
   display: block;
   margin: 0 auto;
   object-fit: cover;
   max-width: 100%;
-  width: 260px;
+  width: 100%;
   height: 165px;
 }
 @media (min-width: 768px) {
-  section.empreendimento-estagio-obra div.contain-carrossel-estagio div.item-estagio > img {
+  section.empreendimento-estagio-obra div.container-carrossel-estagio div.contain-carrossel-estagio div.item-estagio > img {
     height: 240px;
     width: 100%;
     max-width: 380px;
   }
+}
+section.empreendimento-estagio-obra div.contain-btn {
+  padding: 40px 0 0;
+  display: flex;
+  justify-content: center;
+}
+section.empreendimento-estagio-obra div.contain-btn > a.interesse {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  padding: 16px 36px;
+  background: #425545;
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 @media (min-width: 1250px) {
@@ -4240,10 +4575,6 @@ section.empreendimento-estagio-obra div.contain-carrossel-estagio div.item-estag
   }
   nav.navbar div.contain-btn-right > li.nav-item:first-child a.nav-link {
     border: 1px solid transparent;
-    background: none;
-  }
-  nav.navbar div.contain-btn-right > li.nav-item:last-child a.nav-link {
-    border: 1px solid #DDD;
     background: none;
   }
   nav.navbar div.contain-btn-right > li.nav-item a.nav-link {

@@ -109,6 +109,202 @@ div#videoModal {
     }
 }
 
+div#modalFiltro {
+    @media(min-width: 576px) {
+        padding: 0 30px;
+    }
+
+    div.modal-dialog {
+        max-width: calc(1920px - 10%);
+
+        .modal-content {
+            border-radius: 0;
+        }
+
+        .modal-body {
+            padding: 30px 35px;
+
+            @media(min-width: 768px) {
+                padding: 0 35px 50px;
+            }
+
+            div.contain-close-desktop {
+                display: none;
+                padding: 7px 0 11px;
+
+                @media (min-width: 768px) {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                >button.btn-close-filtro {
+                    display: block;
+                    background: none;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+
+            div.container-modal-filtro {
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+
+                fieldset.form-filtro-modal {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    flex-direction: column;
+
+                    @media(min-width: 768px) {
+                        flex-direction: row;
+                        gap: 20px;
+                    }
+
+                    @media(min-width: 1200px) {
+                        gap: 50px;
+                    }
+
+                    div.contain-titulo-filtro {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        width: 100%;
+                        padding-bottom: 50px;
+
+                        @media(min-width: 768px) {
+                            max-width: 130px;
+                            padding-bottom: 0;
+                        }
+
+                        >span.titulo-filtro {
+                            display: block;
+                            flex-grow: 1;
+                            color: #222;
+                            font-size: 26px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+
+                            @media(min-width: 768px) {
+                                font-size: 28px;
+                            }
+                        }
+
+                        >div.contain-btn-close-filtro-mobille {
+                            @media(min-width: 768px) {
+                                display: none;
+                            }
+
+                            >button.btn-close-filtro {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border: none;
+                                background: none;
+                                outline: none;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    div.contain-form-filtro {
+                        width: 100%;
+
+                        >form {
+                            display: flex;
+                            flex-wrap: nowrap;
+                            flex-direction: column;
+                            width: 100%;
+
+                            @media(min-width: 1000px) {
+                                flex-direction: row;
+                                align-items: center;
+                                gap: 20px;
+                            }
+
+                            @media(min-width: 1200px) {
+                                gap: 50px;
+                            }
+
+                            div.contain-itens-filtro {
+                                display: flex;
+                                flex-wrap: nowrap;
+                                flex-direction: column;
+                                width: 100%;
+
+                                @media(min-width: 768px) {
+                                    flex-direction: row;
+                                    gap: 30px;
+                                }
+
+                                div.item-filtro-modal {
+                                    display: flex;
+                                    flex-wrap: nowrap;
+                                    flex-direction: column;
+                                    width: 100%;
+
+                                    @media(min-width: 768px) {
+                                        gap: 40px;
+                                    }
+
+                                    >select.input-filtro-modal {
+                                        display: block;
+                                        margin-bottom: 40px;
+                                        background: #fff url('/website/img/global/seta-select-2.svg') no-repeat;
+                                        background-position: 100% 5px;
+                                        outline: none;
+                                        border-bottom: 1px solid #000;
+                                        padding: 0 20px 9px 0;
+                                        color: #000;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 300;
+                                        line-height: normal;
+
+                                        @media(min-width: 768px) {
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+
+                            div.contain-submit-filtro {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                @media(min-width: 768px) {
+                                    padding-top: 20px;
+                                }
+
+                                @media(min-width: 1000px) {
+                                    padding-top: 0;
+                                }
+
+                                button.submit-filtro-modal {
+                                    display: block;
+                                    border: none;
+                                    background: #425545;
+                                    outline: none;
+                                    cursor: pointer;
+                                    padding: 16px 100px;
+                                    color: #fff;
+                                    text-align: center;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .breadcrumb-banner {
     display: none;
     flex-wrap: nowrap;
