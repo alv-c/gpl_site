@@ -456,32 +456,28 @@ include "_inc_headers.php";
             </div>
         </div>
     </section>
-
     <section class="empreendimento-estagio-obra">
         <div class="container">
             <span class="titulo-estagio">Estágio da obra</span>
             <div class="grid-filtro-estagio">
                 <div class="left-filtro-estagio">
-                    <select id="filtro_data_estagio" name="filtro_data_estagio" style="border: 1px solid #000;">
+                    <select id="filtro_data_estagio" name="filtro_data_estagio">
                         <option value=".outubro_2022">Outubro 2022</option>
                         <option value=".setembro_2022">Setembro 2022</option>
                         <option value=".agosto_2022">Agosto 2022</option>
                     </select>
                 </div>
-                <div class="right-filtro-estagio filtro-carousel-estagio">
-                    <!-- <div class="grupo-btn-filtro">
-                        <button type="button" class="bnt-grupo item-estagio active" data-owl-filter=".foto">Fotos</button>
-                        <button type="button" class="bnt-grupo item-estagio" data-owl-filter=".video">Videos</button>
-                    </div> -->
-                    <label for="tipo_midia_foto">Fotos</label>
-                    <input type="radio" name="tipo_midia" id="tipo_midia_foto" value=".foto" style="appearance: auto;" checked>
-
-                    <label for="tipo_midia_video">Videos</label>
-                    <input type="radio" name="tipo_midia" id="tipo_midia_video" value=".video" style="appearance: auto;">
+                <div class="right-filtro-estagio">
+                    <label for="tipo_midia_foto" class="label-filtro-estagio">
+                        Fotos
+                        <input type="radio" class="input-filtro-estagio" name="tipo_midia" id="tipo_midia_foto" value=".foto" checked>
+                    </label>
+                    <label for="tipo_midia_video" class="label-filtro-estagio">
+                        Videos
+                        <input type="radio" class="input-filtro-estagio" name="tipo_midia" id="tipo_midia_video" value=".video">
+                    </label>
                 </div>
             </div>
-
-
             <div class="contain-charts">
                 <div class="pie" data-pie='{ "percent": "0" }'></div>
                 <div class="pie" data-pie='{ "percent": 20 }'></div>
@@ -492,43 +488,30 @@ include "_inc_headers.php";
                 <div class="pie" data-pie='{ "percent": 30 }'></div>
             </div>
             <div class="contain-carrossel-estagio">
-
-
-
                 <div class="owl-carousel owl-theme" id="owl-carousel-estagio">
 
-                    <div class="item-estagio video outubro_2022" style="height: 250px; border: 2px solid red; display: block;">
-                        <a class="owl-video" href="https://www.youtube.com/watch?v=JpxsRwnRwCQ">
-                            <img src="https://img.freepik.com/fotos-gratis/grupo-de-estudantes-do-ensino-medio-fazendo-um-teste-em-uma-sala-de-aula_662251-1868.jpg?w=1380&t=st=1709555964~exp=1709556564~hmac=de3eadf5b306996f7d9fc4260e1b2280d662aa17f7b859bed802a540bf7cca38" alt="">
-                        </a>
+                    <div class="item-estagio item-video video outubro_2022">
+                        <a class="owl-video" href="https://www.youtube.com/watch?v=1HN6bhAmQMc&t=1s"></a>
                     </div>
 
                     <div class="item-estagio foto outubro_2022">
-                        <h4>1</h4>
+                        <img src="/website/img/empreendimento/item-1-caross-estag.png">
                     </div>
                     <div class="item-estagio foto agosto_2022">
-                        <h4>2</h4>
+                        <img src="/website/img/empreendimento/item-2-caross-estag.png">
                     </div>
                     <div class="item-estagio foto setembro_2022">
-                        <h4>3</h4>
+                        <img src="/website/img/empreendimento/item-3-caross-estag.png">
                     </div>
 
-                    <div class="item-estagio video setembro_2022" style="height: 250px; border: 2px solid lime; display: block;">
-                        <a class="owl-video" href="https://www.youtube.com/watch?v=JpxsRwnRwCQ">
-                            <img src="https://img.freepik.com/fotos-gratis/grupo-de-estudantes-do-ensino-medio-fazendo-um-teste-em-uma-sala-de-aula_662251-1868.jpg?w=1380&t=st=1709555964~exp=1709556564~hmac=de3eadf5b306996f7d9fc4260e1b2280d662aa17f7b859bed802a540bf7cca38" alt="">
-                        </a>
+                    <div class="item-estagio item-video video setembro_2022">
+                        <a class="owl-video" href="https://www.youtube.com/watch?v=J9k_zivDW0o"></a>
                     </div>
 
                 </div>
-
-
-
-
             </div>
         </div>
     </section>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <script>
         //controla estado ativo navegacao inferior ao banner
@@ -570,17 +553,31 @@ include "_inc_headers.php";
         var owlFilterEstagio = $('#owl-carousel-estagio').owlCarousel({
             items: 1,
             merge: true,
-            loop: false,
+            loop: true,
             margin: 10,
             video: true,
             lazyLoad: true,
             center: true,
+            dots: true,
+            stagePadding: 50,
+            // videoHeight: 165,
+            // videoWidth: 260,
             responsive: {
-                480: {
-                    items: 2
+                200: {
+                    autoWidth: true,
                 },
                 600: {
-                    items: 4
+                    items: 2,
+                    autoWidth: false,
+                },
+                768: {
+                    // videoHeight: 240,
+                    // videoWidth: 380,
+                },
+                850: {
+                    margin: 30,
+                    items: 3,
+                    stagePadding: 0,
                 }
             }
         });
@@ -605,7 +602,7 @@ include "_inc_headers.php";
             nav: true,
             dots: false,
             lazyLoad: true,
-            stagePadding: 50,
+            // stagePadding: 50,
             navText: [$('.am-next'), $('.am-prev')],
             responsive: {
                 0: {

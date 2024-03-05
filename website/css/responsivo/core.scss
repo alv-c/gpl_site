@@ -3978,63 +3978,59 @@ section {
                 width: 100%;
 
                 &.left-filtro-estagio {
-                    display: flex;
-                    align-items: flex-end;
-
-                    div.btn-group {
+                    >select#filtro_data_estagio {
+                        display: block;
                         width: 100%;
-
-                        >button.drop-filtro-estagio {
-                            display: block !important;
-                            width: 100%;
-                            background: none;
-                            border-bottom: 1px solid #000;
-                            outline: none;
-                            cursor: pointer;
-                            padding: 0 0 11px;
-                            text-align: left;
-                            color: #A9A9A9;
-                            font-size: 14px;
-                            font-style: normal;
-                            font-weight: 300;
-                            line-height: normal;
-                            position: relative;
-
-                            &::after {
-                                position: absolute;
-                                right: 0;
-                                top: 7px;
-                                color: #000;
-                            }
-                        }
+                        border-bottom: 1px solid #000;
+                        background: #fff url('/website/img/global/seta-select.svg') no-repeat;
+                        background-position: 100% 5px;
+                        padding: 0 0 11px;
+                        color: #000;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
                     }
                 }
 
                 &.right-filtro-estagio {
-                    >div.grupo-btn-filtro {
-                        display: flex;
-                        flex-wrap: nowrap;
-                        justify-content: center;
-                        align-items: center;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    position: relative;
 
-                        >button.bnt-grupo {
+                    @media (min-width: 768px) {
+                        bottom: 11px;
+                    }
+
+                    >label.label-filtro-estagio {
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        padding: 0 25px 13px;
+                        color: #A9A9A9;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26px;
+                        border-bottom: 1px solid #B1B1B1;
+                        position: relative;
+                    }
+
+                    label.label-filtro-estagio:has(.input-filtro-estagio:checked) {
+                        color: #425545;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26px;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            inset: auto auto -1.5px 0;
                             display: block;
                             width: 100%;
-                            padding: 0 25px 13px;
-                            background: none;
-                            border-bottom: 1px solid #B1B1B1;
-                            outline: none;
-                            cursor: pointer;
-                            color: #A9A9A9;
-                            font-size: 16px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: 26px;
-
-                            &.active {
-                                color: #425545;
-                                border-bottom: 3px solid #425545;
-                            }
+                            height: 3px;
+                            background: #425545;
                         }
                     }
                 }
@@ -4066,11 +4062,51 @@ section {
         }
 
         div.contain-carrossel-estagio {
-            border: 2px solid cyan;
             padding-top: 75px;
 
             @media (min-width: 768px) {
                 padding-top: 60px;
+            }
+
+            div.item-estagio {
+                display: block;
+                height: 165px;
+
+                @media (min-width: 768px) {
+                    height: 240px;
+                }
+
+                &.video {
+                    .owl-video-play-icon {
+                        margin: 0 !important;
+                        left: 0 !important;
+                        top: 0 !important;
+                        background-position: center center;
+                        width: 260px;
+                        height: 165px;
+
+                        @media (min-width: 768px) {
+                            height: 240px;
+                            width: 100%;
+                            max-width: 380px;
+                        }
+                    }
+                }
+
+                >img {
+                    display: block;
+                    margin: 0 auto;
+                    object-fit: cover;
+                    max-width: 100%;
+                    width: 260px;
+                    height: 165px;
+
+                    @media (min-width: 768px) {
+                        height: 240px;
+                        width: 100%;
+                        max-width: 380px;
+                    }
+                }
             }
         }
     }
