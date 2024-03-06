@@ -2,7 +2,7 @@
 $pagina = "teaser";
 include "_inc_headers.php";
 ?>
-<title>Empreendimentos | GPL Incorporadora</title>
+<title>Empreendimento | GPL Incorporadora</title>
 </head>
 
 <body id="<?php echo $pagina; ?>">

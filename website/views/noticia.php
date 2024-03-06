@@ -2,7 +2,7 @@
 	$pagina = "noticia";
 	include "_inc_headers.php";
 	?>
-	<title>Notícia</title>
+	<title>Notícia | GPL Incorporadora</title>
 	</head>
 
 	<body id="<?php echo $pagina; ?>">
@@ -76,7 +76,7 @@
 					<img src="website/img/noticia/img-noticia-3.png">
 				</div>
 				<div class="contain-btn-voltar">
-					<a href="#" class="btn-voltar">
+					<a href="./gpl-acontece" class="btn-voltar">
 						<div class="ico">
 							<svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
 								<mask id="mask0_350_1495" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="9" height="9">

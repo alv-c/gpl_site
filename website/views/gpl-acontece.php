@@ -41,7 +41,7 @@ include "_inc_headers.php";
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem ispum.
                     </span>
                     <div class="contain-btn-info">
-                        <a href="#" class="leia-mais">Leia mais</a>
+                        <a href="./noticia" class="leia-mais">Leia mais</a>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@ include "_inc_headers.php";
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         </span>
                         <div class="contain-btn-card">
-                            <a href="#" class="leia-mais-card">Leia mais</a>
+                            <a href="./noticia" class="leia-mais-card">Leia mais</a>
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ include "_inc_headers.php";
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         </span>
                         <div class="contain-btn-card">
-                            <a href="#" class="leia-mais-card">Leia mais</a>
+                            <a href="./noticia" class="leia-mais-card">Leia mais</a>
                         </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ include "_inc_headers.php";
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         </span>
                         <div class="contain-btn-card">
-                            <a href="#" class="leia-mais-card">Leia mais</a>
+                            <a href="./noticia" class="leia-mais-card">Leia mais</a>
                         </div>
                     </div>
                 </div>
@@ -102,7 +102,7 @@ include "_inc_headers.php";
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         </span>
                         <div class="contain-btn-card">
-                            <a href="#" class="leia-mais-card">Leia mais</a>
+                            <a href="./noticia" class="leia-mais-card">Leia mais</a>
                         </div>
                     </div>
                 </div>

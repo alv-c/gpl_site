@@ -1403,7 +1403,7 @@ section.empreendimentos_listagem fieldset.top-filtros div.contain-btns {
   flex-wrap: nowrap;
   gap: 12px;
 }
-section.empreendimentos_listagem fieldset.top-filtros div.contain-btns > button.btn-flt-emp {
+section.empreendimentos_listagem fieldset.top-filtros div.contain-btns button.btn-flt-emp {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -1414,16 +1414,17 @@ section.empreendimentos_listagem fieldset.top-filtros div.contain-btns > button.
   cursor: pointer;
   gap: 8px;
   padding: 8px 20px;
+  white-space: nowrap;
 }
-section.empreendimentos_listagem fieldset.top-filtros div.contain-btns > button.btn-flt-emp:nth-child(2) {
+section.empreendimentos_listagem fieldset.top-filtros div.contain-btns button.btn-flt-emp:nth-child(2) {
   padding: 8px 12px;
 }
-section.empreendimentos_listagem fieldset.top-filtros div.contain-btns > button.btn-flt-emp > div.ico {
+section.empreendimentos_listagem fieldset.top-filtros div.contain-btns button.btn-flt-emp > div.ico {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section.empreendimentos_listagem fieldset.top-filtros div.contain-btns > button.btn-flt-emp > span {
+section.empreendimentos_listagem fieldset.top-filtros div.contain-btns button.btn-flt-emp > span {
   display: block;
   color: #425545;
   font-size: 10px;
@@ -1432,6 +1433,9 @@ section.empreendimentos_listagem fieldset.top-filtros div.contain-btns > button.
   line-height: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+section.empreendimentos_listagem fieldset.top-filtros div.contain-btns .dropdown button.btn-flt-emp {
+  padding: 13px 20px;
 }
 section.empreendimentos_listagem div.lista {
   padding-top: 35px;
@@ -2808,6 +2812,7 @@ section.teaser_banner div.container-full-right > div.contain-desc div.grid-empre
   border: none;
   background: none;
   outline: none;
+  cursor: pointer;
 }
 section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-btn-form > button.submit-form div.ico {
   display: flex;
@@ -3328,6 +3333,7 @@ section.empreendimento_banner div.container-full-right > div.contain-desc div.gr
   border: none;
   background: none;
   outline: none;
+  cursor: pointer;
 }
 section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-btn-form > button.submit-form div.ico {
   display: flex;
@@ -3507,6 +3513,38 @@ section.empreendimento_lancamento_info div.grid-empreendimento-info > div.left-i
   max-width: 205px;
   object-fit: cover;
   margin: 0 auto;
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div.left-info > div.contain-anco {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding-top: 50px;
+  gap: 15px;
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div.left-info > div.contain-anco > a.ancor-info {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  outline: none;
+  text-decoration: none;
+  gap: 12px;
+  white-space: nowrap;
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div.left-info > div.contain-anco > a.ancor-info > div.ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.empreendimento_lancamento_info div.grid-empreendimento-info > div.left-info > div.contain-anco > a.ancor-info > span {
+  display: block;
+  color: #425545;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
 }
 section.empreendimento_lancamento_info div.grid-empreendimento-info > div.right-info > span {
   display: block;

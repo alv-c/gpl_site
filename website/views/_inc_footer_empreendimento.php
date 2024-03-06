@@ -2,11 +2,11 @@
 	<div class="container">
 		<div class="grid-footer-empreendimento">
 			<div class="left-grid-empreendimento">
-				<img src="/website/img/global/logo_clara.png" alt="GPL Incorporadora">
+				<img src="/website/img/global/logo_clara.png" alt="GPL Incorporadora" onclick="window.location.href='./'">
 			</div>
 			<div class="right-grid-empreendimento">
 				<div class="contain-btn-redes-sociais">
-					<a href="#" class="btn-rede-social">
+					<a href="#" class="btn-rede-social" target="_blank">
 						<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<circle cx="21" cy="21" r="21" fill="#506554" />
 							<g clip-path="url(#clip0_140_1720)">
@@ -21,7 +21,7 @@
 							</defs>
 						</svg>
 					</a>
-					<a href="#" class="btn-rede-social">
+					<a href="#" class="btn-rede-social" target="_blank">
 						<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<circle cx="21" cy="21" r="21" fill="#506554" />
 							<g clip-path="url(#clip0_140_1607)">
@@ -35,7 +35,7 @@
 							</defs>
 						</svg>
 					</a>
-					<a href="#" class="btn-rede-social">
+					<a href="#" class="btn-rede-social" target="_blank">
 						<svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<circle cx="21.3271" cy="21" r="21" fill="#506554" />
 							<g clip-path="url(#clip0_140_1502)">

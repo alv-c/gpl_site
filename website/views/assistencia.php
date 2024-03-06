@@ -2,7 +2,7 @@
 	$pagina = "assistencia";
 	include "_inc_headers.php";
 	?>
-	<title>Assistência Técnica</title>
+	<title>Assistência Técnica | GPL Incorporadora</title>
 	</head>
 
 	<body id="<?php echo $pagina; ?>">

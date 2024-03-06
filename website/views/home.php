@@ -2,7 +2,7 @@
 	$pagina = "home";
 	include "_inc_headers.php";
 	?>
-	<title>Home</title>
+	<title>Home | GPL Incorporadora</title>
 	</head>
 
 	<body id="<?php echo $pagina; ?>">
@@ -87,7 +87,7 @@
 							nossos clientes, pois nosso objetivo é ajudá-los a realizar sonhos.
 						</span>
 						<div class="contain-btn">
-							<a href="#">Saiba mais</a>
+							<a href="./institucional">Saiba mais</a>
 						</div>
 					</div>
 					<div class="grid-right">
@@ -117,7 +117,7 @@
 							</div>
 							<span>Filtrar</span>
 						</button>
-						<button type="button">
+						<button type="button" onclick="window.location.href='./empreendimentos'">
 							<div class="ico">
 								<svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none">
 									<circle cx="15" cy="14.5" r="14" fill="white" stroke="#B1B1B1" />
@@ -136,7 +136,7 @@
 			</div>
 			<div class="owl-carousel owl-theme" id="owl-carousel-2">
 				<div class="item">
-					<div class="card_1" onclick="window.location.href='https://www.google.com'">
+					<div class="card_1" onclick="window.location.href='./empreendimento'">
 						<img src="/website/img/home/img-exe-card.png" alt="Imóvel GPL">
 						<div class="contain-card">
 							<div class="top-c-card">
@@ -151,7 +151,7 @@
 					</div>
 				</div>
 				<div class="item">
-					<div class="card_1" onclick="window.location.href='https://www.google.com'">
+					<div class="card_1" onclick="window.location.href='./empreendimento'">
 						<img src="/website/img/home/img-exe-card.png" alt="Imóvel GPL">
 						<div class="contain-card">
 							<div class="top-c-card">
@@ -193,7 +193,7 @@
 				<span class="titulo">GPL Acontece</span>
 				<div class="grid-acontece">
 					<div class="item">
-						<div class="card-acontece">
+						<div class="card-acontece" onclick="window.location.href='./noticia'">
 							<div class="top-img">
 								<img src="website/img/home/img-card-acontece.png">
 							</div>
@@ -219,7 +219,7 @@
 						</div>
 					</div>
 					<div class="item">
-						<div class="card-acontece">
+						<div class="card-acontece" onclick="window.location.href='./noticia'">
 							<div class="top-img">
 								<img src="website/img/home/img-card-acontece.png">
 							</div>
@@ -244,7 +244,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item" onclick="window.location.href='./noticia'">
 						<div class="card-acontece">
 							<div class="top-img">
 								<img src="website/img/home/img-card-acontece.png">
@@ -272,7 +272,7 @@
 					</div>
 				</div>
 				<div class="contain-ver-todos">
-					<a href="" class="ver-todos">
+					<a href="./gpl-acontece" class="ver-todos">
 						<div class="ico">
 							<svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
 								<circle cx="14.5" cy="14.5786" r="14" fill="white" stroke="#B1B1B1" />

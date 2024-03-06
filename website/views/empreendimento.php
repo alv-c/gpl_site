@@ -166,6 +166,34 @@ include "_inc_headers.php";
             <div class="grid-empreendimento-info">
                 <div class="left-info">
                     <img src="/website/img/teaser/info-empreendimento.png">
+                    <div class="contain-anco">
+                        <a href="" class="ancor-info" target="_blank">
+                            <div class="ico">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                    <mask id="mask0_387_1642" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
+                                        <rect width="22" height="22" fill="#D9D9D9" />
+                                    </mask>
+                                    <g>
+                                        <path d="M8.03778 17.7515L7.07178 16.7855L8.85224 14.9769C6.98482 14.7289 5.42443 14.2397 4.17108 13.5093C2.9177 12.7789 2.29102 11.9425 2.29102 11C2.29102 9.87295 3.13217 8.9037 4.81448 8.09222C6.4968 7.28074 8.55841 6.875 10.9993 6.875C13.4402 6.875 15.5019 7.28074 17.1842 8.09222C18.8665 8.9037 19.7076 9.87295 19.7076 11C19.7076 11.8062 19.2452 12.5454 18.3203 13.2176C17.3954 13.8898 16.1773 14.3975 14.666 14.7406V13.3375C15.8424 13.0319 16.7476 12.6538 17.3816 12.2031C18.0156 11.7524 18.3327 11.3514 18.3327 11C18.3327 10.4935 17.6795 9.90849 16.3733 9.24509C15.067 8.58168 13.2757 8.24998 10.9993 8.24998C8.72294 8.24998 6.93162 8.58168 5.62537 9.24509C4.31912 9.90849 3.66599 10.4935 3.66599 11C3.66599 11.4019 4.11434 11.8661 5.01104 12.3926C5.90774 12.9191 7.10352 13.3034 8.59839 13.5455L7.07178 12.0189L8.03778 11.0529L11.3871 14.4022L8.03778 17.7515Z" fill="#1C1B1F" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <span>Tour virtual</span>
+                        </a>
+                        <a href="" class="ancor-info" target="_blank">
+                            <div class="ico">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                                    <mask id="mask0_387_1647" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="23">
+                                        <rect y="0.5" width="22" height="22" fill="#D9D9D9" />
+                                    </mask>
+                                    <g>
+                                        <path d="M6.64518 15.8541H15.3535V14.4792H6.64518V15.8541ZM10.9993 13.016L14.3487 9.66667L13.3827 8.70066L11.6868 10.3683V6.22919H10.3118V10.3683L8.61599 8.70066L7.64999 9.66667L10.9993 13.016ZM11.0009 20.2083C9.79642 20.2083 8.66431 19.9798 7.60452 19.5226C6.54472 19.0655 5.62284 18.4452 4.83889 17.6616C4.05493 16.878 3.43429 15.9565 2.97698 14.8972C2.51967 13.8378 2.29102 12.706 2.29102 11.5015C2.29102 10.2971 2.51957 9.16498 2.97668 8.10519C3.43379 7.04539 4.05415 6.12351 4.83774 5.33956C5.62136 4.5556 6.54283 3.93496 7.60216 3.47765C8.66147 3.02034 9.79335 2.79169 10.9978 2.79169C12.2022 2.79169 13.3343 3.02024 14.3941 3.47735C15.4539 3.93447 16.3758 4.55482 17.1598 5.33842C17.9437 6.12203 18.5644 7.0435 19.0217 8.10283C19.479 9.16215 19.7076 10.294 19.7076 11.4985C19.7076 12.7029 19.4791 13.835 19.022 14.8948C18.5649 15.9546 17.9445 16.8765 17.1609 17.6604C16.3773 18.4444 15.4558 19.065 14.3965 19.5223C13.3372 19.9797 12.2053 20.2083 11.0009 20.2083ZM10.9993 18.8333C13.0465 18.8333 14.7806 18.1229 16.2014 16.7021C17.6222 15.2812 18.3327 13.5472 18.3327 11.5C18.3327 9.45278 17.6222 7.71875 16.2014 6.29791C14.7806 4.87708 13.0465 4.16666 10.9993 4.16666C8.9521 4.16666 7.21808 4.87708 5.79724 6.29791C4.37641 7.71875 3.66599 9.45278 3.66599 11.5C3.66599 13.5472 4.37641 15.2812 5.79724 16.7021C7.21808 18.1229 8.9521 18.8333 10.9993 18.8333Z" fill="#1C1B1F" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <span>memorial descritivo</span>
+                        </a>
+                    </div>
                 </div>
                 <div class="right-info">
                     <span class="subtitulo">Lançamento</span>
@@ -413,7 +441,7 @@ include "_inc_headers.php";
                     <button type="button" class="filtro-mapa active" data-lat="-16.70462320664015" data-long="-49.26433650500866">Empreendimento</button>
                     <button type="button" class="filtro-mapa" data-lat="-16.737587439106694" data-long="-49.205252531695805">Stand</button>
                     <div class="contain-btn-rota">
-                        <a href="#" class="btn-rota">
+                        <a href="https://maps.app.goo.gl/KwoZ57XFUZcAqTkk7" class="btn-rota" target="_blank">
                             <div class="ico">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
                                     <circle cx="14.5" cy="15" r="14" fill="white" stroke="#B1B1B1" />
@@ -438,7 +466,7 @@ include "_inc_headers.php";
                 </div>
                 <span class="endereco-loc">R. 22, 97 - St. Oeste, Goiânia - GO, 74120-130</span>
                 <div class="contain-rota-mobille">
-                    <a href="#" class="btn-rota">
+                    <a href="https://maps.app.goo.gl/KwoZ57XFUZcAqTkk7" class="btn-rota" target="_blank">
                         <div class="ico">
                             <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
                                 <circle cx="14.5" cy="15" r="14" fill="white" stroke="#B1B1B1" />

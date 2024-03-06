@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-xl navbar-light bg-white">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="./">
             <img src="/website/img/global/logo.png" alt="GPL Incorporadora">
         </a>
         <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,19 +14,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item d-xl-none">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="./">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Institucional</a>
+                    <a class="nav-link" href="/institucional">Institucional</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Empreendimentos</a>
+                    <a class="nav-link" href="./empreendimentos">Empreendimentos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">GPL Acontece</a>
+                    <a class="nav-link" href="./gpl-acontece">GPL Acontece</a>
                 </li>
                 <li class="nav-item d-xl-none">
-                    <a class="nav-link" href="#">Trabalhe conosco</a>
+                    <a class="nav-link" href="">Trabalhe conosco</a>
                 </li>
             </ul>
             <div class="contain-btn-right">
@@ -61,7 +61,7 @@
                             <span>Central de atendimento</span>
                         </button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="https://api.whatsapp.com/send?phone=XXXXXXXXXXX">
                                 <div class="ico">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                         <g clip-path="url(#clip0_306_1057)">
@@ -78,7 +78,7 @@
                                 <span>Whatsapp</span>
                             </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="tel:+xxxxxxxxxxx">
                                 <div class="ico">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <mask id="mask0_447_1611" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">

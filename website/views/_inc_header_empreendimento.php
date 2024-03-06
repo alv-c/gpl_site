@@ -18,10 +18,10 @@
                     </svg>
                 </a>
             </div>
-            <a href="#" class="ancora-center">Home</a>
-            <a href="#" class="ancora-center">Institucional</a>
-            <a href="#" class="ancora-center">Empreendimentos</a>
-            <a href="#" class="ancora-center">GPL Acontece</a>
+            <a href="./" class="ancora-center">Home</a>
+            <a href="./institucional" class="ancora-center">Institucional</a>
+            <a href="./empreendimentos" class="ancora-center">Empreendimentos</a>
+            <a href="./gpl-acontece" class="ancora-center">GPL Acontece</a>
             <a href="#" class="ancora-center">Trabalhe conosco</a>
             <a href="#" class="ancora-bottom top">
                 <div class="ico">
@@ -36,7 +36,7 @@
                 </div>
                 <span>Portal do Cliente</span>
             </a>
-            <a href="#" class="ancora-bottom bottom">
+            <a href="https://api.whatsapp.com/send?phone=XXXXXXXXXXX" class="ancora-bottom bottom">
                 <div class="ico">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26" fill="none">
                         <mask id="mask0_311_296" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="26">

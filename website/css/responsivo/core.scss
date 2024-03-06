@@ -1073,7 +1073,7 @@ section {
                 flex-wrap: nowrap;
                 gap: 12px;
 
-                >button.btn-flt-emp {
+                button.btn-flt-emp {
                     display: flex;
                     flex-wrap: nowrap;
                     justify-content: center;
@@ -1084,6 +1084,7 @@ section {
                     cursor: pointer;
                     gap: 8px;
                     padding: 8px 20px;
+                    white-space: nowrap;
 
                     &:nth-child(2) {
                         padding: 8px 12px;
@@ -1104,6 +1105,12 @@ section {
                         line-height: normal;
                         letter-spacing: 2px;
                         text-transform: uppercase;
+                    }
+                }
+
+                .dropdown {
+                    button.btn-flt-emp {
+                        padding: 13px 20px;
                     }
                 }
             }
@@ -2721,6 +2728,7 @@ section {
                                         border: none;
                                         background: none;
                                         outline: none;
+                                        cursor: pointer;
 
                                         div.ico {
                                             display: flex;
@@ -3285,6 +3293,7 @@ section {
                                         border: none;
                                         background: none;
                                         outline: none;
+                                        cursor: pointer;
 
                                         div.ico {
                                             display: flex;
@@ -3478,6 +3487,42 @@ section {
                         max-width: 205px;
                         object-fit: cover;
                         margin: 0 auto;
+                    }
+
+                    >div.contain-anco {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        flex-direction: column;
+                        padding-top: 50px;
+                        gap: 15px;
+
+                        >a.ancor-info {
+                            display: flex;
+                            flex-wrap: nowrap;
+                            justify-content: flex-start;
+                            align-items: center;
+                            outline: none;
+                            text-decoration: none;
+                            gap: 12px;
+                            white-space: nowrap;
+
+                            >div.ico {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            >span {
+                                display: block;
+                                color: #425545;
+                                font-size: 11px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                letter-spacing: 1.1px;
+                                text-transform: uppercase;
+                            }
+                        }
                     }
                 }
 
