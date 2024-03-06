@@ -68,7 +68,7 @@ div#videoModal {
   background: rgba(0, 0, 0, 0.7) !important;
 }
 div#videoModal div.modal-dialog {
-  max-width: 1200px;
+  max-width: 90%;
 }
 div#videoModal div.modal-dialog div.modal-content {
   background: none;
@@ -503,7 +503,6 @@ footer.footer-empreendimento div.grid-footer-empreendimento > div.right-grid-emp
 nav.navbar {
   overflow: hidden;
   padding: 40px 0 30px;
-  border-bottom: 1px solid #BAC3B0;
 }
 nav.navbar .menu {
   background-color: transparent;
@@ -1538,6 +1537,17 @@ section.institucional-topo {
   position: relative;
   background: #fff;
 }
+@media (min-width: 992px) {
+  section.institucional-topo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background: #BAC3B0;
+  }
+}
 section.institucional-topo .breadcrumb-banner {
   display: none;
 }
@@ -1590,6 +1600,7 @@ section.institucional-topo div.grid-inst-topo > div.right-top > img.banner_insti
   margin: 0 auto;
   width: 100%;
   object-fit: cover;
+  position: relative;
 }
 section.institucional-media {
   background: #fff;
@@ -1704,6 +1715,7 @@ section.institucional-mapa div.content-map div#mapa {
 
 section.acontece_banner {
   background-image: linear-gradient(to top, #fff 0, #fff 50%, rgba(186, 195, 176, 0.3490196078) 50%);
+  border-top: 1px solid #BAC3B0;
 }
 section.acontece_banner div.contain-desc {
   padding: 55px 0 70px;
@@ -1898,6 +1910,7 @@ section.acontece-paginacao div.contain-paginacao > div.contain-btns-pag > button
 
 section.noticia-topo {
   padding: 0 0 55px;
+  border-top: 1px solid #BAC3B0;
 }
 @media (min-width: 768px) {
   section.noticia-topo {
@@ -2748,7 +2761,6 @@ section.teaser_banner div.container-full-right > div.contain-desc div.grid-empre
   line-height: normal;
   padding-bottom: 5px;
   width: 100%;
-  max-width: 310px;
 }
 section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo input.form-cont-emp {
   display: block;
@@ -2778,12 +2790,7 @@ section.teaser_banner div.container-full-right > div.contain-desc div.grid-empre
   padding-left: 25px;
   position: relative;
   width: 100%;
-  max-width: 300px;
-}
-@media (min-width: 768px) {
-  section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-check-cont label[for=politica_privacidade] {
-    max-width: 100%;
-  }
+  max-width: 100%;
 }
 section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-check-cont label[for=politica_privacidade]::after {
   content: "";
@@ -2803,7 +2810,7 @@ section.teaser_banner div.container-full-right > div.contain-desc div.grid-empre
 }
 section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-btn-form {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 section.teaser_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-btn-form > button.submit-form {
   display: flex;
@@ -3269,7 +3276,11 @@ section.empreendimento_banner div.container-full-right > div.contain-desc div.gr
   line-height: normal;
   padding-bottom: 5px;
   width: 100%;
-  max-width: 310px;
+}
+@media (min-width: 768px) {
+  section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo > span.titulo-form {
+    max-width: 310px;
+  }
 }
 section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo input.form-cont-emp {
   display: block;
@@ -3299,12 +3310,7 @@ section.empreendimento_banner div.container-full-right > div.contain-desc div.gr
   padding-left: 25px;
   position: relative;
   width: 100%;
-  max-width: 300px;
-}
-@media (min-width: 768px) {
-  section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-check-cont label[for=politica_privacidade] {
-    max-width: 100%;
-  }
+  max-width: 100%;
 }
 section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-check-cont label[for=politica_privacidade]::after {
   content: "";
@@ -3324,7 +3330,7 @@ section.empreendimento_banner div.container-full-right > div.contain-desc div.gr
 }
 section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-btn-form {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 section.empreendimento_banner div.container-full-right > div.contain-desc div.grid-empreendimento-topo > div.right-topo > fieldset#containFormTopo div.contain-btn-form > button.submit-form {
   display: flex;
@@ -3693,11 +3699,23 @@ section.empreendimento-galeria div.contain-nav {
 section.empreendimento-galeria div.contain-nav::before {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 1.5px;
-  width: 100%;
+  right: 0;
+  bottom: 0.5px;
+  width: calc(100% - 30px);
   height: 1px;
   background: #B1B1B1;
+}
+@media (min-width: 992px) {
+  section.empreendimento-galeria div.contain-nav::before {
+    bottom: 1.5px;
+  }
+}
+@media (min-width: 1200px) {
+  section.empreendimento-galeria div.contain-nav::before {
+    width: 100%;
+    right: auto;
+    left: 0;
+  }
 }
 @media (min-width: 768px) {
   section.empreendimento-galeria div.contain-nav {
@@ -3815,6 +3833,11 @@ section.empreendimento-galeria div.owl-carousel div.item a.ancor-item-gall img.i
   width: 100%;
   max-width: 1098px;
   object-fit: cover;
+}
+@media (max-width: 500px) {
+  section.empreendimento-galeria div.owl-carousel div.item a.ancor-item-gall img.img-item-gall {
+    height: 200px;
+  }
 }
 section.empreendimento-galeria div.owl-carousel div.item a.ancor-item-gall div.contain-item-bottom {
   position: absolute;
@@ -4563,7 +4586,7 @@ section.empreendimento-estagio-obra div.contain-btn > a.interesse {
 }
 @media (min-width: 1200px) {
   div#videoModal div.modal-dialog div.modal-content .modal-body div.embed-container > iframe {
-    height: 450px;
+    height: 550px;
   }
   nav.navbar {
     padding: 18px 0 13px;

@@ -4,7 +4,6 @@
 nav.navbar {
     overflow: hidden;
     padding: 40px 0 30px;
-    border-bottom: 1px solid #BAC3B0;
 
     .menu {
         background-color: $background-color_1;
@@ -1236,6 +1235,18 @@ section {
         position: relative;
         background: #fff;
 
+        @media(min-width: 992px) {
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 1px;
+                background: #BAC3B0;
+            }
+        }
+
         .breadcrumb-banner {
             display: none;
         }
@@ -1297,6 +1308,7 @@ section {
                     margin: 0 auto;
                     width: 100%;
                     object-fit: cover;
+                    position: relative;
                 }
             }
         }
@@ -1447,6 +1459,7 @@ section {
 section {
     &.acontece_banner {
         background-image: linear-gradient(to top, #fff 0, #fff 50%, rgba(186, 195, 176, 0.3490196078) 50%);
+        border-top: 1px solid #BAC3B0;
 
         div.contain-desc {
             padding: 55px 0 70px;
@@ -1676,6 +1689,7 @@ section {
 section {
     &.noticia-topo {
         padding: 0 0 55px;
+        border-top: 1px solid #BAC3B0;
 
         @media (min-width: 768px) {
             padding: 0 0 60px;
@@ -2655,7 +2669,6 @@ section {
                                     line-height: normal;
                                     padding-bottom: 5px;
                                     width: 100%;
-                                    max-width: 310px;
                                 }
 
                                 input.form-cont-emp {
@@ -2688,11 +2701,7 @@ section {
                                         padding-left: 25px;
                                         position: relative;
                                         width: 100%;
-                                        max-width: 300px;
-
-                                        @media(min-width: 768px) {
-                                            max-width: 100%;
-                                        }
+                                        max-width: 100%;
 
                                         &::after {
                                             content: '';
@@ -2719,7 +2728,7 @@ section {
 
                                 div.contain-btn-form {
                                     display: flex;
-                                    justify-content: flex-end;
+                                    justify-content: flex-start;
 
                                     >button.submit-form {
                                         display: flex;
@@ -3220,7 +3229,10 @@ section {
                                     line-height: normal;
                                     padding-bottom: 5px;
                                     width: 100%;
-                                    max-width: 310px;
+
+                                    @media (min-width: 768px) {
+                                        max-width: 310px;
+                                    }
                                 }
 
                                 input.form-cont-emp {
@@ -3253,11 +3265,7 @@ section {
                                         padding-left: 25px;
                                         position: relative;
                                         width: 100%;
-                                        max-width: 300px;
-
-                                        @media(min-width: 768px) {
-                                            max-width: 100%;
-                                        }
+                                        max-width: 100%;
 
                                         &::after {
                                             content: '';
@@ -3284,7 +3292,7 @@ section {
 
                                 div.contain-btn-form {
                                     display: flex;
-                                    justify-content: flex-end;
+                                    justify-content: flex-start;
 
                                     >button.submit-form {
                                         display: flex;
@@ -3700,11 +3708,21 @@ section {
             &::before {
                 content: '';
                 position: absolute;
-                left: 0;
-                bottom: 1.5px;
-                width: 100%;
+                right: 0;
+                bottom: .5px;
+                width: calc(100% - 30px);
                 height: 1px;
                 background: #B1B1B1;
+
+                @media (min-width: 992px) {
+                    bottom: 1.5px;
+                }
+
+                @media (min-width: 1200px) {
+                    width: 100%;
+                    right: auto;
+                    left: 0;
+                }
             }
 
             @media (min-width: 768px) {
@@ -3837,6 +3855,10 @@ section {
                         width: 100%;
                         max-width: 1098px;
                         object-fit: cover;
+
+                        @media(max-width: 500px) {
+                            height: 200px;
+                        }
                     }
 
                     div.contain-item-bottom {
@@ -4868,7 +4890,7 @@ section {
                 .modal-body {
                     div.embed-container {
                         >iframe {
-                            height: 450px;
+                            height: 550px;
                         }
                     }
                 }

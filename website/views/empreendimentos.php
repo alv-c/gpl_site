@@ -56,7 +56,7 @@ include "_inc_headers.php";
                         <span>Filtrar</span>
                     </button>
 
-                    <div class="dropdown dropleft">
+                    <div class="dropdown">
                         <button type="button" class="btn-flt-emp" id="drop-filtro-empreendimento" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="ico">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">

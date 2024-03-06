@@ -776,7 +776,7 @@ include "_inc_headers.php";
             nav: true,
             dots: false,
             lazyLoad: true,
-            // stagePadding: 50,
+            stagePadding: 50,
             navText: [$('.am-next'), $('.am-prev')],
             responsive: {
                 0: {
