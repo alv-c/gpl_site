@@ -93,11 +93,11 @@ include "_inc_headers.php";
     <section class="empreendimento-navegacao">
         <nav class="nav-empreendimento">
             <div class="container">
-                <button type="button" data-animation="empreendimento_lancamento_desc" class="btn-filter-top">Sobre</button>
-                <button type="button" data-animation="empreendimento-diferenciais" class="btn-filter-top">Diferenciais</button>
-                <button type="button" data-animation="empreendimento-galeria" class="btn-filter-top">Galeria</button>
-                <button type="button" data-animation="empreendimento-localizacao" class="btn-filter-top">Localização</button>
-                <button type="button" data-animation="empreendimento-estagio-obra" class="btn-filter-top">Estágio da obra</button>
+                <button type="button" onclick="redirect('empreendimento_lancamento_desc')" data-animation="empreendimento_lancamento_desc" class="btn-filter-top">Sobre</button>
+                <button type="button" onclick="redirect('empreendimento-diferenciais')" data-animation="empreendimento-diferenciais" class="btn-filter-top">Diferenciais</button>
+                <button type="button" onclick="redirect('empreendimento-galeria')" data-animation="empreendimento-galeria" class="btn-filter-top">Galeria</button>
+                <button type="button" onclick="redirect('empreendimento-localizacao')" data-animation="empreendimento-localizacao" class="btn-filter-top">Localização</button>
+                <button type="button" onclick="redirect('empreendimento-estagio-obra')" data-animation="empreendimento-estagio-obra" class="btn-filter-top">Estágio da obra</button>
                 <button type="button" data-animation="sessao-2" class="btn-filter-top">Indique um amigo</button>
                 <button type="button" data-animation="empreendimento_banner" class="btn-filter-top">Agende uma visita</button>
             </div>
@@ -575,22 +575,29 @@ include "_inc_headers.php";
             <div class="contain-carrossel-estagio">
                 <div class="owl-carousel owl-theme" id="owl-carousel-estagio">
 
-                    <div class="item-estagio item-video video outubro_2022">
-                        <a class="owl-video" href="https://www.youtube.com/watch?v=1HN6bhAmQMc&t=1s"></a>
+                    <div class="item-estagio item-video video outubro_2022" data-merge="1">
+                        <a class="owl-video" href="https://www.youtube.com/watch?v=JpxsRwnRwCQ"></a>
                     </div>
+
 
                     <div class="item-estagio foto outubro_2022">
-                        <img src="/website/img/empreendimento/item-1-caross-estag.png">
+                        <a href="/website/img/empreendimento/item-1-caross-estag.png" data-lightbox="gallery">
+                            <img src="/website/img/empreendimento/item-1-caross-estag.png">
+                        </a>
                     </div>
                     <div class="item-estagio foto agosto_2022">
-                        <img src="/website/img/empreendimento/item-2-caross-estag.png">
+                        <a href="/website/img/empreendimento/item-2-caross-estag.png" data-lightbox="gallery">
+                            <img src="/website/img/empreendimento/item-2-caross-estag.png">
+                        </a>
                     </div>
                     <div class="item-estagio foto setembro_2022">
-                        <img src="/website/img/empreendimento/item-3-caross-estag.png">
+                        <a href="/website/img/empreendimento/item-3-caross-estag.png" data-lightbox="gallery">
+                            <img src="/website/img/empreendimento/item-3-caross-estag.png">
+                        </a>
                     </div>
 
-                    <div class="item-estagio item-video video setembro_2022">
-                        <a class="owl-video" href="https://www.youtube.com/watch?v=J9k_zivDW0o"></a>
+                    <div class="item-estagio item-video video setembro_2022" data-merge="2">
+                        <a class="owl-video" href="https://www.youtube.com/watch?v=JpxsRwnRwCQ"></a>
                     </div>
 
                 </div>
@@ -666,6 +673,13 @@ include "_inc_headers.php";
                 retornarBtn('empreendimento_banner').removeClass('active');
             }
         });
+
+        //scrol suave
+        let redirect = (link) => {
+            $("html, body").animate({
+                scrollTop: $(`#${link}`).offset().top - 100
+            }, 600, function() {});
+        }
     </script>
 
     <script>
@@ -680,6 +694,19 @@ include "_inc_headers.php";
             center: true,
             dots: true,
             stagePadding: 30,
+            stopOnHover: true,
+            singleItem: true,
+            responsive: true,
+            responsiveRefreshRate: 200,
+            responsiveBaseWidth: window,
+            videoWidth: false, // Default false; Type: Boolean/Number
+            videoHeight: false,
+            onTranslate: function() {
+                $('.owl-item').find('video').each(function() {
+                    this.pause();
+                });
+            },
+
             responsive: {
                 200: {
                     // autoWidth: true,

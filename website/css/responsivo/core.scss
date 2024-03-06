@@ -4215,20 +4215,20 @@ section {
                     }
 
                     &.video {
-                        .owl-video-play-icon {
-                            margin: 0 !important;
-                            left: 0 !important;
-                            top: 0 !important;
-                            background-position: center center;
-                            width: 100%;
-                            height: 165px;
+                        // .owl-video-play-icon {
+                        //     margin: 0 !important;
+                        //     left: 0 !important;
+                        //     top: 0 !important;
+                        //     background-position: center center;
+                        //     width: 100%;
+                        //     height: 165px;
 
-                            @media (min-width: 768px) {
-                                height: 240px;
-                                width: 100%;
-                                max-width: 380px;
-                            }
-                        }
+                        //     @media (min-width: 768px) {
+                        //         height: 240px;
+                        //         width: 100%;
+                        //         max-width: 380px;
+                        //     }
+                        // }
                     }
 
                     >img {
